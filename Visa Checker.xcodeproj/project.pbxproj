@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806D8411FBCF1490052FA56 /* detailViewController.m */; };
+		1806D8451FBCFC030052FA56 /* Visa.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806D8441FBCFC030052FA56 /* Visa.m */; };
 		1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFBE1FBBCC8C006E9942 /* AppDelegate.m */; };
 		1845EFC21FBBCC8C006E9942 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFC11FBBCC8C006E9942 /* ViewController.m */; };
 		1845EFC51FBBCC8C006E9942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845EFC31FBBCC8C006E9942 /* Main.storyboard */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1806D8401FBCF1490052FA56 /* detailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = "<group>"; };
+		1806D8411FBCF1490052FA56 /* detailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = "<group>"; };
+		1806D8431FBCFC030052FA56 /* Visa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visa.h; sourceTree = "<group>"; };
+		1806D8441FBCFC030052FA56 /* Visa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visa.m; sourceTree = "<group>"; };
 		1845EFBA1FBBCC8C006E9942 /* Visa Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visa Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1845EFBD1FBBCC8C006E9942 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1845EFBE1FBBCC8C006E9942 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +112,10 @@
 				1845EFC01FBBCC8C006E9942 /* ViewController.h */,
 				1845EFC11FBBCC8C006E9942 /* ViewController.m */,
 				1845EFC31FBBCC8C006E9942 /* Main.storyboard */,
+				1806D8401FBCF1490052FA56 /* detailViewController.h */,
+				1806D8411FBCF1490052FA56 /* detailViewController.m */,
+				1806D8431FBCFC030052FA56 /* Visa.h */,
+				1806D8441FBCFC030052FA56 /* Visa.m */,
 				1845EFC61FBBCC8C006E9942 /* Assets.xcassets */,
 				1845EFC81FBBCC8C006E9942 /* LaunchScreen.storyboard */,
 				1845EFCB1FBBCC8C006E9942 /* Info.plist */,
@@ -265,9 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1806D8451FBCFC030052FA56 /* Visa.m in Sources */,
 				1845EFC21FBBCC8C006E9942 /* ViewController.m in Sources */,
 				1845EFCD1FBBCC8C006E9942 /* main.m in Sources */,
 				1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */,
+				1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVS7T5ACZ2;
 				INFOPLIST_FILE = "Visa Checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.el16cnp.Visa-Checker";
@@ -444,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVS7T5ACZ2;
 				INFOPLIST_FILE = "Visa Checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.el16cnp.Visa-Checker";
