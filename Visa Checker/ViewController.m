@@ -40,7 +40,6 @@
                     @"Algeria",
                     @"Andorra",
                     @"Angola",
-                    @"Anguillia",
                     @"Antigua & Barbuda",
                     @"Argentina",
                     @"Armenia",
@@ -55,7 +54,6 @@
                     @"Belarus",
                     @"Belize",
                     @"Benin",
-                    @"Bermuda",
                     @"Bhutan",
                     @"Bolivia",
                     @"Bosnia & Herzegovina",
@@ -325,9 +323,9 @@
     
     if ([self.destinationTextField isFirstResponder]) {
         [self.destinationTextField resignFirstResponder];
+
     }
 }
-
 
 
 @end

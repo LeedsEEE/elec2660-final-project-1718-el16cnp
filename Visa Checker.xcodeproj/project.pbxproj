@@ -17,6 +17,11 @@
 		1845EFCD1FBBCC8C006E9942 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFCC1FBBCC8C006E9942 /* main.m */; };
 		1845EFD71FBBCC8C006E9942 /* Visa_CheckerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFD61FBBCC8C006E9942 /* Visa_CheckerTests.m */; };
 		1845EFE21FBBCC8C006E9942 /* Visa_CheckerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFE11FBBCC8C006E9942 /* Visa_CheckerUITests.m */; };
+		18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAC1FBE6BE80013699A /* TableViewController.m */; };
+		18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAF1FBE85A90013699A /* tableDataViewController.m */; };
+		18D23CB31FBE99B70013699A /* tableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CB21FBE99B70013699A /* tableData.m */; };
+		18D23CB61FBE9A550013699A /* tableDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CB51FBE9A550013699A /* tableDataModel.m */; };
+		18D23CB81FBEA7FD0013699A /* flags in Resources */ = {isa = PBXBuildFile; fileRef = 18D23CB71FBEA7FC0013699A /* flags */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,15 @@
 		1845EFDD1FBBCC8C006E9942 /* Visa CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Visa CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1845EFE11FBBCC8C006E9942 /* Visa_CheckerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visa_CheckerUITests.m; sourceTree = "<group>"; };
 		1845EFE31FBBCC8C006E9942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D23CAB1FBE6BE80013699A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		18D23CAC1FBE6BE80013699A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		18D23CAE1FBE85A90013699A /* tableDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableDataViewController.h; sourceTree = "<group>"; };
+		18D23CAF1FBE85A90013699A /* tableDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableDataViewController.m; sourceTree = "<group>"; };
+		18D23CB11FBE99B70013699A /* tableData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableData.h; sourceTree = "<group>"; };
+		18D23CB21FBE99B70013699A /* tableData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableData.m; sourceTree = "<group>"; };
+		18D23CB41FBE9A550013699A /* tableDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableDataModel.h; sourceTree = "<group>"; };
+		18D23CB51FBE9A550013699A /* tableDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableDataModel.m; sourceTree = "<group>"; };
+		18D23CB71FBEA7FC0013699A /* flags */ = {isa = PBXFileReference; lastKnownFileType = folder; path = flags; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +121,20 @@
 		1845EFBC1FBBCC8C006E9942 /* Visa Checker */ = {
 			isa = PBXGroup;
 			children = (
+				18D23CB71FBEA7FC0013699A /* flags */,
 				1845EFBD1FBBCC8C006E9942 /* AppDelegate.h */,
 				1845EFBE1FBBCC8C006E9942 /* AppDelegate.m */,
 				1845EFC01FBBCC8C006E9942 /* ViewController.h */,
 				1845EFC11FBBCC8C006E9942 /* ViewController.m */,
 				1845EFC31FBBCC8C006E9942 /* Main.storyboard */,
+				18D23CAE1FBE85A90013699A /* tableDataViewController.h */,
+				18D23CAF1FBE85A90013699A /* tableDataViewController.m */,
+				18D23CAB1FBE6BE80013699A /* TableViewController.h */,
+				18D23CAC1FBE6BE80013699A /* TableViewController.m */,
+				18D23CB11FBE99B70013699A /* tableData.h */,
+				18D23CB21FBE99B70013699A /* tableData.m */,
+				18D23CB41FBE9A550013699A /* tableDataModel.h */,
+				18D23CB51FBE9A550013699A /* tableDataModel.m */,
 				1806D8401FBCF1490052FA56 /* detailViewController.h */,
 				1806D8411FBCF1490052FA56 /* detailViewController.m */,
 				1806D8431FBCFC030052FA56 /* Visa.h */,
@@ -250,6 +273,7 @@
 			files = (
 				1845EFCA1FBBCC8C006E9942 /* LaunchScreen.storyboard in Resources */,
 				1845EFC71FBBCC8C006E9942 /* Assets.xcassets in Resources */,
+				18D23CB81FBEA7FD0013699A /* flags in Resources */,
 				1845EFC51FBBCC8C006E9942 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,10 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D23CB31FBE99B70013699A /* tableData.m in Sources */,
 				1806D8451FBCFC030052FA56 /* Visa.m in Sources */,
+				18D23CB61FBE9A550013699A /* tableDataModel.m in Sources */,
+				18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */,
 				1845EFC21FBBCC8C006E9942 /* ViewController.m in Sources */,
 				1845EFCD1FBBCC8C006E9942 /* main.m in Sources */,
 				1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */,
+				18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */,
 				1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
