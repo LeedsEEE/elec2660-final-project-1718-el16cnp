@@ -2,6 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Visa Checker.xcodeproj">
+      location = "group:/Users/apple/Documents/iOS App/Visa Checker/Visa Checker/rankTableViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/apple/Documents/iOS App/Visa Checker/Visa Checker/rankTableViewController.m">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/apple/Documents/iOS App/Visa Checker/Visa Checker/list.png">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/apple/Documents/iOS App/Visa Checker/Visa Checker/list@2x.png">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/apple/Documents/iOS App/Visa Checker/Visa Checker/list@3x.png">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
