@@ -17,6 +17,8 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *powerRankLabel;
 
+@property (strong, nonatomic) IBOutlet UIImageView *passportCover;
+
 @property (strong, nonatomic) tableData *tData;
 
 @end

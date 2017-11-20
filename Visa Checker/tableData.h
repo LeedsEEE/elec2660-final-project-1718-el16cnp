@@ -22,4 +22,6 @@
 
 @property (strong, nonatomic) NSString *countryFlag;
 
+@property (strong, nonatomic) NSString *passportCoverImage;
+
 @end

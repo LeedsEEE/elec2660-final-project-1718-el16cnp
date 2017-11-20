@@ -20,7 +20,9 @@
     
     self.countryTitleLabel.text = self.tData.countryTitle;
     self.visaFreeNumberLabel.text = [NSString stringWithFormat:@"%i/199",self.tData.visaFreeNumber];
-    self.powerRankLabel.text = [NSString stringWithFormat:@"%i/95", self.tData.powerRank];
+    self.powerRankLabel.text = [NSString stringWithFormat:@"%i/199", self.tData.powerRank];
+    UIImage *passportCoverSource = [UIImage imageNamed:self.tData.passportCoverImage];
+    self.passportCover.image = passportCoverSource;
 }
 
 - (void)didReceiveMemoryWarning {
