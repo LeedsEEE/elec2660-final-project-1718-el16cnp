@@ -14,4 +14,10 @@
 
 @property (strong, nonatomic) tableDataModel *tDataModel;
 
+@property (strong, nonatomic) NSDictionary *country;
+
+@property (strong, nonatomic) NSArray *countrySectionList;
+
+@property (strong, nonatomic) NSArray *countryIndexList;
+
 @end

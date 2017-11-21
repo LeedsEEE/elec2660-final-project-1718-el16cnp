@@ -14,10 +14,43 @@
 
 @implementation TableViewController
 
+@synthesize country, countryIndexList, countrySectionList;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.tDataModel = [[tableDataModel alloc]init];
+    
+    country = @{
+                @"A" : self.tDataModel.aArray,
+                @"B" : self.tDataModel.bArray,
+                @"C" : self.tDataModel.cArray,
+                @"D" : self.tDataModel.dArray,
+                @"E" : self.tDataModel.eArray,
+                @"F" : self.tDataModel.fArray,
+                @"G" : self.tDataModel.gArray,
+                @"H" : self.tDataModel.hArray,
+                @"I" : self.tDataModel.iArray,
+                @"J" : self.tDataModel.jArray,
+                @"K" : self.tDataModel.kArray,
+                @"L" : self.tDataModel.lArray,
+                @"M" : self.tDataModel.mArray,
+                @"N" : self.tDataModel.nArray,
+                @"O" : self.tDataModel.oArray,
+                @"P" : self.tDataModel.pArray,
+                @"Q" : self.tDataModel.qArray,
+                @"R" : self.tDataModel.rArray,
+                @"S" : self.tDataModel.sArray,
+                @"T" : self.tDataModel.tArray,
+                @"U" : self.tDataModel.uArray,
+                @"V" : self.tDataModel.vArray,
+                @"Y" : self.tDataModel.yArray,
+                @"Z" : self.tDataModel.zArray,
+                };
+    
+    countrySectionList = [[country allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
+    countryIndexList = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -35,7 +68,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // 25 sections (exclude W,X)
-    return 24;
+    return countrySectionList.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -401,7 +434,7 @@
 // define section title (in alphabets)
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    NSString *sectionName;
+    /* NSString *sectionName;
     switch (section)
     {
         case 0:
@@ -480,7 +513,9 @@
             sectionName = @"";
             break;
     }
-    return sectionName;
+    return sectionName; */
+    
+    return [countrySectionList objectAtIndex:section];
 }
 
 /*
@@ -634,6 +669,12 @@
         
     }
     
+}
+
+// Alphabet scroll
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    return countryIndexList;
 }
 
 
