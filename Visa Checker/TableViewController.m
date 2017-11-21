@@ -570,101 +570,125 @@
         if(indexPath.section == 0) {
             tableData *temptableData = [self.tDataModel.aArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         
         if(indexPath.section == 1) {
             tableData *temptableData = [self.tDataModel.bArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         
         if(indexPath.section == 2) {
             tableData *temptableData = [self.tDataModel.cArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         
         if(indexPath.section == 3) {
             tableData *temptableData = [self.tDataModel.dArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 4) {
             tableData *temptableData = [self.tDataModel.eArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 5) {
             tableData *temptableData = [self.tDataModel.fArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 6) {
             tableData *temptableData = [self.tDataModel.gArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 7) {
             tableData *temptableData = [self.tDataModel.hArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 8) {
             tableData *temptableData = [self.tDataModel.iArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 9) {
             tableData *temptableData = [self.tDataModel.jArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 10) {
             tableData *temptableData = [self.tDataModel.kArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 11) {
             tableData *temptableData = [self.tDataModel.lArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 12) {
             tableData *temptableData = [self.tDataModel.mArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 13) {
             tableData *temptableData = [self.tDataModel.nArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 14) {
             tableData *temptableData = [self.tDataModel.oArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 15) {
             tableData *temptableData = [self.tDataModel.pArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 16) {
             tableData *temptableData = [self.tDataModel.qArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 17) {
             tableData *temptableData = [self.tDataModel.rArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 18) {
             tableData *temptableData = [self.tDataModel.sArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 19) {
             tableData *temptableData = [self.tDataModel.tArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 20) {
             tableData *temptableData = [self.tDataModel.uArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 21) {
             tableData *temptableData = [self.tDataModel.vArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 22) {
             tableData *temptableData = [self.tDataModel.yArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         if(indexPath.section == 23) {
             tableData *temptableData = [self.tDataModel.zArray objectAtIndex:indexPath.row];
             destinationViewController.tData = temptableData;
+            NSLog(@"Country Selected: %@", temptableData.countryTitle);
         }
         
     }
