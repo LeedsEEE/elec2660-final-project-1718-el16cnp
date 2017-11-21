@@ -354,7 +354,7 @@
         // Central African Republic
         self.cArray = [NSMutableArray array];
         tableData *car = [[tableData alloc] init];
-        car.countryTitle = @"Central African Rep.";
+        car.countryTitle = @"Central African Republic";
         car.visaFreeNumber = 47;
         car.powerRank = 170;
         car.countryFlag = @"flags/CAFR0001.png";
@@ -1550,7 +1550,7 @@
         // St. Vincent & the Grenadines
         self.sArray = [NSMutableArray array];
         tableData *stvincent = [[tableData alloc] init];
-        stvincent.countryTitle = @"St. Vincent \n& the Grenadines";
+        stvincent.countryTitle = @"St. Vincent & the Grenadines";
         stvincent.visaFreeNumber = 126;
         stvincent.powerRank = 58;
         stvincent.countryFlag = @"flags/SVGR0001.png";
@@ -1577,7 +1577,7 @@
         // Sao Tome & Principe
         self.sArray = [NSMutableArray array];
         tableData *saot = [[tableData alloc] init];
-        saot.countryTitle = @"Sao Tome \n& Principe";
+        saot.countryTitle = @"Sao Tome & Principe";
         saot.visaFreeNumber = 57;
         saot.powerRank = 141;
         saot.countryFlag = @"flags/STPR0001.png";
@@ -1592,7 +1592,185 @@
         saudi.countryFlag = @"flags/SAAR0001.png";
         saudi.passportCoverImage = @"passportcover/saudi.jpg";
         
+        // Senegal
+        self.sArray = [NSMutableArray array];
+        tableData *senegal = [[tableData alloc] init];
+        senegal.countryTitle = @"Senegal";
+        senegal.visaFreeNumber = 54;
+        senegal.powerRank = 145;
+        senegal.countryFlag = @"flags/SENE0001.png";
+        senegal.passportCoverImage = @"passportcover/senegal.jpg";
         
+        // Serbia
+        self.sArray = [NSMutableArray array];
+        tableData *serbia = [[tableData alloc] init];
+        serbia.countryTitle = @"Serbia";
+        serbia.visaFreeNumber = 114;
+        serbia.powerRank = 78;
+        serbia.countryFlag = @"flags/SERB0001.png";
+        serbia.passportCoverImage = @"passportcover/serbia.png";
+        
+        // Seychelles
+        self.sArray = [NSMutableArray array];
+        tableData *seychelles = [[tableData alloc] init];
+        seychelles.countryTitle = @"Seychelles";
+        seychelles.visaFreeNumber = 130;
+        seychelles.powerRank = 53;
+        seychelles.countryFlag = @"flags/SEYC0001.png";
+        seychelles.passportCoverImage = @"passportcover/seychelles.jpg";
+        
+        // Sierra Leone
+        self.sArray = [NSMutableArray array];
+        tableData *sierra = [[tableData alloc] init];
+        sierra.countryTitle = @"Sierra Leone";
+        sierra.visaFreeNumber = 59;
+        sierra.powerRank = 135;
+        sierra.countryFlag = @"flags/SILE0001.png";
+        sierra.passportCoverImage = @"passportcover/sierra.jpg";
+        
+        // Singapore
+        self.sArray = [NSMutableArray array];
+        tableData *singapore = [[tableData alloc] init];
+        singapore.countryTitle = @"Singapore";
+        singapore.visaFreeNumber = 159;
+        singapore.powerRank = 1;
+        singapore.countryFlag = @"flags/SING0001.png";
+        singapore.passportCoverImage = @"passportcover/singapore.jpg";
+        
+        // Slovakia
+        self.sArray = [NSMutableArray array];
+        tableData *slovakia = [[tableData alloc] init];
+        slovakia.countryTitle = @"Slovakia";
+        slovakia.visaFreeNumber = 149;
+        slovakia.powerRank = 31;
+        slovakia.countryFlag = @"flags/SVKA0001.png";
+        slovakia.passportCoverImage = @"passportcover/slovakia.jpg";
+        
+        // Slovenia
+        self.sArray = [NSMutableArray array];
+        tableData *slovenia = [[tableData alloc] init];
+        slovenia.countryTitle = @"Slovenia";
+        slovenia.visaFreeNumber = 149;
+        slovenia.powerRank = 30;
+        slovenia.countryFlag = @"flags/SLVA0001.png";
+        slovenia.passportCoverImage = @"passportcover/slovenia.jpg";
+        
+        // Solomon Islands
+        self.sArray = [NSMutableArray array];
+        tableData *solomon = [[tableData alloc] init];
+        solomon.countryTitle = @"Solomon Islands";
+        solomon.visaFreeNumber = 114;
+        solomon.powerRank = 75;
+        solomon.countryFlag = @"flags/SOIS0001.png";
+        solomon.passportCoverImage = @"passportcover/solomon.jpg";
+        
+        // Somalia
+        self.sArray = [NSMutableArray array];
+        tableData *somalia = [[tableData alloc] init];
+        somalia.countryTitle = @"Somalia";
+        somalia.visaFreeNumber = 33;
+        somalia.powerRank = 195;
+        somalia.countryFlag = @"flags/SMLA0001.png";
+        somalia.passportCoverImage = @"passportcover/somalia.jpg";
+        
+        // South Africa
+        self.sArray = [NSMutableArray array];
+        tableData *sa = [[tableData alloc] init];
+        sa.countryTitle = @"South Africa";
+        sa.visaFreeNumber = 92;
+        sa.powerRank = 96;
+        sa.countryFlag = @"flags/SOAF0001.png";
+        sa.passportCoverImage = @"passportcover/sa.jpg";
+        
+        // South Korea
+        self.sArray = [NSMutableArray array];
+        tableData *sk = [[tableData alloc] init];
+        sk.countryTitle = @"South Korea";
+        sk.visaFreeNumber = 157;
+        sk.powerRank = 4;
+        sk.countryFlag = @"flags/SKOR0001.png";
+        sk.passportCoverImage = @"passportcover/sk.jpg";
+        
+        // South Sudan
+        self.sArray = [NSMutableArray array];
+        tableData *ss = [[tableData alloc] init];
+        ss.countryTitle = @"South Sudan";
+        ss.visaFreeNumber = 39;
+        ss.powerRank = 183;
+        ss.countryFlag = @"flags/SOSU0001.png";
+        ss.passportCoverImage = @"passportcover/ss.jpg";
+        
+        // Spain
+        self.sArray = [NSMutableArray array];
+        tableData *spain = [[tableData alloc] init];
+        spain.countryTitle = @"Spain";
+        spain.visaFreeNumber = 156;
+        spain.powerRank = 8;
+        spain.countryFlag = @"flags/SPAN0001.png";
+        spain.passportCoverImage = @"passportcover/spain.jpg";
+        
+        // Sri Lanka
+        self.sArray = [NSMutableArray array];
+        tableData *sri = [[tableData alloc] init];
+        sri.countryTitle = @"Sri Lanka";
+        sri.visaFreeNumber = 37;
+        sri.powerRank = 187;
+        sri.countryFlag = @"flags/SRLA0001.png";
+        sri.passportCoverImage = @"passportcover/sri.jpg";
+        
+        // Sudan
+        self.sArray = [NSMutableArray array];
+        tableData *sudan = [[tableData alloc] init];
+        sudan.countryTitle = @"Sudan";
+        sudan.visaFreeNumber = 37;
+        sudan.powerRank = 191;
+        sudan.countryFlag = @"flags/SUDA0001.png";
+        sudan.passportCoverImage = @"passportcover/sudan.jpg";
+        
+        // Suriname
+        self.sArray = [NSMutableArray array];
+        tableData *suriname = [[tableData alloc] init];
+        suriname.countryTitle = @"Suriname";
+        suriname.visaFreeNumber = 69;
+        suriname.powerRank = 116;
+        suriname.countryFlag = @"flags/SURN0001.png";
+        suriname.passportCoverImage = @"passportcover/suriname.jpg";
+        
+        // Swaziland
+        self.sArray = [NSMutableArray array];
+        tableData *swaziland = [[tableData alloc] init];
+        swaziland.countryTitle = @"Swaziland";
+        swaziland.visaFreeNumber = 69;
+        swaziland.powerRank = 115;
+        swaziland.countryFlag = @"flags/SZLD0001.png";
+        swaziland.passportCoverImage = @"passportcover/swaziland.jpg";
+        
+        // Sweden
+        self.sArray = [NSMutableArray array];
+        tableData *sweden = [[tableData alloc] init];
+        sweden.countryTitle = @"Sweden";
+        sweden.visaFreeNumber = 157;
+        sweden.powerRank = 3;
+        sweden.countryFlag = @"flags/SWDN0001.png";
+        sweden.passportCoverImage = @"passportcover/sweden.png";
+        
+        // Switzerland
+        self.sArray = [NSMutableArray array];
+        tableData *swi = [[tableData alloc] init];
+        swi.countryTitle = @"Switzerland";
+        swi.visaFreeNumber = 155;
+        swi.powerRank = 14;
+        swi.countryFlag = @"flags/SWIT0001.png";
+        swi.passportCoverImage = @"passportcover/swi.jpg";
+        
+        // Syria
+        self.sArray = [NSMutableArray array];
+        tableData *syria = [[tableData alloc] init];
+        syria.countryTitle = @"Syria";
+        syria.visaFreeNumber = 29;
+        syria.powerRank = 196;
+        syria.countryFlag = @"flags/SYRA0001.png";
+        syria.passportCoverImage = @"passportcover/syria.jpg";
         
         // Countries starting with S
         [self.sArray addObject:stkitts]; // index 144 - st kitts & nevis
@@ -1602,6 +1780,296 @@
         [self.sArray addObject:sanm]; // index 148 - san marino
         [self.sArray addObject:saot]; // index 149 - sao tome & principe
         [self.sArray addObject:saudi]; // index 150 - saudi arabia
+        [self.sArray addObject:senegal]; // index 151 - senegal
+        [self.sArray addObject:serbia]; // index 152 - serbia
+        [self.sArray addObject:seychelles]; // index 153 - seychelles
+        [self.sArray addObject:sierra]; // index 154 - sierra leone
+        [self.sArray addObject:singapore]; // index 155 - singapore
+        [self.sArray addObject:slovakia]; // index 156 - slovakia
+        [self.sArray addObject:slovenia]; // index 157 - slovenia
+        [self.sArray addObject:solomon]; // index 158 - solomon islands
+        [self.sArray addObject:somalia]; // index 159 - somalia
+        [self.sArray addObject:sa]; // index 160 - south africa
+        [self.sArray addObject:sk]; // index 161 - south korea
+        [self.sArray addObject:ss]; // index 162 - south sudan
+        [self.sArray addObject:spain]; // index 163 - spain
+        [self.sArray addObject:sri]; // index 164 - sri lanka
+        [self.sArray addObject:sudan]; // index 165 - sudan
+        [self.sArray addObject:suriname]; // index 166 - suriname
+        [self.sArray addObject:swaziland]; // index 167 - swaziland
+        [self.sArray addObject:sweden]; //index 168 - sweden
+        [self.sArray addObject:swi]; // index 167 - switzerland
+        [self.sArray addObject:syria]; // index 168 - syria
+        
+        // T
+        
+        // Taiwan
+        self.tArray = [NSMutableArray array];
+        tableData *taiwan = [[tableData alloc] init];
+        taiwan.countryTitle = @"Taiwan";
+        taiwan.visaFreeNumber = 120;
+        taiwan.powerRank = 68;
+        taiwan.countryFlag = @"flags/TAIW0001.png";
+        taiwan.passportCoverImage = @"passportcover/taiwan.jpg";
+        
+        // Tajikistan
+        self.tArray = [NSMutableArray array];
+        tableData *taj = [[tableData alloc] init];
+        taj.countryTitle = @"Tajikistan";
+        taj.visaFreeNumber = 54;
+        taj.powerRank = 149;
+        taj.countryFlag = @"flags/TAJK0001.png";
+        taj.passportCoverImage = @"passportcover/taj.jpg";
+        
+        // Tanzania
+        self.tArray = [NSMutableArray array];
+        tableData *tan = [[tableData alloc] init];
+        tan.countryTitle = @"Tanzania";
+        tan.visaFreeNumber = 65;
+        tan.powerRank = 123;
+        tan.countryFlag = @"flags/TANZ0001.png";
+        tan.passportCoverImage = @"passportcover/tan.jpg";
+        
+        // Thailand
+        self.tArray = [NSMutableArray array];
+        tableData *th = [[tableData alloc] init];
+        th.countryTitle = @"Thailand";
+        th.visaFreeNumber = 72;
+        th.powerRank = 108;
+        th.countryFlag = @"flags/THAL0001.png";
+        th.passportCoverImage = @"passportcover/th.jpg";
+        
+        // Timor-Leste
+        self.tArray = [NSMutableArray array];
+        tableData *timor = [[tableData alloc] init];
+        timor.countryTitle = @"Timor-Leste";
+        timor.visaFreeNumber = 85;
+        timor.powerRank = 92;
+        timor.countryFlag = @"flags/ETIM0001.png";
+        timor.passportCoverImage = @"passportcover/timor.jpg";
+        
+        // Togo
+        self.tArray = [NSMutableArray array];
+        tableData *togo = [[tableData alloc] init];
+        togo.countryTitle = @"Togo";
+        togo.visaFreeNumber = 52;
+        togo.powerRank = 155;
+        togo.countryFlag = @"flags/TOGO0001.png";
+        togo.passportCoverImage = @"passportcover/togo.png";
+        
+        // Tonga
+        self.tArray = [NSMutableArray array];
+        tableData *tonga = [[tableData alloc] init];
+        tonga.countryTitle = @"Tonga";
+        tonga.visaFreeNumber = 110;
+        tonga.powerRank = 81;
+        tonga.countryFlag = @"flags/TONG0001.png";
+        tonga.passportCoverImage = @"passportcover/tonga.jpg";
+        
+        // Trinidad & Tobago
+        self.tArray = [NSMutableArray array];
+        tableData *trin = [[tableData alloc] init];
+        trin.countryTitle = @"Trindad & Tobago";
+        trin.visaFreeNumber = 124;
+        trin.powerRank = 60;
+        trin.countryFlag = @"flags/TRTB0001.png";
+        trin.passportCoverImage = @"passportcover/trin.jpg";
+        
+        // Tunisia
+        self.tArray = [NSMutableArray array];
+        tableData *tunisia = [[tableData alloc] init];
+        tunisia.countryTitle = @"Tunisia";
+        tunisia.visaFreeNumber = 62;
+        tunisia.powerRank = 130;
+        tunisia.countryFlag = @"flags/TUNS0001.png";
+        tunisia.passportCoverImage = @"passportcover/tunisia.jpg";
+        
+        // Turkey
+        self.tArray = [NSMutableArray array];
+        tableData *turkey = [[tableData alloc] init];
+        turkey.countryTitle = @"Turkey";
+        turkey.visaFreeNumber = 104;
+        turkey.powerRank = 91;
+        turkey.countryFlag = @"flags/TURK0001.png";
+        turkey.passportCoverImage = @"passportcover/turkey.jpg";
+        
+        // Turkmenistan
+        self.tArray = [NSMutableArray array];
+        tableData *turkm = [[tableData alloc] init];
+        turkm.countryTitle = @"Turkmenistan";
+        turkm.visaFreeNumber = 48;
+        turkm.powerRank = 166;
+        turkm.countryFlag = @"flags/TKST0001.png";
+        turkm.passportCoverImage = @"passportcover/turkm.jpg";
+        
+        // Tuvalu
+        self.tArray = [NSMutableArray array];
+        tableData *tuvalu = [[tableData alloc] init];
+        tuvalu.countryTitle = @"Tuvalu";
+        tuvalu.visaFreeNumber = 114;
+        tuvalu.powerRank = 76;
+        tuvalu.countryFlag = @"flags/TUVA0001.png";
+        tuvalu.passportCoverImage = @"passportcover/tuvalu.jpg";
+        
+        // Countries starting with T
+        [self.tArray addObject:taiwan]; // index 169 - taiwan
+        [self.tArray addObject:taj]; // index 170 - tajikistan
+        [self.tArray addObject:tan]; // index 171 - tanzania
+        [self.tArray addObject:th]; // index 172 - thailand
+        [self.tArray addObject:timor]; // index 173 - timor-leste
+        [self.tArray addObject:togo]; // index 174 - togo
+        [self.tArray addObject:tonga]; // index 175 - tonga
+        [self.tArray addObject:trin]; // index 176 - trinidad & tobago
+        [self.tArray addObject:tunisia]; // index 177 - tunisia
+        [self.tArray addObject:turkey]; // index 178 - turkey
+        [self.tArray addObject:turkm]; // index 179 - turkmenistan
+        [self.tArray addObject:tuvalu]; // index 180 - tuvalu
+        
+        // U
+        
+        // Uganda
+        self.uArray = [NSMutableArray array];
+        tableData *uganda = [[tableData alloc] init];
+        uganda.countryTitle = @"Uganda";
+        uganda.visaFreeNumber = 61;
+        uganda.powerRank = 132;
+        uganda.countryFlag = @"flags/UGAN0001.png";
+        uganda.passportCoverImage = @"passportcover/uganda.jpg";
+        
+        // Ukraine
+        self.uArray = [NSMutableArray array];
+        tableData *ukraine = [[tableData alloc] init];
+        ukraine.countryTitle = @"Ukraine";
+        ukraine.visaFreeNumber = 120;
+        ukraine.powerRank = 66;
+        ukraine.countryFlag = @"flags/UKRN0001.png";
+        ukraine.passportCoverImage = @"passportcover/ukraine.jpg";
+        
+        // United Kingdom
+        self.uArray = [NSMutableArray array];
+        tableData *uk = [[tableData alloc] init];
+        uk.countryTitle = @"United Kingdom";
+        uk.visaFreeNumber = 156;
+        uk.powerRank = 11;
+        uk.countryFlag = @"flags/UNKG0001.png";
+        uk.passportCoverImage = @"passportcover/uk.jpg";
+        
+        // United States of America
+        self.uArray = [NSMutableArray array];
+        tableData *us = [[tableData alloc] init];
+        us.countryTitle = @"United States of America";
+        us.visaFreeNumber = 154;
+        us.powerRank = 21;
+        us.countryFlag = @"flags/UNST0001.png";
+        us.passportCoverImage = @"passportcover/us.jpg";
+        
+        // Uruguay
+        self.uArray = [NSMutableArray array];
+        tableData *uruguay = [[tableData alloc] init];
+        uruguay.countryTitle = @"Uruguay";
+        uruguay.visaFreeNumber = 129;
+        uruguay.powerRank = 56;
+        uruguay.countryFlag = @"flags/URGY0001.png";
+        uruguay.passportCoverImage = @"passportcover/uruguay.jpg";
+        
+        // Uzbekistan
+        self.uArray = [NSMutableArray array];
+        tableData *uzbek = [[tableData alloc] init];
+        uzbek.countryTitle = @"Uzbekistan";
+        uzbek.visaFreeNumber = 54;
+        uzbek.powerRank = 148;
+        uzbek.countryFlag = @"flags/UZBK0001.png";
+        uzbek.passportCoverImage = @"passportcover/uzbek.jpg";
+        
+        // Countries starting with U
+        [self.uArray addObject:uganda]; // index 181 - uganda
+        [self.uArray addObject:ukraine]; // index 182 - ukraine
+        [self.uArray addObject:uk]; // index 183 - united kingdom
+        [self.uArray addObject:us]; // index 184 - united states of america
+        [self.uArray addObject:uruguay]; // index 185 - uruguay
+        [self.uArray addObject:uzbek]; // idex 186 - uzbekistan
+        
+        // V
+        
+        // Vanuatu
+        self.vArray = [NSMutableArray array];
+        tableData *vanuatu = [[tableData alloc] init];
+        vanuatu.countryTitle = @"Vanuatu";
+        vanuatu.visaFreeNumber = 117;
+        vanuatu.powerRank = 72;
+        vanuatu.countryFlag = @"flags/VANT0001.png";
+        vanuatu.passportCoverImage = @"passportcover/vanuatu.jpg";
+        
+        // Vatican City
+        self.vArray = [NSMutableArray array];
+        tableData *vatican = [[tableData alloc] init];
+        vatican.countryTitle = @"Vatican City";
+        vatican.visaFreeNumber = 130;
+        vatican.powerRank = 54;
+        vatican.countryFlag = @"flags/VATI0001.png";
+        vatican.passportCoverImage = @"passportcover/vatican.jpg";
+        
+        // Venezuela
+        self.vArray = [NSMutableArray array];
+        tableData *venezuela = [[tableData alloc] init];
+        venezuela.countryTitle = @"Venezuela";
+        venezuela.visaFreeNumber = 119;
+        venezuela.powerRank = 69;
+        venezuela.countryFlag = @"flags/VENZ0001.png";
+        venezuela.passportCoverImage = @"passportcover/venezuela.jpg";
+        
+        // Viet Nam
+        self.vArray = [NSMutableArray array];
+        tableData *vietnam = [[tableData alloc] init];
+        vietnam.countryTitle = @"Viet Nam";
+        vietnam.visaFreeNumber = 48;
+        vietnam.powerRank = 165;
+        vietnam.countryFlag = @"flags/VIET0001.png";
+        vietnam.passportCoverImage = @"passportcover/vietnam.jpg";
+        
+        // Countries starting with V
+        [self.vArray addObject:vanuatu]; // index 187 - vanuatu
+        [self.vArray addObject:vatican]; // index 188 - vatican city
+        [self.vArray addObject:venezuela]; // index 190 - venezuela
+        [self.vArray addObject:vietnam]; // index 191 - vietnam
+        
+        // Y
+        
+        // Yemen
+        self.yArray = [NSMutableArray array];
+        tableData *yemen = [[tableData alloc] init];
+        yemen.countryTitle = @"Yemen";
+        yemen.visaFreeNumber = 36;
+        yemen.powerRank = 194;
+        yemen.countryFlag = @"flags/YEMN0001.png";
+        yemen.passportCoverImage = @"passportcover/yemen.jpg";
+        
+        // Countries starting with V
+        [self.yArray addObject:yemen]; // index 192 - yemen
+        
+        // Z
+        
+        // Zambia
+        self.zArray = [NSMutableArray array];
+        tableData *zambia = [[tableData alloc] init];
+        zambia.countryTitle = @"Zambia";
+        zambia.visaFreeNumber = 63;
+        zambia.powerRank = 125;
+        zambia.countryFlag = @"flags/ZAMB0001.png";
+        zambia.passportCoverImage = @"passportcover/zambia.jpg";
+        
+        // Zimbabwe
+        self.zArray = [NSMutableArray array];
+        tableData *zimbabwe = [[tableData alloc] init];
+        zimbabwe.countryTitle = @"Zimbabwe";
+        zimbabwe.visaFreeNumber = 62;
+        zimbabwe.powerRank = 128;
+        zimbabwe.countryFlag = @"flags/ZBWE0001.png";
+        zimbabwe.passportCoverImage = @"passportcover/zimbabwe.jpg";
+        
+        // Countries starting with Z
+        [self.zArray addObject:zambia]; // index 193 - zambia
+        [self.zArray addObject:zimbabwe]; // index 194 - zimbabwe
         
         
     }
