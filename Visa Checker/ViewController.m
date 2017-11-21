@@ -185,7 +185,7 @@
                     @"Palau",
                     @"Palestinian Territories",
                     @"Panama",
-                    @"Papa New Guinea",
+                    @"Papua New Guinea",
                     @"Paraguay",
                     @"Peru",
                     @"Philippines",
@@ -198,7 +198,7 @@
                     @"Russian Federation",
                     @"Rwanda",
                     // S
-                    @"Saint Kitts an Nevis",
+                    @"Saint Kitts and Nevis",
                     @"Saint Lucia",
                     @"Samoa",
                     @"San Marino",

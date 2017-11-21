@@ -19,6 +19,7 @@
 		1845EFD71FBBCC8C006E9942 /* Visa_CheckerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFD61FBBCC8C006E9942 /* Visa_CheckerTests.m */; };
 		1845EFE21FBBCC8C006E9942 /* Visa_CheckerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFE11FBBCC8C006E9942 /* Visa_CheckerUITests.m */; };
 		1850FAF81FC287C8001D3B2F /* rankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850FAF71FC287C8001D3B2F /* rankTableViewController.m */; };
+		1850FAFA1FC3CF1C001D3B2F /* appicons in Resources */ = {isa = PBXBuildFile; fileRef = 1850FAF91FC3CF1B001D3B2F /* appicons */; };
 		187BC4FC1FC08B0A002C0ED0 /* passportcover in Resources */ = {isa = PBXBuildFile; fileRef = 187BC4FB1FC08B0A002C0ED0 /* passportcover */; };
 		18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAC1FBE6BE80013699A /* TableViewController.m */; };
 		18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAF1FBE85A90013699A /* tableDataViewController.m */; };
@@ -68,6 +69,7 @@
 		1845EFE31FBBCC8C006E9942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1850FAF61FC287C7001D3B2F /* rankTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rankTableViewController.h; path = "/Users/apple/Documents/iOS App/Visa Checker/Visa Checker/rankTableViewController.h"; sourceTree = "<absolute>"; };
 		1850FAF71FC287C8001D3B2F /* rankTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = rankTableViewController.m; path = "/Users/apple/Documents/iOS App/Visa Checker/Visa Checker/rankTableViewController.m"; sourceTree = "<absolute>"; };
+		1850FAF91FC3CF1B001D3B2F /* appicons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = appicons; sourceTree = "<group>"; };
 		187BC4FB1FC08B0A002C0ED0 /* passportcover */ = {isa = PBXFileReference; lastKnownFileType = folder; path = passportcover; sourceTree = "<group>"; };
 		18D23CAB1FBE6BE80013699A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		18D23CAC1FBE6BE80013699A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		1845EFBC1FBBCC8C006E9942 /* Visa Checker */ = {
 			isa = PBXGroup;
 			children = (
+				1850FAF91FC3CF1B001D3B2F /* appicons */,
 				1850FAF61FC287C7001D3B2F /* rankTableViewController.h */,
 				1850FAF71FC287C8001D3B2F /* rankTableViewController.m */,
 				18D23CB71FBEA7FC0013699A /* flags */,
@@ -284,6 +287,7 @@
 			files = (
 				1845EFCA1FBBCC8C006E9942 /* LaunchScreen.storyboard in Resources */,
 				1845EFC71FBBCC8C006E9942 /* Assets.xcassets in Resources */,
+				1850FAFA1FC3CF1C001D3B2F /* appicons in Resources */,
 				187BC4FC1FC08B0A002C0ED0 /* passportcover in Resources */,
 				183AAA5B1FC0545B00298994 /* tabbaricons in Resources */,
 				18D23CB81FBEA7FD0013699A /* flags in Resources */,
