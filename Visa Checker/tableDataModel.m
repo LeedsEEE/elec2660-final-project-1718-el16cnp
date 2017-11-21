@@ -2016,7 +2016,7 @@
         venezuela.visaFreeNumber = 119;
         venezuela.powerRank = 69;
         venezuela.countryFlag = @"flags/VENZ0001.png";
-        venezuela.passportCoverImage = @"passportcover/venezuela.jpg";
+        venezuela.passportCoverImage = @"passportcover/venezuela.jpeg";
         
         // Viet Nam
         self.vArray = [NSMutableArray array];
