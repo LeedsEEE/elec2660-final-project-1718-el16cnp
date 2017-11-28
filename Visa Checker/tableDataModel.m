@@ -492,7 +492,7 @@
         // DR Congo
         self.dArray = [NSMutableArray array];
         tableData *drcongo= [[tableData alloc] init];
-        drcongo.countryTitle = @"DR Congo";
+        drcongo.countryTitle = @"Democratic Republic of the Congo";
         drcongo.visaFreeNumber = 42;
         drcongo.powerRank = 179;
         drcongo.countryFlag = @"flags/CODR0001.png";
