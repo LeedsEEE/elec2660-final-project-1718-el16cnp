@@ -11,6 +11,8 @@
 
 @interface visaDataModel : NSObject
 
-@property (strong, nonatomic) NSMutableArray *nameArray;
+@property (strong, nonatomic) NSMutableArray *passportArray;
+
+@property (strong, nonatomic) NSMutableArray *destinationArray;
 
 @end

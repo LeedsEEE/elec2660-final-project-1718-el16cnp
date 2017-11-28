@@ -21,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.detailLabel.text = [NSString stringWithFormat: @"%@ passport in %@", self.passportData.nationality, self.destinationData.destination];
     
 }
 

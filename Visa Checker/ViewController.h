@@ -16,19 +16,27 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *destinationTextField;
 
-@property (strong, nonatomic) IBOutlet UIPickerView *picker;
+@property (strong, nonatomic) IBOutlet UIPickerView *passportPicker;
+
+@property (strong, nonatomic) IBOutlet UIPickerView *destinationPicker;
 
 - (IBAction)submitPressed:(id)sender;
 
 - (IBAction)backgroundPressed:(id)sender;
 
-@property (strong, nonatomic) NSArray *pickerArray;
+@property (strong, nonatomic) NSArray *passportPickerArray;
+
+@property (strong, nonatomic) NSArray *destinationPickerArray;
 
 @property (strong, nonatomic) NSString *passportCountry;
 
 @property (strong, nonatomic) NSString *destinationCountry;
 
 @property (strong, nonatomic) visaDataModel *vDataModel;
+
+@property NSInteger *passportSelectedRow;
+
+@property NSInteger *destinationSelectedRow;
 
 
 @end

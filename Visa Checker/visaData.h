@@ -10,7 +10,11 @@
 
 @interface visaData : NSObject
 
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *passport;
+
+@property (strong, nonatomic) NSString *destination;
+
+@property (strong, nonatomic) NSString *nationality;
 
 
 

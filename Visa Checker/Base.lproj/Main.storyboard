@@ -64,7 +64,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="w0c-AU-WHs"/>
-                                    <segue destination="KXQ-E8-Je5" kind="show" id="wQS-RO-215"/>
+                                    <segue destination="KXQ-E8-Je5" kind="show" identifier="showDetails" id="wQS-RO-215"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -295,7 +295,7 @@
             </objects>
             <point key="canvasLocation" x="812" y="865.81709145427294"/>
         </scene>
-        <!--Detail-->
+        <!--Result-->
         <scene sceneID="IQe-UJ-BVO">
             <objects>
                 <viewController id="KXQ-E8-Je5" customClass="detailViewController" sceneMemberID="viewController">
@@ -303,9 +303,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(passportCountry) in (destinationCountry)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdG-nD-tB9">
-                                <rect key="frame" x="26" y="95" width="322" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(passportCountry) in (destinationCountry)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdG-nD-tB9">
+                                <rect key="frame" x="13" y="95" width="349" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -317,9 +317,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wkp-iP-fac"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="Zsq-6W-j9f">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="eSL-cE-3BO"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Result" id="Zsq-6W-j9f"/>
                     <connections>
                         <outlet property="detailLabel" destination="wdG-nD-tB9" id="MaH-wg-l2m"/>
                     </connections>

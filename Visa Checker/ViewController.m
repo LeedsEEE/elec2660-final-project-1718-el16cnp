@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-@synthesize passportTextField, destinationTextField, picker, pickerArray, passportCountry, destinationCountry;
+@synthesize passportTextField, destinationTextField, passportPicker, destinationPicker, passportPickerArray, destinationPickerArray, passportCountry, destinationCountry, passportSelectedRow, destinationSelectedRow;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,249 +24,20 @@
     
     // initialize picker view
     // self.visa = [[Visa alloc] init];
-    self.picker = [[UIPickerView alloc]init];
+    self.destinationPicker = [[UIPickerView alloc]init];
+    self.passportPicker = [[UIPickerView alloc] init];
     self.vDataModel = [[visaDataModel alloc] init];
-    pickerArray = self.vDataModel.nameArray;
-    self.picker.delegate = self;
-    self.picker.dataSource = self;
+    passportPickerArray = self.vDataModel.passportArray;
+    destinationPickerArray = self.vDataModel.destinationArray;
     
-    
-    
-    
-    
+    self.destinationPicker.delegate = self;
+    self.destinationPicker.dataSource = self;
+    self.passportPicker.delegate = self;
+    self.passportPicker.dataSource = self;
     
     // setting picker as input of both text fields
-    passportTextField.inputView = picker;
-    destinationTextField.inputView = picker;
-    
-    // Picker data - countries
-    
-    //pickerArray = self.vDataModel.nameArray;
-    
-    /* pickerArray = @[// A
-                    @"Afghanistan",
-                    @"Albania",
-                    @"Algeria",
-                    @"Andorra",
-                    @"Angola",
-                    @"Antigua & Barbuda",
-                    @"Argentina",
-                    @"Armenia",
-                    @"Australia",
-                    @"Austria",
-                    @"Azerbaijan",
-                    // B
-                    @"Bahamas",
-                    @"Bahrain",
-                    @"Bangladesh",
-                    @"Barbados",
-                    @"Belarus",
-                    @"Belize",
-                    @"Benin",
-                    @"Bhutan",
-                    @"Bolivia",
-                    @"Bosnia & Herzegovina",
-                    @"Botzwana",
-                    @"Brazil",
-                    @"Brunei",
-                    @"Bulgaria",
-                    @"Burkina Faso",
-                    @"Burma / Myanmar",
-                    @"Burundi",
-                    // C
-                    @"Cambodia",
-                    @"Cameroon",
-                    @"Canada",
-                    @"Cape Verde",
-                    @"Cayman Islands",
-                    @"Central African Republic",
-                    @"Chad",
-                    @"Chile",
-                    @"China",
-                    @"Colombia",
-                    @"Comoros",
-                    @"Congo",
-                    @"Costa Rica",
-                    @"Côte d’Ivoire",
-                    @"Croatia",
-                    @"Cuba",
-                    @"Cyprus",
-                    @"Czech Republic",
-                    // D
-                    @"Democratic Republic of the Congo",
-                    @"Denmark",
-                    @"Djibouti",
-                    @"Dominican Republic",
-                    @"Dominica",
-                    // E
-                    @"Ecuador",
-                    @"Egypt",
-                    @"El Savador",
-                    @"Equitorial Guinea",
-                    @"Eritrea",
-                    @"Estonia",
-                    @"Ethiopia",
-                    // F
-                    @"Fiji",
-                    @"Finland",
-                    @"France",
-                    // G
-                    @"Gabon",
-                    @"Gambia",
-                    @"Georgia",
-                    @"Germany",
-                    @"Ghana",
-                    @"Greece",
-                    @"Grenada",
-                    @"Guatemala",
-                    @"Guinea",
-                    @"Guinea-Bissau",
-                    @"Guyana",
-                    // H
-                    @"Haiti",
-                    @"Honduras",
-                    @"Hong Kong",
-                    @"Hungary",
-                    // I
-                    @"Iceland",
-                    @"India",
-                    @"Indonesia",
-                    @"Iran",
-                    @"Iraq",
-                    @"Ireland",
-                    @"Israel",
-                    @"Italy",
-                    // J
-                    @"Jamaica",
-                    @"Japan",
-                    @"Jordan",
-                    // K
-                    @"Kazakhstan",
-                    @"Kenya",
-                    @"Kirbati",
-                    @"Kosovo",
-                    @"Kuwait",
-                    @"Kyrgzstan",
-                    // L
-                    @"Laos",
-                    @"Latvia",
-                    @"Lebanon",
-                    @"Lesotho",
-                    @"Liberia",
-                    @"Libya",
-                    @"Liechenstein",
-                    @"Lithuania",
-                    @"Luxembourg",
-                    // M
-                    @"Macao",
-                    @"Macedonia (FYROM)",
-                    @"Madagascar",
-                    @"Malawi",
-                    @"Malaysia",
-                    @"Maldives",
-                    @"Mali",
-                    @"Malta",
-                    @"Marshall Islands",
-                    @"Mauritius",
-                    @"Mexico",
-                    @"Micronesia",
-                    @"Moldova",
-                    @"Monaco",
-                    @"Mongolia",
-                    @"Montenegro",
-                    @"Morocco",
-                    @"Mozambique",
-                    // N
-                    @"Namibia",
-                    @"Nauru",
-                    @"Nepal",
-                    @"Netherlands",
-                    @"New Zealand",
-                    @"Nicaragua",
-                    @"Niger",
-                    @"Nigeria",
-                    @"North Korea",
-                    @"Norway",
-                    // O
-                    @"Oman",
-                    // P
-                    @"Pakistan",
-                    @"Palau",
-                    @"Palestinian Territories",
-                    @"Panama",
-                    @"Papua New Guinea",
-                    @"Paraguay",
-                    @"Peru",
-                    @"Philippines",
-                    @"Poland",
-                    @"Portugal",
-                    // Q
-                    @"Qatar",
-                    // R
-                    @"Romania",
-                    @"Russian Federation",
-                    @"Rwanda",
-                    // S
-                    @"Saint Kitts and Nevis",
-                    @"Saint Lucia",
-                    @"Samoa",
-                    @"San Marino",
-                    @"Sao Tome and Principe",
-                    @"Saudi Arabia",
-                    @"Senegal",
-                    @"Serbia",
-                    @"Seychelles",
-                    @"Sierra Leone",
-                    @"Singapore",
-                    @"Slovakia",
-                    @"Slovenia",
-                    @"Solomon Islands",
-                    @"Somalia",
-                    @"South Africa",
-                    @"South Korea",
-                    @"South Sudan",
-                    @"Spain",
-                    @"Sri Lanka",
-                    @"St. Vincent and the Grenadines",
-                    @"Sudan",
-                    @"Suriname",
-                    @"Swaziland",
-                    @"Sweeden",
-                    @"Switzerland",
-                    @"Syria",
-                    // T
-                    @"Taiwan",
-                    @"Tajikistan",
-                    @"Tanzania",
-                    @"Thailand",
-                    @"Timor-Leste",
-                    @"Togo",
-                    @"Tonga",
-                    @"Trinidad and Tobago",
-                    @"Tunisia",
-                    @"Turkey",
-                    @"Turlmenistan",
-                    @"Tuvalu",
-                    // U
-                    @"Uganda",
-                    @"Ukraine",
-                    @"UAE",
-                    @"United Kingdom",
-                    @"United States of America",
-                    @"Uruguay",
-                    @"Uzbekistan",
-                    // V
-                    @"Vanuatu",
-                    @"Vatican City",
-                    @"Venezuela",
-                    @"Vietnam",
-                    // Y
-                    @"Yemen",
-                    // Z
-                    @"Zambia",
-                    @"Zimbabwe"
-                    ]; */
-    
+    passportTextField.inputView = passportPicker;
+    destinationTextField.inputView = destinationPicker;
 }
 
 
@@ -279,21 +50,45 @@
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     
-    visaData *data = [self.vDataModel.nameArray objectAtIndex:row];
-    return data.name;
+    if (pickerView == passportPicker) {
+    visaData *data = [self.vDataModel.passportArray objectAtIndex:row];
+    return data.passport;
+    
+    }
+    
+    else {
+    
+    visaData *data = [self.vDataModel.destinationArray objectAtIndex:row];
+    return data.destination;
+    }
     
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
-    // select selected array data on passport text field
-    if (passportTextField.editing) {
-        passportTextField.text = pickerArray[row];
-    }
+    if (pickerView == passportPicker) {
+        visaData *passportData = [self.vDataModel.passportArray objectAtIndex:row];
+        
+        passportSelectedRow = row;
+        
+        NSLog(@"Selected Passport Row: %i", passportSelectedRow);
+        
+        // select selected array data on passport text field
+        if (passportTextField.editing) {
+            passportTextField.text = passportData.passport;
+        }
+    } else {
     
-    // select selected array data on destination text field
-    if (destinationTextField.editing) {
-        destinationTextField.text = pickerArray[row];
+        visaData *destinationData = [self.vDataModel.destinationArray objectAtIndex:row];
+        
+            destinationSelectedRow = row;
+        
+            NSLog(@"Selected Destination Row: %i", destinationSelectedRow);
+        
+        // select selected array data on destination text field
+        if (destinationTextField.editing) {
+            destinationTextField.text = destinationData.destination;
+        }
     }
 }
 
@@ -305,7 +100,12 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     
-    return [self.vDataModel.nameArray count];
+    if (pickerView == passportPicker) {
+    return [self.vDataModel.passportArray count];
+    }
+    else {
+        return [self.vDataModel.destinationArray count];
+    }
 }
 
 #pragma mark submitPressed Method
@@ -338,6 +138,32 @@
         [self.destinationTextField resignFirstResponder];
 
     }
+}
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"showDetails"]) {
+        
+        detailViewController *destinationViewController = [segue destinationViewController];
+        
+        visaData *tempPassportData = [self.vDataModel.passportArray objectAtIndex:passportSelectedRow];
+        
+        destinationViewController.passportData = tempPassportData;
+        
+        visaData *tempDestinationData = [self.vDataModel.destinationArray objectAtIndex:destinationSelectedRow];
+        
+        destinationViewController.destinationData = tempDestinationData;
+        
+        NSLog(@"Passing data for: %@", tempPassportData.passport);
+        
+        
+    }
+    
 }
 
 
