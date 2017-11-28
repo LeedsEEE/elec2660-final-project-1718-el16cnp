@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "detailViewController.h"
-// #import "Visa.h"
+#import "visaDataModel.h"
 
 @interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -28,7 +28,7 @@
 
 @property (strong, nonatomic) NSString *destinationCountry;
 
-//@property Visa *visa;
+@property (strong, nonatomic) visaDataModel *vDataModel;
 
 
 @end

@@ -25,8 +25,15 @@
     // initialize picker view
     // self.visa = [[Visa alloc] init];
     self.picker = [[UIPickerView alloc]init];
+    self.vDataModel = [[visaDataModel alloc] init];
+    pickerArray = self.vDataModel.nameArray;
     self.picker.delegate = self;
     self.picker.dataSource = self;
+    
+    
+    
+    
+    
     
     // setting picker as input of both text fields
     passportTextField.inputView = picker;
@@ -34,7 +41,9 @@
     
     // Picker data - countries
     
-    pickerArray = @[// A
+    //pickerArray = self.vDataModel.nameArray;
+    
+    /* pickerArray = @[// A
                     @"Afghanistan",
                     @"Albania",
                     @"Algeria",
@@ -84,7 +93,7 @@
                     @"Cyprus",
                     @"Czech Republic",
                     // D
-                    @"Democratic Republic of Congo",
+                    @"Democratic Republic of the Congo",
                     @"Denmark",
                     @"Djibouti",
                     @"Dominican Republic",
@@ -256,7 +265,7 @@
                     // Z
                     @"Zambia",
                     @"Zimbabwe"
-                    ];
+                    ]; */
     
 }
 
@@ -269,7 +278,10 @@
 #pragma mark Picker View Delegate Methods
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return pickerArray[row];
+    
+    visaData *data = [self.vDataModel.nameArray objectAtIndex:row];
+    return data.name;
+    
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
@@ -292,8 +304,8 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return pickerArray.
-    count;
+    
+    return [self.vDataModel.nameArray count];
 }
 
 #pragma mark submitPressed Method

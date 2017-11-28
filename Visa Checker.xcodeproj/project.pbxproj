@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806D8411FBCF1490052FA56 /* detailViewController.m */; };
-		1806D8451FBCFC030052FA56 /* Visa.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806D8441FBCFC030052FA56 /* Visa.m */; };
+		1811DB491FCD9A1E00FB5533 /* visaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811DB481FCD9A1E00FB5533 /* visaData.m */; };
+		1811DB4C1FCD9A3900FB5533 /* visaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */; };
 		183AAA5B1FC0545B00298994 /* tabbaricons in Resources */ = {isa = PBXBuildFile; fileRef = 183AAA5A1FC0545A00298994 /* tabbaricons */; };
 		1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFBE1FBBCC8C006E9942 /* AppDelegate.m */; };
 		1845EFC21FBBCC8C006E9942 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFC11FBBCC8C006E9942 /* ViewController.m */; };
@@ -48,8 +49,10 @@
 /* Begin PBXFileReference section */
 		1806D8401FBCF1490052FA56 /* detailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = "<group>"; };
 		1806D8411FBCF1490052FA56 /* detailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = "<group>"; };
-		1806D8431FBCFC030052FA56 /* Visa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visa.h; sourceTree = "<group>"; };
-		1806D8441FBCFC030052FA56 /* Visa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visa.m; sourceTree = "<group>"; };
+		1811DB471FCD9A1E00FB5533 /* visaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visaData.h; sourceTree = "<group>"; };
+		1811DB481FCD9A1E00FB5533 /* visaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaData.m; sourceTree = "<group>"; };
+		1811DB4A1FCD9A3900FB5533 /* visaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visaDataModel.h; sourceTree = "<group>"; };
+		1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaDataModel.m; sourceTree = "<group>"; };
 		183AAA5A1FC0545A00298994 /* tabbaricons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tabbaricons; sourceTree = "<group>"; };
 		1845EFBA1FBBCC8C006E9942 /* Visa Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visa Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1845EFBD1FBBCC8C006E9942 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +142,10 @@
 				1845EFC01FBBCC8C006E9942 /* ViewController.h */,
 				1845EFC11FBBCC8C006E9942 /* ViewController.m */,
 				1845EFC31FBBCC8C006E9942 /* Main.storyboard */,
+				1811DB4A1FCD9A3900FB5533 /* visaDataModel.h */,
+				1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */,
+				1811DB471FCD9A1E00FB5533 /* visaData.h */,
+				1811DB481FCD9A1E00FB5533 /* visaData.m */,
 				18D23CAE1FBE85A90013699A /* tableDataViewController.h */,
 				18D23CAF1FBE85A90013699A /* tableDataViewController.m */,
 				18D23CAB1FBE6BE80013699A /* TableViewController.h */,
@@ -151,8 +158,6 @@
 				1806D8401FBCF1490052FA56 /* detailViewController.h */,
 				183AAA5A1FC0545A00298994 /* tabbaricons */,
 				1806D8411FBCF1490052FA56 /* detailViewController.m */,
-				1806D8431FBCFC030052FA56 /* Visa.h */,
-				1806D8441FBCFC030052FA56 /* Visa.m */,
 				1845EFC61FBBCC8C006E9942 /* Assets.xcassets */,
 				1845EFC81FBBCC8C006E9942 /* LaunchScreen.storyboard */,
 				1845EFCB1FBBCC8C006E9942 /* Info.plist */,
@@ -318,14 +323,15 @@
 			files = (
 				18D23CB31FBE99B70013699A /* tableData.m in Sources */,
 				1850FAF81FC287C8001D3B2F /* rankTableViewController.m in Sources */,
-				1806D8451FBCFC030052FA56 /* Visa.m in Sources */,
 				18D23CB61FBE9A550013699A /* tableDataModel.m in Sources */,
+				1811DB4C1FCD9A3900FB5533 /* visaDataModel.m in Sources */,
 				18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */,
 				1845EFC21FBBCC8C006E9942 /* ViewController.m in Sources */,
 				1845EFCD1FBBCC8C006E9942 /* main.m in Sources */,
 				1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */,
 				18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */,
 				1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */,
+				1811DB491FCD9A1E00FB5533 /* visaData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
