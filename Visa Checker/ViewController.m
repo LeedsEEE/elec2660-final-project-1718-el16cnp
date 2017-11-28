@@ -115,6 +115,20 @@
     passportCountry = passportTextField.text;
     destinationCountry = destinationTextField.text;
     
+    if (passportSelectedRow == destinationSelectedRow) {
+        NSLog(@"Passport country == Destination country, error.");
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"Passport country and destination country cannot be the same." preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction
+                                   actionWithTitle:@"OK"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction *action){
+                                       NSLog(@"Passport country == Destination country, error. Okay.");
+                                   }];
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    
     // print log of user chosen datas
     NSLog(@"Passport: %@", passportCountry);
     NSLog(@"Destination: %@", destinationCountry);

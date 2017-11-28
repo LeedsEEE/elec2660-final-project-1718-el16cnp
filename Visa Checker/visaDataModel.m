@@ -106,6 +106,7 @@
         visaData *bahamas = [[visaData alloc] init];
         bahamas.passport = @"Bahamas";
         bahamas.destination = @"Bahamas";
+        bahamas.nationality = @"Bahamian";
         // Bahrain
         
         visaData *bahrain = [[visaData alloc] init];

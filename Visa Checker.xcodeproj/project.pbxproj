@@ -22,6 +22,8 @@
 		1850FAF81FC287C8001D3B2F /* rankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850FAF71FC287C8001D3B2F /* rankTableViewController.m */; };
 		1850FAFA1FC3CF1C001D3B2F /* appicons in Resources */ = {isa = PBXBuildFile; fileRef = 1850FAF91FC3CF1B001D3B2F /* appicons */; };
 		187BC4FC1FC08B0A002C0ED0 /* passportcover in Resources */ = {isa = PBXBuildFile; fileRef = 187BC4FB1FC08B0A002C0ED0 /* passportcover */; };
+		18BFFAD41FCDEACB00B55C62 /* visaDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */; };
+		18BFFAD71FCDEB6F00B55C62 /* visaDetailDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD61FCDEB6F00B55C62 /* visaDetailDataModel.m */; };
 		18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAC1FBE6BE80013699A /* TableViewController.m */; };
 		18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAF1FBE85A90013699A /* tableDataViewController.m */; };
 		18D23CB31FBE99B70013699A /* tableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CB21FBE99B70013699A /* tableData.m */; };
@@ -74,6 +76,10 @@
 		1850FAF71FC287C8001D3B2F /* rankTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = rankTableViewController.m; path = "/Users/apple/Documents/iOS App/Visa Checker/Visa Checker/rankTableViewController.m"; sourceTree = "<absolute>"; };
 		1850FAF91FC3CF1B001D3B2F /* appicons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = appicons; sourceTree = "<group>"; };
 		187BC4FB1FC08B0A002C0ED0 /* passportcover */ = {isa = PBXFileReference; lastKnownFileType = folder; path = passportcover; sourceTree = "<group>"; };
+		18BFFAD21FCDEACB00B55C62 /* visaDetailData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visaDetailData.h; sourceTree = "<group>"; };
+		18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaDetailData.m; sourceTree = "<group>"; };
+		18BFFAD51FCDEB6F00B55C62 /* visaDetailDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visaDetailDataModel.h; sourceTree = "<group>"; };
+		18BFFAD61FCDEB6F00B55C62 /* visaDetailDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaDetailDataModel.m; sourceTree = "<group>"; };
 		18D23CAB1FBE6BE80013699A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		18D23CAC1FBE6BE80013699A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		18D23CAE1FBE85A90013699A /* tableDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableDataViewController.h; sourceTree = "<group>"; };
@@ -135,6 +141,10 @@
 			children = (
 				1850FAF91FC3CF1B001D3B2F /* appicons */,
 				1850FAF61FC287C7001D3B2F /* rankTableViewController.h */,
+				18BFFAD51FCDEB6F00B55C62 /* visaDetailDataModel.h */,
+				18BFFAD61FCDEB6F00B55C62 /* visaDetailDataModel.m */,
+				18BFFAD21FCDEACB00B55C62 /* visaDetailData.h */,
+				18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */,
 				1850FAF71FC287C8001D3B2F /* rankTableViewController.m */,
 				18D23CB71FBEA7FC0013699A /* flags */,
 				1845EFBD1FBBCC8C006E9942 /* AppDelegate.h */,
@@ -324,10 +334,12 @@
 				18D23CB31FBE99B70013699A /* tableData.m in Sources */,
 				1850FAF81FC287C8001D3B2F /* rankTableViewController.m in Sources */,
 				18D23CB61FBE9A550013699A /* tableDataModel.m in Sources */,
+				18BFFAD71FCDEB6F00B55C62 /* visaDetailDataModel.m in Sources */,
 				1811DB4C1FCD9A3900FB5533 /* visaDataModel.m in Sources */,
 				18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */,
 				1845EFC21FBBCC8C006E9942 /* ViewController.m in Sources */,
 				1845EFCD1FBBCC8C006E9942 /* main.m in Sources */,
+				18BFFAD41FCDEACB00B55C62 /* visaDetailData.m in Sources */,
 				1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */,
 				18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */,
 				1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */,
