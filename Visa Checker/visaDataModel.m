@@ -20,7 +20,7 @@
         visaData *afghanistan = [[visaData alloc] init];
         afghanistan.passport = @"Afghanistan";
         afghanistan.destination = @"Afghanistan";
-        afghanistan.nationality = @"Afghan";
+        afghanistan.nationality = @"Afghani";
         
         // Albanina
         
@@ -34,6 +34,7 @@
         visaData *algeria = [[visaData alloc] init];
         algeria.passport = @"Algeria";
         algeria.destination = @"Algeria";
+        algeria.nationality = @"Algerian";
         
         // Andorra
         
@@ -60,7 +61,7 @@
         visaData *argentina = [[visaData alloc] init];
         argentina.passport = @"Argentina";
         argentina.destination = @"Argentina";
-        argentina.destination = @"Argentine";
+        argentina.nationality = @"Argentine";
         
         // Armenia
         
@@ -325,8 +326,8 @@
         // DR Congo
         
         visaData *drcongo= [[visaData alloc] init];
-        drcongo.passport = @"Democratic Republic of the Congo";
-        drcongo.destination = @"Democratic Republic of the Congo";
+        drcongo.passport = @"DR Congo";
+        drcongo.destination = @"DR Congo";
         // Denmark
         
         visaData *dk= [[visaData alloc] init];
@@ -761,7 +762,7 @@
         
         visaData *moldova = [[visaData alloc] init];
         moldova.passport = @"Moldova";
-        micronesia.destination = @"Micronesia";
+        moldova.destination = @"Moldova";
         // Monaco
         
         visaData *monaco = [[visaData alloc] init];
@@ -1231,6 +1232,13 @@
         visaData *ukraine = [[visaData alloc] init];
         ukraine.passport = @"Ukraine";
         ukraine.destination = @"Ukraine";
+        
+        // UAE
+        
+        visaData *uae = [[visaData alloc] init];
+        uae.passport = @"United Arab Emirates";
+        uae.destination = @"United Arab Emirates";
+        
         // United Kingdom
         
         visaData *uk = [[visaData alloc] init];
@@ -1254,6 +1262,7 @@
         // Countries starting with U
         [self.passportArray addObject:uganda]; // index 181 - uganda
         [self.passportArray addObject:ukraine]; // index 182 - ukraine
+        [self.passportArray addObject:uae]; // index 184 - uae
         [self.passportArray addObject:uk]; // index 183 - united kingdom
         [self.passportArray addObject:us]; // index 184 - united states of america
         [self.passportArray addObject:uruguay]; // index 185 - uruguay
@@ -1544,6 +1553,7 @@
         // Countries starting with U
         [self.destinationArray addObject:uganda]; // index 181 - uganda
         [self.destinationArray addObject:ukraine]; // index 182 - ukraine
+        [self.destinationArray addObject:uae]; // index 184 - uae
         [self.destinationArray addObject:uk]; // index 183 - united kingdom
         [self.destinationArray addObject:us]; // index 184 - united states of america
         [self.destinationArray addObject:uruguay]; // index 185 - uruguay
@@ -1560,7 +1570,7 @@
         
         // Countries starting with Z
         [self.destinationArray addObject:zambia]; // index 193 - zambia
-        [self.destinationArray addObject:zimbabwe]; // index 194 - zimbabwe
+        [self.destinationArray addObject:zimbabwe]; // index 195 - zimbabwe
         
     }
     

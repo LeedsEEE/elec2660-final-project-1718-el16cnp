@@ -21,7 +21,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.detailLabel.text = [NSString stringWithFormat: @"%@ passport in %@", self.passportData.nationality, self.destinationData.destination];
+    self.detailLabel.text = [NSString stringWithFormat: @"%@ passport in \n%@", self.passportData.nationality, self.destinationData.destination];
+
+    self.visaStatusLabel.text = [NSString stringWithFormat:@"Visa Requrement: %@", self.vDetailData.visaStatus];
+    
+    if (self.vDetailData.duration == 0) {
+        self.durationLabel.text = [NSString stringWithFormat:@"Duration: n/a"];
+    } else {
+        self.durationLabel.text = [NSString stringWithFormat:@"Duration: %li %@", (long)self.vDetailData.duration, self.vDetailData.time];
+    }
     
 }
 

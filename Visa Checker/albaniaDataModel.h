@@ -1,5 +1,5 @@
 //
-//  visaDetailDataModel.h
+//  albaniaDataModel.h
 //  Visa Checker
 //
 //  Created by apple on 28/11/2017.
@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "visaDetailData.h"
 
-@interface visaDetailDataModel : NSObject
+@interface albaniaDataModel : NSObject
+
+@property (strong, nonatomic) NSMutableArray *albaniaArray;
 
 @end

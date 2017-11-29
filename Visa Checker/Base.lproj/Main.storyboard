@@ -303,22 +303,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(passportCountry) in (destinationCountry)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdG-nD-tB9">
-                                <rect key="frame" x="13" y="95" width="349" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(passportCountry) in (destinationCountry)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdG-nD-tB9">
+                                <rect key="frame" x="13" y="95" width="349" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visa Status: (status)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwM-tJ-bQ6">
-                                <rect key="frame" x="110" y="214" width="155" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration: (duration)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-dw-nvi">
+                                <rect key="frame" x="112" y="272" width="150" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration: (duration)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-dw-nvi">
-                                <rect key="frame" x="112" y="272" width="150" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa Status: (status)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwM-tJ-bQ6">
+                                <rect key="frame" x="13" y="216" width="346" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -327,18 +325,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wdG-nD-tB9" firstAttribute="centerX" secondItem="Wkp-iP-fac" secondAttribute="centerX" id="3K1-0m-6qW"/>
+                            <constraint firstItem="zwM-tJ-bQ6" firstAttribute="leading" secondItem="Wkp-iP-fac" secondAttribute="leading" constant="13" id="9N3-Ci-MCN"/>
                             <constraint firstItem="wdG-nD-tB9" firstAttribute="top" secondItem="Wkp-iP-fac" secondAttribute="top" constant="31" id="Bmq-fU-aVZ"/>
+                            <constraint firstItem="Wkp-iP-fac" firstAttribute="trailing" secondItem="zwM-tJ-bQ6" secondAttribute="trailing" constant="16" id="Csp-rb-Lw8"/>
+                            <constraint firstItem="ubo-dw-nvi" firstAttribute="centerX" secondItem="wdG-nD-tB9" secondAttribute="centerX" id="Mfq-EJ-E6o"/>
+                            <constraint firstItem="zwM-tJ-bQ6" firstAttribute="top" secondItem="wdG-nD-tB9" secondAttribute="bottom" constant="100.5" id="o8f-2l-oOs"/>
+                            <constraint firstItem="ubo-dw-nvi" firstAttribute="top" secondItem="zwM-tJ-bQ6" secondAttribute="bottom" constant="35" id="tnY-kY-wlF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wkp-iP-fac"/>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="Zsq-6W-j9f"/>
                     <connections>
                         <outlet property="detailLabel" destination="wdG-nD-tB9" id="MaH-wg-l2m"/>
+                        <outlet property="durationLabel" destination="ubo-dw-nvi" id="oRN-m8-zHy"/>
+                        <outlet property="visaStatusLabel" destination="zwM-tJ-bQ6" id="xSV-Wk-UQ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yso-3c-LZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="134"/>
+            <point key="canvasLocation" x="812" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>

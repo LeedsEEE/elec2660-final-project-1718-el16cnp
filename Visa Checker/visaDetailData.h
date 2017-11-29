@@ -10,10 +10,10 @@
 
 @interface visaDetailData : NSObject
 
-@property (strong, nonatomic) NSString *passportCountry;
-
-@property (strong, nonatomic) NSString *destinationCountry;
-
 @property NSInteger *duration;
+
+@property (strong, nonatomic) NSString *time;
+
+@property (strong, nonatomic) NSString *visaStatus;
 
 @end

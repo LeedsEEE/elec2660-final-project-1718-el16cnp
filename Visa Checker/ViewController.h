@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "detailViewController.h"
 #import "visaDataModel.h"
+#import "afghanistanDataModel.h"
+#import "albaniaDataModel.h"
+#import "algeriaDataModel.h"
 
 @interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -33,6 +36,12 @@
 @property (strong, nonatomic) NSString *destinationCountry;
 
 @property (strong, nonatomic) visaDataModel *vDataModel;
+
+@property (strong, nonatomic) afghanistanDataModel *afghanDataModel;
+
+@property (strong, nonatomic) albaniaDataModel *albanianDataModel;
+
+@property (strong, nonatomic) algeriaDataModel *algerianDataModel;
 
 @property NSInteger *passportSelectedRow;
 

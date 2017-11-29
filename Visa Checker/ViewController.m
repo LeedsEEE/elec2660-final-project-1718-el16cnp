@@ -27,6 +27,9 @@
     self.destinationPicker = [[UIPickerView alloc]init];
     self.passportPicker = [[UIPickerView alloc] init];
     self.vDataModel = [[visaDataModel alloc] init];
+    self.afghanDataModel = [[afghanistanDataModel alloc] init];
+    self.albanianDataModel = [[albaniaDataModel alloc] init];
+    self.algerianDataModel = [[algeriaDataModel alloc] init];
     passportPickerArray = self.vDataModel.passportArray;
     destinationPickerArray = self.vDataModel.destinationArray;
     
@@ -167,6 +170,8 @@
         
         visaData *tempPassportData = [self.vDataModel.passportArray objectAtIndex:passportSelectedRow];
         
+        NSLog(@"passportSelectedRow = %i", passportSelectedRow);
+        
         destinationViewController.passportData = tempPassportData;
         
         visaData *tempDestinationData = [self.vDataModel.destinationArray objectAtIndex:destinationSelectedRow];
@@ -174,6 +179,27 @@
         destinationViewController.destinationData = tempDestinationData;
         
         NSLog(@"Passing data for: %@", tempPassportData.passport);
+        
+        NSLog(@"destinationSelectedRow = %i", destinationSelectedRow);
+        
+        if (passportSelectedRow == 0) {
+            visaDetailData *tempDetailData = [self.afghanDataModel.afghanistanArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        if (passportSelectedRow == 1) {
+            visaDetailData *tempDetailData = [self.albanianDataModel.albaniaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        if (passportSelectedRow == 2) {
+            visaDetailData *tempDetailData = [self.algerianDataModel.algeriaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
         
         
     }
