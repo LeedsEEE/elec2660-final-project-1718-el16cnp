@@ -12,6 +12,7 @@
 		1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806D8411FBCF1490052FA56 /* detailViewController.m */; };
 		1811DB491FCD9A1E00FB5533 /* visaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811DB481FCD9A1E00FB5533 /* visaData.m */; };
 		1811DB4C1FCD9A3900FB5533 /* visaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */; };
+		182875331FCEEACC00FC4C7B /* andorraDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182875321FCEEACC00FC4C7B /* andorraDataModel.m */; };
 		183AAA5B1FC0545B00298994 /* tabbaricons in Resources */ = {isa = PBXBuildFile; fileRef = 183AAA5A1FC0545A00298994 /* tabbaricons */; };
 		1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFBE1FBBCC8C006E9942 /* AppDelegate.m */; };
 		1845EFC21FBBCC8C006E9942 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFC11FBBCC8C006E9942 /* ViewController.m */; };
@@ -26,6 +27,7 @@
 		187BC4FC1FC08B0A002C0ED0 /* passportcover in Resources */ = {isa = PBXBuildFile; fileRef = 187BC4FB1FC08B0A002C0ED0 /* passportcover */; };
 		18BFFAD41FCDEACB00B55C62 /* visaDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */; };
 		18BFFADA1FCE272600B55C62 /* albaniaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD91FCE272600B55C62 /* albaniaDataModel.m */; };
+		18C4F0661FD02CB900DA3943 /* angolaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4F0651FD02CB900DA3943 /* angolaDataModel.m */; };
 		18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAC1FBE6BE80013699A /* TableViewController.m */; };
 		18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAF1FBE85A90013699A /* tableDataViewController.m */; };
 		18D23CB31FBE99B70013699A /* tableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CB21FBE99B70013699A /* tableData.m */; };
@@ -61,6 +63,8 @@
 		1811DB481FCD9A1E00FB5533 /* visaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaData.m; sourceTree = "<group>"; };
 		1811DB4A1FCD9A3900FB5533 /* visaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visaDataModel.h; sourceTree = "<group>"; };
 		1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaDataModel.m; sourceTree = "<group>"; };
+		182875311FCEEACC00FC4C7B /* andorraDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = andorraDataModel.h; sourceTree = "<group>"; };
+		182875321FCEEACC00FC4C7B /* andorraDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = andorraDataModel.m; sourceTree = "<group>"; };
 		183AAA5A1FC0545A00298994 /* tabbaricons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tabbaricons; sourceTree = "<group>"; };
 		1845EFBA1FBBCC8C006E9942 /* Visa Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visa Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1845EFBD1FBBCC8C006E9942 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 		18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaDetailData.m; sourceTree = "<group>"; };
 		18BFFAD81FCE272600B55C62 /* albaniaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = albaniaDataModel.h; sourceTree = "<group>"; };
 		18BFFAD91FCE272600B55C62 /* albaniaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = albaniaDataModel.m; sourceTree = "<group>"; };
+		18C4F0641FD02CB900DA3943 /* angolaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = angolaDataModel.h; sourceTree = "<group>"; };
+		18C4F0651FD02CB900DA3943 /* angolaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = angolaDataModel.m; sourceTree = "<group>"; };
 		18D23CAB1FBE6BE80013699A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		18D23CAC1FBE6BE80013699A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		18D23CAE1FBE85A90013699A /* tableDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableDataViewController.h; sourceTree = "<group>"; };
@@ -154,6 +160,10 @@
 				18BFFAD91FCE272600B55C62 /* albaniaDataModel.m */,
 				1802B55B1FCE36FB004458AC /* algeriaDataModel.h */,
 				1802B55C1FCE36FB004458AC /* algeriaDataModel.m */,
+				182875311FCEEACC00FC4C7B /* andorraDataModel.h */,
+				182875321FCEEACC00FC4C7B /* andorraDataModel.m */,
+				18C4F0641FD02CB900DA3943 /* angolaDataModel.h */,
+				18C4F0651FD02CB900DA3943 /* angolaDataModel.m */,
 				18BFFAD21FCDEACB00B55C62 /* visaDetailData.h */,
 				18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */,
 				18D23CB71FBEA7FC0013699A /* flags */,
@@ -342,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D23CB31FBE99B70013699A /* tableData.m in Sources */,
+				18C4F0661FD02CB900DA3943 /* angolaDataModel.m in Sources */,
 				1850FAF81FC287C8001D3B2F /* rankTableViewController.m in Sources */,
 				18D23CB61FBE9A550013699A /* tableDataModel.m in Sources */,
 				1811DB4C1FCD9A3900FB5533 /* visaDataModel.m in Sources */,
@@ -356,6 +367,7 @@
 				18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */,
 				1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */,
 				1811DB491FCD9A1E00FB5533 /* visaData.m in Sources */,
+				182875331FCEEACC00FC4C7B /* andorraDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

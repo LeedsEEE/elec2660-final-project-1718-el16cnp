@@ -27,11 +27,21 @@
     self.destinationPicker = [[UIPickerView alloc]init];
     self.passportPicker = [[UIPickerView alloc] init];
     self.vDataModel = [[visaDataModel alloc] init];
+    
     self.afghanDataModel = [[afghanistanDataModel alloc] init];
     self.albanianDataModel = [[albaniaDataModel alloc] init];
     self.algerianDataModel = [[algeriaDataModel alloc] init];
+    self.andorranDataModel = [[andorraDataModel alloc] init];
+    self.angolanDataModel = [[angolaDataModel alloc] init];
+    
     passportPickerArray = self.vDataModel.passportArray;
     destinationPickerArray = self.vDataModel.destinationArray;
+    
+    NSLog(@"\nAfg: %i / 198\nAlb: %i / 198\nAlg: %i / 198\nAnd: %i / 198",self.afghanDataModel.afghanistanArray.count, self.albanianDataModel.albaniaArray.count,
+          self.algerianDataModel.algeriaArray.count, self.andorranDataModel.andorraArray.count);
+    NSLog(@"Ang: %i / 198", self.angolanDataModel.angolaArray.count);
+    
+    // NSLog(@"country count: %i", self.vDataModel.passportArray.count);
     
     self.destinationPicker.delegate = self;
     self.destinationPicker.dataSource = self;
@@ -196,6 +206,20 @@
         }
         if (passportSelectedRow == 2) {
             visaDetailData *tempDetailData = [self.algerianDataModel.algeriaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow == 3) {
+            visaDetailData *tempDetailData = [self.andorranDataModel.andorraArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow == 4) {
+            visaDetailData *tempDetailData = [self.angolanDataModel.angolaArray objectAtIndex:destinationSelectedRow];
             
             destinationViewController.vDetailData = tempDetailData;
             

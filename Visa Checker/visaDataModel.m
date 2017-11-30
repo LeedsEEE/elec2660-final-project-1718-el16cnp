@@ -1049,6 +1049,11 @@
         paraguay.passport = @"Paraguay";
         paraguay.destination = @"Paraguay";
         paraguay.nationality = @"Paraguayan";
+        
+        visaData *peru = [[visaData alloc] init];
+        peru.passport = @"Peru";
+        peru.destination = @"Peru";
+        peru.nationality = @"Peruvian";
         // Philippines
         
         visaData *philippines = [[visaData alloc] init];
@@ -1074,6 +1079,7 @@
         [self.passportArray addObject:panama]; // index 134 - panama
         [self.passportArray addObject:papua]; // index 135 - papua new guinea
         [self.passportArray addObject:paraguay]; // index 136 - paraguay
+        [self.passportArray addObject:peru];
         [self.passportArray addObject:philippines]; // index 137 - philippines
         [self.passportArray addObject:poland]; // index 138 - poland
         [self.passportArray addObject:portugal]; // index 139 - portugal
@@ -1686,6 +1692,7 @@
         [self.destinationArray addObject:panama]; // index 134 - panama
         [self.destinationArray addObject:papua]; // index 135 - papua new guinea
         [self.destinationArray addObject:paraguay]; // index 136 - paraguay
+        [self.destinationArray addObject:peru];
         [self.destinationArray addObject:philippines]; // index 137 - philippines
         [self.destinationArray addObject:poland]; // index 138 - poland
         [self.destinationArray addObject:portugal]; // index 139 - portugal

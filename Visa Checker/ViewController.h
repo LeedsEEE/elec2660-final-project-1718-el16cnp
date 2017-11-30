@@ -12,6 +12,15 @@
 #import "afghanistanDataModel.h"
 #import "albaniaDataModel.h"
 #import "algeriaDataModel.h"
+#import "andorraDataModel.h"
+#import "angolaDataModel.h"
+
+
+
+
+
+
+
 
 @interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -42,6 +51,10 @@
 @property (strong, nonatomic) albaniaDataModel *albanianDataModel;
 
 @property (strong, nonatomic) algeriaDataModel *algerianDataModel;
+
+@property (strong, nonatomic) andorraDataModel *andorranDataModel;
+
+@property (strong, nonatomic) angolaDataModel *angolanDataModel;
 
 @property NSInteger *passportSelectedRow;
 
