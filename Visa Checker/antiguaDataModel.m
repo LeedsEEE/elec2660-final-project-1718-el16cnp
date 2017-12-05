@@ -1,14 +1,14 @@
 //
-//  andorraDataModel.m
+//  antiguaDataModel.m
 //  Visa Checker
 //
-//  Created by apple on 29/11/2017.
+//  Created by apple on 30/11/2017.
 //  Copyright © 2017 Nixon Pang. All rights reserved.
 //
 
-#import "andorraDataModel.h"
+#import "antiguaDataModel.h"
 
-@implementation andorraDataModel
+@implementation antiguaDataModel
 
 - (instancetype) init {
     
@@ -16,14 +16,14 @@
     
     if (self) {
         
-        // Andorra Passport Data
-        self.andorraArray = [NSMutableArray array];
+        // Antigua Passport data
+        self.antiguaArray = [NSMutableArray array];
         
         visaDetailData *placeholder = [[visaDetailData alloc] init];
         placeholder.visaStatus = @"placeholder";
         placeholder.duration = 0;
         placeholder.time = @"";
-        [self.andorraArray addObject:placeholder];
+        [self.antiguaArray addObject:placeholder];
         
         // Afghanistan
         visaDetailData *afghanistan = [[visaDetailData alloc] init];
@@ -40,90 +40,82 @@
         algeria.visaStatus = @"Visa Required";
         algeria.duration = 0;
         algeria.time = @"";
-        
-        // Andorra (placeholder)
+        // Andorra
         visaDetailData *andorra = [[visaDetailData alloc] init];
         andorra.visaStatus = @"Visa not required";
-        andorra.duration = 90;
-        andorra.time = @"days";
+        andorra.duration = 3;
+        andorra.time = @"months";
         // Angola
         visaDetailData *angola = [[visaDetailData alloc] init];
         angola.visaStatus = @"Visa Required";
         angola.duration = 0;
         angola.time = @"";
+        // Antigua and barbuda (placeholder)
         
-        // Antigua and barbuda
         visaDetailData *antigua = [[visaDetailData alloc] init];
-        antigua.visaStatus = @"Visa not required";
-        antigua.duration = 90;
-        antigua.time = @"days";
+        antigua.visaStatus = @"Electronic Entry Visa";
+        antigua.duration = 0;
+        antigua.time = @"";
         // Argentina
         visaDetailData *arg = [[visaDetailData alloc] init];
-        arg.visaStatus = @"Visa not required";
-        arg.duration = 90;
-        arg.time = @"days";
-        
+        arg.visaStatus = @"Visa Required";
+        arg.duration = 0;
+        arg.time = @"";
         // Armenia
         visaDetailData *armenia = [[visaDetailData alloc] init];
-        armenia.visaStatus = @"eVisa / Visa on arrival";
+        armenia.visaStatus = @"Visa on arrival";
         armenia.duration = 120;
         armenia.time = @"days";
-        
         // Aus
         visaDetailData *aus = [[visaDetailData alloc] init];
-        aus.visaStatus = @"eVisitor";
-        aus.duration = 90;
-        aus.time = @"days";
-        
+        aus.visaStatus = @"Visa Required";
+        aus.duration = 0;
+        aus.time = @"";
         // austria
         visaDetailData *austria = [[visaDetailData alloc] init];
         austria.visaStatus = @"Visa not required";
-        austria.duration = 90;
-        austria.time = @"days";
+        austria.duration = 3;
+        austria.time = @"months";
         // azerbaijan
         visaDetailData *azerbaijan = [[visaDetailData alloc] init];
-        azerbaijan.visaStatus = @"eVisa";
-        azerbaijan.duration = 30;
-        azerbaijan.time = @"days";
+        azerbaijan.visaStatus = @"Visa Required";
+        azerbaijan.duration = 0;
+        azerbaijan.time = @"";
         // bahamas
         visaDetailData *bahamas = [[visaDetailData alloc] init];
         bahamas.visaStatus = @"Visa not required";
         bahamas.duration = 8;
         bahamas.time = @"months";
-        
         // bahrain
         visaDetailData *bahrain = [[visaDetailData alloc] init];
-        bahrain.visaStatus = @"eVisa / Visa on arrival";
+        bahrain.visaStatus = @"eVisa";
         bahrain.duration = 14;
         bahrain.time = @"days";
         // bangladesh
         visaDetailData *bangladesh = [[visaDetailData alloc] init];
         bangladesh.visaStatus = @"Visa on arrival";
-        bangladesh.duration = 30;
-        bangladesh.time = @"days";
-        
+        bangladesh.duration = 0;
+        bangladesh.time = @"";
         // barbados
         visaDetailData *barbados = [[visaDetailData alloc] init];
-        barbados.visaStatus = @"Visa Required";
-        barbados.duration = 0;
-        barbados.time = @"";
+        barbados.visaStatus = @"Visa not required";
+        barbados.duration = 6;
+        barbados.time = @"months";
         // belarus
         visaDetailData *belarus = [[visaDetailData alloc] init];
         belarus.visaStatus = @"Visa not required";
         belarus.duration = 5;
         belarus.time = @"days";
-        
         // belgium
         visaDetailData *belgium = [[visaDetailData alloc] init];
         belgium.visaStatus = @"Visa not required";
         belgium.duration = 90;
-        belgium.time = @"days";
+        belarus.time = @"days";
         // belize
         visaDetailData *belize = [[visaDetailData alloc] init];
         belize.visaStatus = @"Visa not required";
-        belize.duration = 1;
-        belize.time = @"month";
-        
+        belize.duration = 6;
+        belize.time = @"months";
         // benin
         visaDetailData *benin = [[visaDetailData alloc] init];
         benin.visaStatus = @"Visa Required";
@@ -134,7 +126,6 @@
         bhutan.visaStatus = @"Visa Required";
         bhutan.duration = 0;
         bhutan.time = @"";
-        
         // bolivia
         visaDetailData *bolivia = [[visaDetailData alloc] init];
         bolivia.visaStatus = @"Visa on arrival";
@@ -147,20 +138,19 @@
         bosnia.time = @"days";
         // botswana
         visaDetailData *botswana = [[visaDetailData alloc] init];
-        botswana.visaStatus = @"Visa Required";
-        botswana.duration = 0;
+        botswana.visaStatus = @"Visa not required";
+        botswana.duration = 90;
+        botswana.time = @"days";
         // brazil
         visaDetailData *brazil = [[visaDetailData alloc] init];
         brazil.visaStatus = @"Visa not required";
         brazil.duration = 90;
         brazil.time = @"days";
-        
         // brunei
         visaDetailData *brunei = [[visaDetailData alloc] init];
         brunei.visaStatus = @"Visa Required";
         brunei.duration = 0;
         brunei.time = @"";
-        
         // bulgaria
         visaDetailData *bulgaria = [[visaDetailData alloc] init];
         bulgaria.visaStatus = @"Visa not required";
@@ -171,130 +161,109 @@
         burkina.visaStatus = @"Visa Required";
         burkina.duration = 0;
         burkina.time = @"";
-        
         // burma
         visaDetailData *burma = [[visaDetailData alloc] init];
         burma.visaStatus = @"Visa Required";
         burma.duration = 0;
         burma.time = @"";
-        
         // burundi
         visaDetailData *burundi = [[visaDetailData alloc] init];
         burundi.visaStatus = @"Visa Required";
         burundi.duration = 0;
         burundi.time = @"";
-        
         // cambodia
         visaDetailData *cambodia = [[visaDetailData alloc] init];
-        cambodia.visaStatus = @"eVisa / Visa on arrival";
+        cambodia.visaStatus = @"Visa on arrival";
         cambodia.duration = 30;
         cambodia.time = @"days";
-        
         // cameroon
         visaDetailData *cameroon = [[visaDetailData alloc] init];
         cameroon.visaStatus = @"Visa Required";
         cameroon.duration = 0;
         cameroon.time = @"";
-        
         // canada
         visaDetailData *canada = [[visaDetailData alloc] init];
-        canada.visaStatus = @"Visa not required (eTA required if arriving by air)";
-        canada.duration = 6;
-        canada.time = @"months";
-        
+        canada.visaStatus = @"Visa Required";
+        canada.duration = 0;
+        canada.time = @"";
         // cape verde
         visaDetailData *cape = [[visaDetailData alloc] init];
-        cape.visaStatus = @"Visa on arrival";
+        cape.visaStatus = @"Visa not required";
         cape.duration = 0;
         cape.time = @"";
-        
         // Central African republic
         visaDetailData *car = [[visaDetailData alloc] init];
         car.visaStatus = @"Visa Required";
         car.duration = 0;
         car.time = @"";
-        
         // chad
         visaDetailData *chad = [[visaDetailData alloc] init];
         chad.visaStatus = @"Visa Required";
         chad.duration = 0;
         chad.time = @"";
-        
         // chile
         visaDetailData *chile = [[visaDetailData alloc] init];
         chile.visaStatus = @"Visa not required";
         chile.duration = 90;
         chile.time = @"days";
-        
         // china
         visaDetailData *china = [[visaDetailData alloc] init];
         china.visaStatus = @"Visa Required";
         china.duration = 0;
         china.time = @"";
-        
         // colombia
         visaDetailData *colombia = [[visaDetailData alloc] init];
         colombia.visaStatus = @"Visa not required";
         colombia.duration = 90;
         colombia.time = @"days";
-        
         // comoros
         visaDetailData *comoros = [[visaDetailData alloc] init];
         comoros.visaStatus = @"Visa on arrival";
         comoros.duration = 0;
-        comoros.time = @"";
-        
+        colombia.time = @"";
         // congo
         visaDetailData *congo = [[visaDetailData alloc] init];
         congo.visaStatus = @"Visa Required";
         congo.duration = 0;
         congo.time = @"";
-        
         // costa rica
         visaDetailData *costa = [[visaDetailData alloc] init];
         costa.visaStatus = @"Visa not required";
         costa.duration = 90;
         costa.time = @"days";
-        
         // cote divore
         visaDetailData *cote = [[visaDetailData alloc] init];
         cote.visaStatus = @"eVisa";
-        cote.duration = 0;
-        cote.time = @"";
-        
+        cote.duration = 3;
+        cote.time = @"months";
         // croatia
         visaDetailData *croatia = [[visaDetailData alloc] init];
         croatia.visaStatus = @"Visa not required";
         croatia.duration = 90;
         croatia.time = @"days";
-        
         // cuba
         visaDetailData *cuba = [[visaDetailData alloc] init];
-        cuba.visaStatus = @"Visa Required";
-        cuba.duration = 0;
-        cuba.time = @"";
-        
+        cuba.visaStatus = @"Visa not required";
+        cuba.duration = 30;
+        cuba.time = @"days";
         // cyprus
         visaDetailData *cyprus = [[visaDetailData alloc] init];
-        cyprus.visaStatus = @"Visa not required";
+        cyprus.visaStatus = @"Visa not requierd";
         cyprus.duration = 90;
         cyprus.time = @"days";
-        
         // czech
         visaDetailData *cz = [[visaDetailData alloc] init];
         cz.visaStatus = @"Visa not required";
         cz.duration = 90;
         cz.time = @"days";
-        
         // drcongo
         visaDetailData *drcongo = [[visaDetailData alloc] init];
         drcongo.visaStatus = @"Visa Required";
         drcongo.duration = 0;
         drcongo.time = @"";
-        
         // denmark
         visaDetailData *dk = [[visaDetailData alloc] init];
-        dk.visaStatus = @"Visa not required";
+        dk.visaStatus = @"Visa not rquired";
         dk.duration = 90;
         dk.time = @"days";
         // djibouti
@@ -302,49 +271,40 @@
         dj.visaStatus = @"Visa on arrival";
         dj.duration = 0;
         dj.time = @"";
-        
         // Dominica
         visaDetailData *dominica = [[visaDetailData alloc] init];
         dominica.visaStatus = @"Visa not required";
-        dominica.duration = 21;
-        dominica.time = @"days";
-        
+        dominica.duration = 6;
+        dominica.time = @"months";
         // dominican
         visaDetailData *dominican = [[visaDetailData alloc] init];
-        dominican.visaStatus = @"Tourist card (USD10) on arrival";
-        dominican.duration = 90;
-        dominican.time = @"days";
-        
+        dominican.visaStatus = @"Visa not rquired (Must purchase tourist card on arrival)";
+        dominican.duration = 0;
+        dominican.time = @"";
         // ecuador
         visaDetailData *ecuador = [[visaDetailData alloc] init];
         ecuador.visaStatus = @"Visa not required";
         ecuador.duration = 90;
         ecuador.time = @"days";
-        
         // egypt
         visaDetailData *egypt = [[visaDetailData alloc] init];
         egypt.visaStatus = @"Visa on arrival";
-        egypt.duration = 30;
-        egypt.time = @"days";
-        
+        egypt.duration = 0;
+        egypt.time = @"";
         // elsa
         visaDetailData *elsa = [[visaDetailData alloc] init];
         elsa.visaStatus = @"Visa not required";
-        elsa.duration = 3;
-        elsa.time = @"months";
-        
+        elsa.duration = 90;
+        elsa.time = @"";
         // eq
         visaDetailData *eq = [[visaDetailData alloc] init];
         eq.visaStatus = @"Visa Required";
         eq.duration = 0;
-        eq.time = @"";
-        
         // eritrea
         visaDetailData *eritrea = [[visaDetailData alloc] init];
         eritrea.visaStatus = @"Visa Required";
         eritrea.duration = 0;
         eritrea.time = @"";
-        
         // estonia
         visaDetailData *estonia = [[visaDetailData alloc] init];
         estonia.visaStatus = @"Visa not required";
@@ -353,34 +313,31 @@
         
         // ethiopia
         visaDetailData *ethiopia = [[visaDetailData alloc] init];
-        ethiopia.visaStatus = @"Visa Required";
+        ethiopia.visaStatus = @"Visa nRequired";
         ethiopia.duration = 0;
         ethiopia.time = @"";
         
         // fiji
         visaDetailData *fiji = [[visaDetailData alloc] init];
-        fiji.visaStatus = @"Visa Required";
-        fiji.duration = 0;
-        fiji.time = @"";
+        fiji.visaStatus = @"Visa not required";
+        fiji.duration = 4;
+        fiji.time = @"months";
         
         // finland
         visaDetailData *finland = [[visaDetailData alloc] init];
         finland.visaStatus = @"Visa not required";
         finland.duration = 90;
         finland.time = @"days";
-        
         // france
         visaDetailData *france = [[visaDetailData alloc] init];
         france.visaStatus = @"Visa not required";
         france.duration = 90;
         france.time = @"days";
-        
         // gabon
         visaDetailData *gabon = [[visaDetailData alloc] init];
         gabon.visaStatus = @"eVisa";
         gabon.duration = 0;
         gabon.time = @"";
-        
         // gambia
         visaDetailData *gambia = [[visaDetailData alloc] init];
         gambia.visaStatus = @"Visa not required";
@@ -391,20 +348,17 @@
         visaDetailData *georgia = [[visaDetailData alloc] init];
         georgia.visaStatus = @"Visa not required";
         georgia.duration = 1;
-        georgia.time = @"year";
-        
+        georgia.time = @"ear";
         // germany
         visaDetailData *germany = [[visaDetailData alloc] init];
         germany.visaStatus = @"Visa not required";
         germany.duration = 90;
         germany.time = @"days";
-        
         // ghana
         visaDetailData *ghana = [[visaDetailData alloc] init];
         ghana.visaStatus = @"Visa Required";
         ghana.duration = 0;
         ghana.time = @"";
-        
         // greece
         visaDetailData *greece = [[visaDetailData alloc] init];
         greece.visaStatus = @"Visa not required";
@@ -413,9 +367,10 @@
         
         // grenada
         visaDetailData *grenada = [[visaDetailData alloc] init];
-        grenada.visaStatus = @"Visa Required";
-        grenada.duration = 0;
-        grenada.time = @"";
+        grenada.visaStatus = @"Visa not required";
+        grenada.duration = 6;
+        grenada.time = @"months";
+        
         // guatemala
         visaDetailData *guatemala = [[visaDetailData alloc] init];
         guatemala.visaStatus = @"Visa not required";
@@ -429,60 +384,55 @@
         guinea.time = @"";
         // guineab
         visaDetailData *guineab = [[visaDetailData alloc] init];
-        guineab.visaStatus = @"eVisa / Visa on arrival";
+        guineab.visaStatus = @"Visa on arrival";
         guineab.duration = 90;
         guineab.time = @"days";
-        
         // guyana
         visaDetailData *guyana = [[visaDetailData alloc] init];
-        guyana.visaStatus = @"Visa Required";
-        guyana.duration = 0;
-        guyana.time = @"";
-        
+        guyana.visaStatus = @"Visa not required";
+        guyana.duration = 6;
+        guyana.time = @"months";
         // haiti
         visaDetailData *haiti = [[visaDetailData alloc] init];
         haiti.visaStatus = @"Visa not required";
-        haiti.duration = 90;
-        haiti.time = @"days";
+        haiti.duration = 3;
+        haiti.time = @"months";
         // honduras
         visaDetailData *honduras = [[visaDetailData alloc] init];
         honduras.visaStatus = @"Visa not required";
-        honduras.duration = 3;
-        honduras.time = @"months";
+        honduras.duration = 90;
+        honduras.time = @"days";
+        
         // hk
         visaDetailData *hk = [[visaDetailData alloc] init];
         hk.visaStatus = @"Visa not required";
-        hk.duration = 30;
+        hk.duration = 90;
         hk.time = @"days";
         // hungary
         visaDetailData *hungary = [[visaDetailData alloc] init];
         hungary.visaStatus = @"Visa not required";
         hungary.duration = 90;
+        hungary.time = @"days";
         // iceland
         visaDetailData *iceland = [[visaDetailData alloc] init];
         iceland.visaStatus = @"Visa not required";
         iceland.duration = 90;
-        iceland.time = @"days";
-        
-        
+        iceland.time = @"das";
         // india
         visaDetailData *india = [[visaDetailData alloc] init];
         india.visaStatus = @"eVisa";
         india.duration = 60;
         india.time = @"days";
-        
         // indonesia
         visaDetailData *indonesia = [[visaDetailData alloc] init];
         indonesia.visaStatus = @"Visa not required";
         indonesia.duration = 30;
         indonesia.time = @"days";
-        
         // iran
         visaDetailData *iran = [[visaDetailData alloc] init];
-        iran.visaStatus = @"Visa on arrival";
+        iran.visaStatus = @"Visa on arrival (conditions apply)";
         iran.duration = 15;
         iran.time = @"days";
-        
         // iraq
         visaDetailData *iraq = [[visaDetailData alloc] init];
         iraq.visaStatus = @"Visa Required";
@@ -492,34 +442,35 @@
         // ireland
         visaDetailData *ireland = [[visaDetailData alloc] init];
         ireland.visaStatus = @"Visa not required";
-        ireland.duration = 90;
-        ireland.time = @"days";
+        ireland.duration = 0;
+        ireland.time = @"";
+        
         // israel
         visaDetailData *israel = [[visaDetailData alloc] init];
-        israel.visaStatus = @"Visa not required";
-        israel.duration = 3;
-        israel.time = @"months";
-        
+        israel.visaStatus = @"Visa Required";
+        israel.duration = 0;
+        israel.time = @"";
         // italy
         visaDetailData *italy = [[visaDetailData alloc] init];
         italy.visaStatus = @"Visa not required";
         italy.duration = 90;
         italy.time = @"days";
+        
         // jamaica
         visaDetailData *jamaica = [[visaDetailData alloc] init];
         jamaica.visaStatus = @"Visa not required";
-        jamaica.duration = 90;
-        jamaica.time = @"days";
+        jamaica.duration = 6;
+        jamaica.time = @"months";
         
         // japan
         visaDetailData *japan = [[visaDetailData alloc] init];
-        japan.visaStatus = @"Visa not required";
-        japan.duration = 90;
-        japan.time = @"days";
+        japan.visaStatus = @"Visa Required";
+        japan.duration = 0;
+        japan.time = @"";
         
         // jordan
         visaDetailData *jordan = [[visaDetailData alloc] init];
-        jordan.visaStatus = @"Visa on arrival (conditions apply)";
+        jordan.visaStatus = @"Visa on arrival";
         jordan.duration = 0;
         jordan.time = @"";
         
@@ -531,43 +482,44 @@
         
         // kenya
         visaDetailData *kenya = [[visaDetailData alloc] init];
-        kenya.visaStatus = @"eVisa / Visa on arrival";
+        kenya.visaStatus = @"eVisa";
         kenya.duration = 3;
         kenya.time = @"months";
         
         // kiribati
         visaDetailData *kiribati = [[visaDetailData alloc] init];
-        kiribati.visaStatus = @"Visa Required";
-        kiribati.duration = 0;
-        kiribati.time = @"";
-        
+        kiribati.visaStatus = @"Visa not required";
+        kiribati.duration = 30;
+        kiribati.time = @"days";
         // kiribati
         visaDetailData *kosovo = [[visaDetailData alloc] init];
-        kosovo.visaStatus = @"Visa not required";
+        kosovo.visaStatus = @"Visa not requird";
         kosovo.duration = 90;
         kosovo.time = @"days";
         
         // kuwait
         visaDetailData *kuwait = [[visaDetailData alloc] init];
-        kuwait.visaStatus = @"eVisa / Visa on arrival";
-        kuwait.duration = 3;
-        kuwait.time = @"months";
-        
+        kuwait.visaStatus = @"Visa Required";
+        kuwait.duration = 0;
+        kuwait.time = @"";
         // krgyzstan
         visaDetailData *krgyzstan = [[visaDetailData alloc] init];
-        krgyzstan.visaStatus = @"eVisa / Visa on arrival";
-        krgyzstan.duration = 1;
-        krgyzstan.time = @"month";
+        krgyzstan.visaStatus = @"eVisa";
+        krgyzstan.duration = 0;
+        krgyzstan.time = @"";
+        
         // laos
         visaDetailData *laos = [[visaDetailData alloc] init];
         laos.visaStatus = @"Visa on arrival";
         laos.duration = 30;
         laos.time = @"days";
+        
         // latvia
         visaDetailData *latvia = [[visaDetailData alloc] init];
         latvia.visaStatus = @"Visa not required";
         latvia.duration = 90;
         latvia.time = @"days";
+        
         // lebanon
         visaDetailData *lebanon = [[visaDetailData alloc] init];
         lebanon.visaStatus = @"Visa on arrival";
@@ -575,9 +527,9 @@
         lebanon.time = @"month";
         // lesotho
         visaDetailData *lesotho = [[visaDetailData alloc] init];
-        lesotho.visaStatus = @"eVisa";
-        lesotho.duration = 0;
-        lesotho.time = @"";
+        lesotho.visaStatus = @"Visa not required";
+        lesotho.duration = 30;
+        lesotho.time = @"days";
         
         // liberia
         visaDetailData *liberia = [[visaDetailData alloc] init];
@@ -607,19 +559,19 @@
         visaDetailData *luxembourg = [[visaDetailData alloc] init];
         luxembourg.visaStatus = @"Visa not required";
         luxembourg.duration = 90;
-        luxembourg.time = @"not required";
+        luxembourg.time = @"days";
         
         // macao
         visaDetailData *macao = [[visaDetailData alloc] init];
-        macao.visaStatus = @"Visa not required";
-        macao.duration = 90;
-        macao.time = @"days";
+        macao.visaStatus = @"Visa on arrival";
+        macao.duration = 0;
+        macao.time = @"";
         
         // macedonia
         visaDetailData *macedonia = [[visaDetailData alloc] init];
         macedonia.visaStatus = @"Visa not required";
         macedonia.duration = 90;
-        macedonia.time = @"";
+        macedonia.time = @"days";
         
         
         // madagascar
@@ -630,9 +582,9 @@
         
         // malawi
         visaDetailData *malawi = [[visaDetailData alloc] init];
-        malawi.visaStatus = @"Visa on arrival";
-        malawi.duration = 0;
-        malawi.time = @"";
+        malawi.visaStatus = @"Visa not required";
+        malawi.duration = 90;
+        malawi.time = @"days";
         
         // malaysia
         visaDetailData *malaysia = [[visaDetailData alloc] init];
@@ -648,7 +600,7 @@
         
         // mali
         visaDetailData *mali = [[visaDetailData alloc] init];
-        mali.visaStatus = @"Visa not required";
+        mali.visaStatus = @"Visa Required";
         mali.duration = 0;
         mali.time = @"";
         // malta
@@ -659,9 +611,9 @@
         
         // marshall
         visaDetailData *marshall = [[visaDetailData alloc] init];
-        marshall.visaStatus = @"Visa on arrival";
-        marshall.duration = 90;
-        marshall.time = @"days";
+        marshall.visaStatus = @"Visa Required";
+        marshall.duration = 0;
+        marshall.time = @"";
         
         // mauritania
         visaDetailData *mauritania = [[visaDetailData alloc] init];
@@ -671,15 +623,15 @@
         
         // mauritius
         visaDetailData *mauritius = [[visaDetailData alloc] init];
-        mauritius.visaStatus = @"Visa on arrival";
-        mauritius.duration = 60;
+        mauritius.visaStatus = @"Visa not required";
+        mauritius.duration = 90;
         mauritius.time = @"days";
         
         // mexico
         visaDetailData *mexico = [[visaDetailData alloc] init];
-        mexico.visaStatus = @"Visa not required";
-        mexico.duration = 180;
-        mexico.time = @"days";
+        mexico.visaStatus = @"Visa Required";
+        mexico.duration = 0;
+        mexico.time = @"";
         // micronesia
         visaDetailData *micronesia = [[visaDetailData alloc] init];
         micronesia.visaStatus = @"Visa not required";
@@ -688,9 +640,9 @@
         
         // moldova
         visaDetailData *moldova = [[visaDetailData alloc] init];
-        moldova.visaStatus = @"Visa not required";
-        moldova.duration = 90;
-        moldova.time = @"days";
+        moldova.visaStatus = @"Visa Required";
+        moldova.duration = 0;
+        moldova.time = @"";
         // monaco
         visaDetailData *monaco = [[visaDetailData alloc] init];
         monaco.visaStatus = @"Visa not required";
@@ -711,9 +663,9 @@
         
         // morocco
         visaDetailData *morocco = [[visaDetailData alloc] init];
-        morocco.visaStatus = @"Visa not required";
-        morocco.duration = 3;
-        morocco.time = @"months";
+        morocco.visaStatus = @"Visa Required";
+        morocco.duration = 0;
+        morocco.time = @"";
         // mozambique
         visaDetailData *mozambique = [[visaDetailData alloc] init];
         mozambique.visaStatus = @"Visa on arrival";
@@ -735,7 +687,7 @@
         // nepal
         visaDetailData *nepal = [[visaDetailData alloc] init];
         nepal.visaStatus = @"Visa on arrival";
-        nepal.duration = 90;
+        nepal.duration = 30;
         nepal.time = @"days";
         
         // nl
@@ -746,9 +698,9 @@
         
         // nz
         visaDetailData *nz = [[visaDetailData alloc] init];
-        nz.visaStatus = @"Visa not required";
-        nz.duration = 3;
-        nz.time = @"months";
+        nz.visaStatus = @"Visa Required";
+        nz.duration = 0;
+        nz.time = @"";
         
         // nicaragua
         visaDetailData *nicaragua = [[visaDetailData alloc] init];
@@ -782,7 +734,7 @@
         
         // oman
         visaDetailData *oman = [[visaDetailData alloc] init];
-        oman.visaStatus = @"eVisa / Visa on arrival";
+        oman.visaStatus = @"Visa Required";
         oman.duration = 0;
         oman.time = @"";
         
@@ -799,7 +751,7 @@
         
         // palestinian territories
         visaDetailData *palestine = [[visaDetailData alloc] init];
-        palestine.visaStatus = @"Visa Required";
+        palestine.visaStatus = @"Visa not required";
         palestine.duration = 0;
         palestine.time = @"";
         
@@ -811,20 +763,20 @@
         
         // papua
         visaDetailData *papua = [[visaDetailData alloc] init];
-        papua.visaStatus = @"Visa on arrival";
-        papua.duration = 60;
-        papua.time = @"days";
+        papua.visaStatus = @"Visa Required";
+        papua.duration = 0;
+        papua.time = @"";
         
         // paraguay
         visaDetailData *paraguay = [[visaDetailData alloc] init];
-        paraguay.visaStatus = @"Visa not required";
-        paraguay.duration = 90;
-        paraguay.time = @"days";
+        paraguay.visaStatus = @"Visa Required";
+        paraguay.duration = 0;
+        paraguay.time = @"";
         
         // peru
         visaDetailData *peru = [[visaDetailData alloc] init];
         peru.visaStatus = @"Visa not required";
-        peru.duration = 183;
+        peru.duration = 180;
         peru.time = @"days";
         
         // philippines
@@ -848,14 +800,14 @@
         // qatar
         visaDetailData *qatar = [[visaDetailData alloc] init];
         qatar.visaStatus = @"eVisa";
-        qatar.duration = 30;
-        qatar.time = @"days";
+        qatar.duration = 0;
+        qatar.time = @"";
         
         // romania
         visaDetailData *romania = [[visaDetailData alloc] init];
         romania.visaStatus = @"Visa not required";
         romania.duration = 90;
-        romania.time = @"";
+        romania.time = @"days";
         // russia
         visaDetailData *russia = [[visaDetailData alloc] init];
         russia.visaStatus = @"Visa Required";
@@ -870,20 +822,20 @@
         
         // stkitts
         visaDetailData *stkitts = [[visaDetailData alloc] init];
-        stkitts.visaStatus = @"eVisa";
-        stkitts.duration = 0;
-        stkitts.time = @"";
+        stkitts.visaStatus = @"Visa not required";
+        stkitts.duration = 6;
+        stkitts.time = @"months";
         
         // stlucia
         visaDetailData *stlucia = [[visaDetailData alloc] init];
         stlucia.visaStatus = @"Visa not required";
         stlucia.duration = 6;
-        stlucia.time = @"weeks";
+        stlucia.time = @"months";
         
         // stvincent
         visaDetailData *stvincent = [[visaDetailData alloc] init];
         stvincent.visaStatus = @"Visa not required";
-        stvincent.duration = 1;
+        stvincent.duration = 6;
         stvincent.time = @"month";
         // samoa
         visaDetailData *samoa = [[visaDetailData alloc] init];
@@ -893,14 +845,14 @@
         // sanmarino
         visaDetailData *sanmarino = [[visaDetailData alloc] init];
         sanmarino.visaStatus = @"Visa not required";
-        sanmarino.duration = 90;
-        sanmarino.time = @"days";
+        sanmarino.duration = 0;
+        sanmarino.time = @"";
         
         // saot
         visaDetailData *saot = [[visaDetailData alloc] init];
-        saot.visaStatus = @"Visa not required";
-        saot.duration = 15;
-        saot.time = @"days";
+        saot.visaStatus = @"eVisa";
+        saot.duration = 0;
+        saot.time = @"";
         
         // saudi
         visaDetailData *saudi = [[visaDetailData alloc] init];
@@ -910,15 +862,15 @@
         
         // senegal
         visaDetailData *senegal = [[visaDetailData alloc] init];
-        senegal.visaStatus = @"Visa on arrival";
-        senegal.duration = 0;
-        senegal.time = @"";
+        senegal.visaStatus = @"eVisa";
+        senegal.duration = 90;
+        senegal.time = @"days";
         
         // serbia
         visaDetailData *serbia = [[visaDetailData alloc] init];
-        serbia.visaStatus = @"Visa not required";
-        serbia.duration = 90;
-        serbia.time = @"days";
+        serbia.visaStatus = @"Visa Required";
+        serbia.duration = 0;
+        serbia.time = @"";
         
         // seychelles
         visaDetailData *seychelles = [[visaDetailData alloc] init];
@@ -951,9 +903,9 @@
         slovenia.time = @"days";
         // solomon
         visaDetailData *solomon = [[visaDetailData alloc] init];
-        solomon.visaStatus = @"Visitor's permit on arrival";
-        solomon.duration = 3;
-        solomon.time = @"months";
+        solomon.visaStatus = @"Permit on arrival";
+        solomon.duration = 30;
+        solomon.time = @"days";
         
         // somalia
         visaDetailData *somalia = [[visaDetailData alloc] init];
@@ -963,13 +915,13 @@
         // sa
         visaDetailData *sa = [[visaDetailData alloc] init];
         sa.visaStatus = @"Visa not required";
-        sa.duration = 90;
+        sa.duration = 30;
         sa.time = @"days";
         
         // sk
         visaDetailData *sk = [[visaDetailData alloc] init];
         sk.visaStatus = @"Visa not required";
-        sk.duration = 30;
+        sk.duration = 90;
         sk.time = @"days";
         
         // ssudan
@@ -985,7 +937,7 @@
         spain.time = @"days";
         // sri
         visaDetailData *sri = [[visaDetailData alloc] init];
-        sri.visaStatus = @"eVisa / Visa on arrival";
+        sri.visaStatus = @"eTA (Electronic Travel Authorization)";
         sri.duration = 30;
         sri.time = @"days";
         
@@ -997,9 +949,9 @@
         
         // suriname
         visaDetailData *suriname = [[visaDetailData alloc] init];
-        suriname.visaStatus = @"Visa Required";
-        suriname.duration = 0;
-        suriname.time = @"";
+        suriname.visaStatus = @"Visa not required";
+        suriname.duration = 6;
+        suriname.time = @"months";
         
         // swaziland
         visaDetailData *swaziland = [[visaDetailData alloc] init];
@@ -1025,26 +977,26 @@
         
         // taiwan
         visaDetailData *taiwan = [[visaDetailData alloc] init];
-        taiwan.visaStatus = @"Visa not required";
-        taiwan.duration = 90;
-        taiwan.time = @"days";
+        taiwan.visaStatus = @"Visa Required";
+        taiwan.duration = 0;
+        taiwan.time = @"";
         // taj
         visaDetailData *taj = [[visaDetailData alloc] init];
-        taj.visaStatus = @"Visa on arrival";
-        taj.duration = 45;
-        taj.time = @"days ";
+        taj.visaStatus = @"Visa Required";
+        taj.duration = 0;
+        taj.time = @"";
         
         // tanzania
         visaDetailData *tanzania = [[visaDetailData alloc] init];
-        tanzania.visaStatus = @"Visa on arrival";
-        tanzania.duration = 0;
-        tanzania.time = @"";
+        tanzania.visaStatus = @"Visa not required";
+        tanzania.duration = 3;
+        tanzania.time = @"months";
         
         // thailand
         visaDetailData *thailand = [[visaDetailData alloc] init];
-        thailand.visaStatus = @"Visa on arrival";
-        thailand.duration = 15;
-        thailand.time = @"days";
+        thailand.visaStatus = @"Visa Required";
+        thailand.duration = 0;
+        thailand.time = @"";
         
         // timor
         visaDetailData *timor = [[visaDetailData alloc] init];
@@ -1066,20 +1018,20 @@
         // trinidad
         visaDetailData *trinidad = [[visaDetailData alloc] init];
         trinidad.visaStatus = @"Visa not required";
-        trinidad.duration = 90;
-        trinidad.time = @"days";
+        trinidad.duration = 6;
+        trinidad.time = @"months";
         
         // tunisia
         visaDetailData *tunisia = [[visaDetailData alloc] init];
         tunisia.visaStatus = @"Visa not required";
-        tunisia.duration = 3;
-        tunisia.time = @"months";
+        tunisia.duration = 90;
+        tunisia.time = @"days";
         
         // turkey
         visaDetailData *turkey = [[visaDetailData alloc] init];
-        turkey.visaStatus = @"Visa not required";
-        turkey.duration = 3;
-        turkey.time = @"months";
+        turkey.visaStatus = @"eVisa";
+        turkey.duration = 30;
+        turkey.time = @"days";
         
         // turk
         visaDetailData *turk = [[visaDetailData alloc] init];
@@ -1094,21 +1046,21 @@
         
         // uganda
         visaDetailData *uganda = [[visaDetailData alloc] init];
-        uganda.visaStatus = @"eVisa / Visa on arrival";
-        uganda.duration = 0;
-        uganda.time = @"";
+        uganda.visaStatus = @"Visa not required";
+        uganda.duration = 90;
+        uganda.time = @"days";
         
         // ukraine
         visaDetailData *ukraine = [[visaDetailData alloc] init];
-        ukraine.visaStatus = @"Visa not required";
-        ukraine.duration = 90;
+        ukraine.visaStatus = @"Visa on arrival";
+        ukraine.duration = 15;
         ukraine.time = @"days";
         
         // uae
         visaDetailData *uae = [[visaDetailData alloc] init];
-        uae.visaStatus = @"Visa on arrival";
-        uae.duration = 30;
-        uae.time = @"days";
+        uae.visaStatus = @"Visa Required";
+        uae.duration = 0;
+        uae.time = @"";
         
         // uk
         visaDetailData *uk = [[visaDetailData alloc] init];
@@ -1118,15 +1070,15 @@
         
         // us
         visaDetailData *us = [[visaDetailData alloc] init];
-        us.visaStatus = @"Visa not required";
-        us.duration = 90;
-        us.time = @"days";
+        us.visaStatus = @"Visa Required";
+        us.duration = 0;
+        us.time = @"";
         
         // uruguay
         visaDetailData *uruguay = [[visaDetailData alloc] init];
-        uruguay.visaStatus = @"Visa not required";
-        uruguay.duration = 3;
-        uruguay.time = @"months";
+        uruguay.visaStatus = @"Visa Required";
+        uruguay.duration = 0;
+        uruguay.time = @"";
         
         // uzbek
         visaDetailData *uzbek = [[visaDetailData alloc] init];
@@ -1166,217 +1118,216 @@
         
         // zambia
         visaDetailData *zambia = [[visaDetailData alloc] init];
-        zambia.visaStatus = @"eVisa / Visa on arrival";
+        zambia.visaStatus = @"Visa not required";
         zambia.duration = 90;
         zambia.time = @"days";
         
         // zimbabwe
         visaDetailData *zimbabwe = [[visaDetailData alloc] init];
-        zimbabwe.visaStatus = @"Visa on arrival";
+        zimbabwe.visaStatus = @"Visa not required";
         zimbabwe.duration = 3;
         zimbabwe.time = @"months";
         
-        [self.andorraArray addObject:afghanistan]; // 0
-        [self.andorraArray addObject:albania]; // 1
-        [self.andorraArray addObject:algeria]; // 2
-        [self.andorraArray addObject:andorra]; // 3
-        [self.andorraArray addObject:angola]; // 4
-        [self.andorraArray addObject:antigua]; // 5
-        [self.andorraArray addObject:arg]; // 6
-        [self.andorraArray addObject:armenia]; // 7
-        [self.andorraArray addObject:aus]; // 8
-        [self.andorraArray addObject:austria]; // 9
-        [self.andorraArray addObject:azerbaijan]; // 10
-        [self.andorraArray addObject:bahamas]; // 11
-        [self.andorraArray addObject:bahrain]; // 12
-        [self.andorraArray addObject:bangladesh]; // 13
-        [self.andorraArray addObject:barbados]; //14
-        [self.andorraArray addObject:belarus]; // 15
-        [self.andorraArray addObject:belgium]; // 16
-        [self.andorraArray addObject:belize]; // 17
-        [self.andorraArray addObject:benin]; // 18
-        [self.andorraArray addObject:bhutan]; // 19
-        [self.andorraArray addObject:bolivia]; // 20
-        [self.andorraArray addObject:bosnia]; // 21
-        [self.andorraArray addObject:botswana]; // 22
-        [self.andorraArray addObject:brazil]; // 23
-        [self.andorraArray addObject:brunei]; // 24
-        [self.andorraArray addObject:bulgaria]; // 25
-        [self.andorraArray addObject:burkina]; // 26
-        [self.andorraArray addObject:burma]; // 27
-        [self.andorraArray addObject:burundi]; // 28
-        [self.andorraArray addObject:cambodia]; // 29
-        [self.andorraArray addObject:cameroon]; // 30
-        [self.andorraArray addObject:canada]; // 31
-        [self.andorraArray addObject:cape]; // 32
-        [self.andorraArray addObject:car]; // 33
-        [self.andorraArray addObject:chad]; // 34
-        [self.andorraArray addObject:chile]; // 35
-        [self.andorraArray addObject:china]; // 36
-        [self.andorraArray addObject:colombia]; // 37
-        [self.andorraArray addObject:comoros]; // 38
-        [self.andorraArray addObject:congo]; // 39
-        [self.andorraArray addObject:costa]; // 40
-        [self.andorraArray addObject:cote]; // 41
-        [self.andorraArray addObject:croatia]; // 42
-        [self.andorraArray addObject:cuba]; // 43
-        [self.andorraArray addObject:cyprus]; // 44
-        [self.andorraArray addObject:cz]; // 45
-        [self.andorraArray addObject:drcongo]; // 46
-        [self.andorraArray addObject:dk]; // 47
-        [self.andorraArray addObject:dj]; // 48
-        [self.andorraArray addObject:dominica]; // 49
-        [self.andorraArray addObject:dominican]; // 50
-        [self.andorraArray addObject:ecuador]; // 51
-        [self.andorraArray addObject:egypt]; // 52
-        [self.andorraArray addObject:elsa]; // 53
-        [self.andorraArray addObject:eq]; // 54
-        [self.andorraArray addObject:eritrea]; // 55
-        [self.andorraArray addObject:estonia]; // 56
-        [self.andorraArray addObject:ethiopia]; // 57
-        [self.andorraArray addObject:fiji]; // 58
-        [self.andorraArray addObject:finland]; // 59
-        [self.andorraArray addObject:france]; // 60
-        [self.andorraArray addObject:gabon]; // 61
-        [self.andorraArray addObject:gambia]; // 62
-        [self.andorraArray addObject:georgia]; // 63
-        [self.andorraArray addObject:germany]; // 64
-        [self.andorraArray addObject:ghana]; // 65
-        [self.andorraArray addObject:greece]; // 66
-        [self.andorraArray addObject:grenada]; // 67
-        [self.andorraArray addObject:guatemala]; // 55
-        [self.andorraArray addObject:guinea]; // 55
-        [self.andorraArray addObject:guineab]; // 55
-        [self.andorraArray addObject:guyana]; // 55
-        [self.andorraArray addObject:haiti]; // 55
-        [self.andorraArray addObject:honduras]; // 55
-        [self.andorraArray addObject:hk]; // 55
-        [self.andorraArray addObject:hungary]; // 55
-        [self.andorraArray addObject:iceland]; // 55
-        [self.andorraArray addObject:india]; // 55
-        [self.andorraArray addObject:iran]; // 55
-        [self.andorraArray addObject:iraq]; // 55
-        [self.andorraArray addObject:ireland]; // 55
-        [self.andorraArray addObject:israel]; // 55
-        [self.andorraArray addObject:italy]; // 55
-        [self.andorraArray addObject:jamaica]; // 55
-        [self.andorraArray addObject:japan]; // 55
-        [self.andorraArray addObject:jordan]; // 55
-        [self.andorraArray addObject:kazak]; // 55
-        [self.andorraArray addObject:kenya]; // 55
-        [self.andorraArray addObject:kosovo]; // 55
-        [self.andorraArray addObject:kiribati]; // 55
-        [self.andorraArray addObject:kuwait]; // 55
-        [self.andorraArray addObject:krgyzstan]; // 55
-        [self.andorraArray addObject:laos]; // 55
-        [self.andorraArray addObject:latvia]; // 55
-        [self.andorraArray addObject:lebanon]; // 55
-        [self.andorraArray addObject:lesotho]; // 55
-        [self.andorraArray addObject:liberia]; // 55
-        [self.andorraArray addObject:libya]; // 55
-        [self.andorraArray addObject:liechtenstein]; // 55
-        [self.andorraArray addObject:lithuania]; // 55
-        [self.andorraArray addObject:luxembourg]; // 55
-        [self.andorraArray addObject:macao]; // 55
-        [self.andorraArray addObject:macedonia]; // 55
-        [self.andorraArray addObject:madagascar]; // 55
-        [self.andorraArray addObject:malawi]; // 55
-        [self.andorraArray addObject:malaysia]; // 55
-        [self.andorraArray addObject:maldives]; // 55
-        [self.andorraArray addObject:mali]; // 55
-        [self.andorraArray addObject:malta]; // 55
-        [self.andorraArray addObject:marshall]; // 55
-        [self.andorraArray addObject:mauritania]; // 55
-        [self.andorraArray addObject:mauritius]; // 55
-        [self.andorraArray addObject:mexico]; // 55
-        [self.andorraArray addObject:micronesia]; // 55
-        [self.andorraArray addObject:moldova]; // 55
-        [self.andorraArray addObject:monaco]; // 55
-        [self.andorraArray addObject:mongolia]; // 55
-        [self.andorraArray addObject:montenegro]; // 55
-        [self.andorraArray addObject:morocco]; // 55
-        [self.andorraArray addObject:mozambique]; // 55
-        [self.andorraArray addObject:namibia]; // 55
-        [self.andorraArray addObject:nauru]; // 55
-        [self.andorraArray addObject:nepal]; // 55
-        [self.andorraArray addObject:nl]; // 55
-        [self.andorraArray addObject:nz]; // 55
-        [self.andorraArray addObject:nicaragua]; // 55
-        [self.andorraArray addObject:niger]; // 55
-        [self.andorraArray addObject:nigeria]; // 55
-        [self.andorraArray addObject:nk]; // 55
-        [self.andorraArray addObject:norway]; // 55
-        [self.andorraArray addObject:oman]; // 55
-        [self.andorraArray addObject:pakistan]; // 55
-        [self.andorraArray addObject:palau]; // 55
-        [self.andorraArray addObject:palestine]; // 55
-        [self.andorraArray addObject:panama]; // 55
-        [self.andorraArray addObject:papua]; // 55
-        [self.andorraArray addObject:paraguay]; // 55
-        [self.andorraArray addObject:peru]; // 55
-        [self.andorraArray addObject:philippines]; // 55
-        [self.andorraArray addObject:poland]; // 55
-        [self.andorraArray addObject:portugal]; // 55
-        [self.andorraArray addObject:qatar]; // 55
-        [self.andorraArray addObject:romania]; // 55
-        [self.andorraArray addObject:russia]; // 55
-        [self.andorraArray addObject:rwanda]; // 55
-        [self.andorraArray addObject:stkitts]; // 55
-        [self.andorraArray addObject:stlucia]; // 55
-        [self.andorraArray addObject:stvincent]; // 55
-        [self.andorraArray addObject:samoa]; // 55
-        [self.andorraArray addObject:sanmarino]; // 55
-        [self.andorraArray addObject:saot]; // 55
-        [self.andorraArray addObject:saudi]; // 55
-        [self.andorraArray addObject:senegal]; // 55
-        [self.andorraArray addObject:serbia]; // 55
-        [self.andorraArray addObject:seychelles]; // 55
-        [self.andorraArray addObject:sierra]; // 55
-        [self.andorraArray addObject:singapore]; // 55
-        [self.andorraArray addObject:slovakia]; // 55
-        [self.andorraArray addObject:slovenia]; // 55
-        [self.andorraArray addObject:solomon]; // 55
-        [self.andorraArray addObject:somalia]; // 55
-        [self.andorraArray addObject:sa]; // 55
-        [self.andorraArray addObject:sk]; // 55
-        [self.andorraArray addObject:ssudan]; // 55
-        [self.andorraArray addObject:spain]; // 55
-        [self.andorraArray addObject:sri]; // 55
-        [self.andorraArray addObject:sudan]; // 55
-        [self.andorraArray addObject:suriname]; // 55
-        [self.andorraArray addObject:swaziland]; // 55
-        [self.andorraArray addObject:sweden]; // 55
-        [self.andorraArray addObject:switz]; // 55
-        [self.andorraArray addObject:syria]; // 55
-        [self.andorraArray addObject:taiwan]; // 55
-        [self.andorraArray addObject:taj]; // 55
-        [self.andorraArray addObject:tanzania]; // 55
-        [self.andorraArray addObject:thailand]; // 55
-        [self.andorraArray addObject:timor]; // 55
-        [self.andorraArray addObject:togo]; // 55
-        [self.andorraArray addObject:tonga]; // 55
-        [self.andorraArray addObject:trinidad]; // 55
-        [self.andorraArray addObject:tunisia]; // 55
-        [self.andorraArray addObject:turkey]; // 55
-        [self.andorraArray addObject:turk]; // 55
-        [self.andorraArray addObject:tuvalu]; // 55
-        [self.andorraArray addObject:uganda]; // 55
-        [self.andorraArray addObject:ukraine]; // 55
-        [self.andorraArray addObject:uae]; // 55
-        [self.andorraArray addObject:uk]; // 55
-        [self.andorraArray addObject:us]; // 55
-        [self.andorraArray addObject:uruguay]; // 55
-        [self.andorraArray addObject:uzbek]; // 55
-        [self.andorraArray addObject:vanuatu]; // 55
-        [self.andorraArray addObject:vatican]; // 55
-        [self.andorraArray addObject:venezuela]; // 55
-        [self.andorraArray addObject:vietnam]; // 55
-        [self.andorraArray addObject:yemen]; // 55
-        [self.andorraArray addObject:zambia]; // 55
-        [self.andorraArray addObject:zimbabwe]; // 55
         
-
-
+        [self.antiguaArray addObject:afghanistan]; // 0
+        [self.antiguaArray addObject:albania]; // 1
+        [self.antiguaArray addObject:algeria]; // 2
+        [self.antiguaArray addObject:andorra]; // 3
+        [self.antiguaArray addObject:angola]; // 4
+        [self.antiguaArray addObject:antigua]; // 5
+        [self.antiguaArray addObject:arg]; // 6
+        [self.antiguaArray addObject:armenia]; // 7
+        [self.antiguaArray addObject:aus]; // 8
+        [self.antiguaArray addObject:austria]; // 9
+        [self.antiguaArray addObject:azerbaijan]; // 10
+        [self.antiguaArray addObject:bahamas]; // 11
+        [self.antiguaArray addObject:bahrain]; // 12
+        [self.antiguaArray addObject:bangladesh]; // 13
+        [self.antiguaArray addObject:barbados]; //14
+        [self.antiguaArray addObject:belarus]; // 15
+        [self.antiguaArray addObject:belgium]; // 16
+        [self.antiguaArray addObject:belize]; // 17
+        [self.antiguaArray addObject:benin]; // 18
+        [self.antiguaArray addObject:bhutan]; // 19
+        [self.antiguaArray addObject:bolivia]; // 20
+        [self.antiguaArray addObject:bosnia]; // 21
+        [self.antiguaArray addObject:botswana]; // 22
+        [self.antiguaArray addObject:brazil]; // 23
+        [self.antiguaArray addObject:brunei]; // 24
+        [self.antiguaArray addObject:bulgaria]; // 25
+        [self.antiguaArray addObject:burkina]; // 26
+        [self.antiguaArray addObject:burma]; // 27
+        [self.antiguaArray addObject:burundi]; // 28
+        [self.antiguaArray addObject:cambodia]; // 29
+        [self.antiguaArray addObject:cameroon]; // 30
+        [self.antiguaArray addObject:canada]; // 31
+        [self.antiguaArray addObject:cape]; // 32
+        [self.antiguaArray addObject:car]; // 33
+        [self.antiguaArray addObject:chad]; // 34
+        [self.antiguaArray addObject:chile]; // 35
+        [self.antiguaArray addObject:china]; // 36
+        [self.antiguaArray addObject:colombia]; // 37
+        [self.antiguaArray addObject:comoros]; // 38
+        [self.antiguaArray addObject:congo]; // 39
+        [self.antiguaArray addObject:costa]; // 40
+        [self.antiguaArray addObject:cote]; // 41
+        [self.antiguaArray addObject:croatia]; // 42
+        [self.antiguaArray addObject:cuba]; // 43
+        [self.antiguaArray addObject:cyprus]; // 44
+        [self.antiguaArray addObject:cz]; // 45
+        [self.antiguaArray addObject:drcongo]; // 46
+        [self.antiguaArray addObject:dk]; // 47
+        [self.antiguaArray addObject:dj]; // 48
+        [self.antiguaArray addObject:dominica]; // 49
+        [self.antiguaArray addObject:dominican]; // 50
+        [self.antiguaArray addObject:ecuador]; // 51
+        [self.antiguaArray addObject:egypt]; // 52
+        [self.antiguaArray addObject:elsa]; // 53
+        [self.antiguaArray addObject:eq]; // 54
+        [self.antiguaArray addObject:eritrea]; // 55
+        [self.antiguaArray addObject:estonia]; // 56
+        [self.antiguaArray addObject:ethiopia]; // 57
+        [self.antiguaArray addObject:fiji]; // 58
+        [self.antiguaArray addObject:finland]; // 59
+        [self.antiguaArray addObject:france]; // 60
+        [self.antiguaArray addObject:gabon]; // 61
+        [self.antiguaArray addObject:gambia]; // 62
+        [self.antiguaArray addObject:georgia]; // 63
+        [self.antiguaArray addObject:germany]; // 64
+        [self.antiguaArray addObject:ghana]; // 65
+        [self.antiguaArray addObject:greece]; // 66
+        [self.antiguaArray addObject:grenada]; // 67
+        [self.antiguaArray addObject:guatemala]; // 55
+        [self.antiguaArray addObject:guinea]; // 55
+        [self.antiguaArray addObject:guineab]; // 55
+        [self.antiguaArray addObject:guyana]; // 55
+        [self.antiguaArray addObject:haiti]; // 55
+        [self.antiguaArray addObject:honduras]; // 55
+        [self.antiguaArray addObject:hk]; // 55
+        [self.antiguaArray addObject:hungary]; // 55
+        [self.antiguaArray addObject:iceland]; // 55
+        [self.antiguaArray addObject:india]; // 55
+        [self.antiguaArray addObject:iran]; // 55
+        [self.antiguaArray addObject:iraq]; // 55
+        [self.antiguaArray addObject:ireland]; // 55
+        [self.antiguaArray addObject:israel]; // 55
+        [self.antiguaArray addObject:italy]; // 55
+        [self.antiguaArray addObject:jamaica]; // 55
+        [self.antiguaArray addObject:japan]; // 55
+        [self.antiguaArray addObject:jordan]; // 55
+        [self.antiguaArray addObject:kazak]; // 55
+        [self.antiguaArray addObject:kenya]; // 55
+        [self.antiguaArray addObject:kosovo]; // 55
+        [self.antiguaArray addObject:kiribati]; // 55
+        [self.antiguaArray addObject:kuwait]; // 55
+        [self.antiguaArray addObject:krgyzstan]; // 55
+        [self.antiguaArray addObject:laos]; // 55
+        [self.antiguaArray addObject:latvia]; // 55
+        [self.antiguaArray addObject:lebanon]; // 55
+        [self.antiguaArray addObject:lesotho]; // 55
+        [self.antiguaArray addObject:liberia]; // 55
+        [self.antiguaArray addObject:libya]; // 55
+        [self.antiguaArray addObject:liechtenstein]; // 55
+        [self.antiguaArray addObject:lithuania]; // 55
+        [self.antiguaArray addObject:luxembourg]; // 55
+        [self.antiguaArray addObject:macao]; // 55
+        [self.antiguaArray addObject:macedonia]; // 55
+        [self.antiguaArray addObject:madagascar]; // 55
+        [self.antiguaArray addObject:malawi]; // 55
+        [self.antiguaArray addObject:malaysia]; // 55
+        [self.antiguaArray addObject:maldives]; // 55
+        [self.antiguaArray addObject:mali]; // 55
+        [self.antiguaArray addObject:malta]; // 55
+        [self.antiguaArray addObject:marshall]; // 55
+        [self.antiguaArray addObject:mauritania]; // 55
+        [self.antiguaArray addObject:mauritius]; // 55
+        [self.antiguaArray addObject:mexico]; // 55
+        [self.antiguaArray addObject:micronesia]; // 55
+        [self.antiguaArray addObject:moldova]; // 55
+        [self.antiguaArray addObject:monaco]; // 55
+        [self.antiguaArray addObject:mongolia]; // 55
+        [self.antiguaArray addObject:montenegro]; // 55
+        [self.antiguaArray addObject:morocco]; // 55
+        [self.antiguaArray addObject:mozambique]; // 55
+        [self.antiguaArray addObject:namibia]; // 55
+        [self.antiguaArray addObject:nauru]; // 55
+        [self.antiguaArray addObject:nepal]; // 55
+        [self.antiguaArray addObject:nl]; // 55
+        [self.antiguaArray addObject:nz]; // 55
+        [self.antiguaArray addObject:nicaragua]; // 55
+        [self.antiguaArray addObject:niger]; // 55
+        [self.antiguaArray addObject:nigeria]; // 55
+        [self.antiguaArray addObject:nk]; // 55
+        [self.antiguaArray addObject:norway]; // 55
+        [self.antiguaArray addObject:oman]; // 55
+        [self.antiguaArray addObject:pakistan]; // 55
+        [self.antiguaArray addObject:palau]; // 55
+        [self.antiguaArray addObject:palestine]; // 55
+        [self.antiguaArray addObject:panama]; // 55
+        [self.antiguaArray addObject:papua]; // 55
+        [self.antiguaArray addObject:paraguay]; // 55
+        [self.antiguaArray addObject:peru]; // 55
+        [self.antiguaArray addObject:philippines]; // 55
+        [self.antiguaArray addObject:poland]; // 55
+        [self.antiguaArray addObject:portugal]; // 55
+        [self.antiguaArray addObject:qatar]; // 55
+        [self.antiguaArray addObject:romania]; // 55
+        [self.antiguaArray addObject:russia]; // 55
+        [self.antiguaArray addObject:rwanda]; // 55
+        [self.antiguaArray addObject:stkitts]; // 55
+        [self.antiguaArray addObject:stlucia]; // 55
+        [self.antiguaArray addObject:stvincent]; // 55
+        [self.antiguaArray addObject:samoa]; // 55
+        [self.antiguaArray addObject:sanmarino]; // 55
+        [self.antiguaArray addObject:saot]; // 55
+        [self.antiguaArray addObject:saudi]; // 55
+        [self.antiguaArray addObject:senegal]; // 55
+        [self.antiguaArray addObject:serbia]; // 55
+        [self.antiguaArray addObject:seychelles]; // 55
+        [self.antiguaArray addObject:sierra]; // 55
+        [self.antiguaArray addObject:singapore]; // 55
+        [self.antiguaArray addObject:slovakia]; // 55
+        [self.antiguaArray addObject:slovenia]; // 55
+        [self.antiguaArray addObject:solomon]; // 55
+        [self.antiguaArray addObject:somalia]; // 55
+        [self.antiguaArray addObject:sa]; // 55
+        [self.antiguaArray addObject:sk]; // 55
+        [self.antiguaArray addObject:ssudan]; // 55
+        [self.antiguaArray addObject:spain]; // 55
+        [self.antiguaArray addObject:sri]; // 55
+        [self.antiguaArray addObject:sudan]; // 55
+        [self.antiguaArray addObject:suriname]; // 55
+        [self.antiguaArray addObject:swaziland]; // 55
+        [self.antiguaArray addObject:sweden]; // 55
+        [self.antiguaArray addObject:switz]; // 55
+        [self.antiguaArray addObject:syria]; // 55
+        [self.antiguaArray addObject:taiwan]; // 55
+        [self.antiguaArray addObject:taj]; // 55
+        [self.antiguaArray addObject:tanzania]; // 55
+        [self.antiguaArray addObject:thailand]; // 55
+        [self.antiguaArray addObject:timor]; // 55
+        [self.antiguaArray addObject:togo]; // 55
+        [self.antiguaArray addObject:tonga]; // 55
+        [self.antiguaArray addObject:trinidad]; // 55
+        [self.antiguaArray addObject:tunisia]; // 55
+        [self.antiguaArray addObject:turkey]; // 55
+        [self.antiguaArray addObject:turk]; // 55
+        [self.antiguaArray addObject:tuvalu]; // 55
+        [self.antiguaArray addObject:uganda]; // 55
+        [self.antiguaArray addObject:ukraine]; // 55
+        [self.antiguaArray addObject:uae]; // 55
+        [self.antiguaArray addObject:uk]; // 55
+        [self.antiguaArray addObject:us]; // 55
+        [self.antiguaArray addObject:uruguay]; // 55
+        [self.antiguaArray addObject:uzbek]; // 55
+        [self.antiguaArray addObject:vanuatu]; // 55
+        [self.antiguaArray addObject:vatican]; // 55
+        [self.antiguaArray addObject:venezuela]; // 55
+        [self.antiguaArray addObject:vietnam]; // 55
+        [self.antiguaArray addObject:yemen]; // 55
+        [self.antiguaArray addObject:zambia]; // 55
+        [self.antiguaArray addObject:zimbabwe]; // 55
+        
         
         
         
@@ -1385,5 +1336,8 @@
     return self;
     
 }
+
+
+
 
 @end

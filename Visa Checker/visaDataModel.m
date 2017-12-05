@@ -17,6 +17,11 @@
         
         self.passportArray = [NSMutableArray array];
         
+        visaData *placeholder = [[visaData alloc] init];
+        placeholder.passport = @"--Select a Country--";
+        placeholder.destination = @"--Select a Country--";
+        placeholder.nationality = @"--Select a Country--";
+        
         visaData *afghanistan = [[visaData alloc] init];
         afghanistan.passport = @"Afghanistan";
         afghanistan.destination = @"Afghanistan";
@@ -88,6 +93,8 @@
         az.destination = @"Azerbaijan";
         az.nationality = @"Azerbaijani";
         // Countries starting A
+        
+        [self.passportArray addObject:placeholder];
         [self.passportArray addObject:afghanistan]; // index 0 - afghanistan
         [self.passportArray addObject:albania];  // index 1 - albania
         [self.passportArray addObject:algeria]; // index 2 - algeria
@@ -387,7 +394,7 @@
         visaData *domr = [[visaData alloc] init];
         domr.passport = @"Dominican Republic";
         domr.destination = @"Dominican Republic";
-        domr.destination = @"Dominican (Republic)";
+        domr.nationality = @"Dominican (Republic)";
         // Countries starting D
         [self.passportArray addObject:drcongo]; // index 46 - dr congo
         [self.passportArray addObject:dk]; // index 47 - denmark
@@ -1524,6 +1531,8 @@
         
         self.destinationArray = [NSMutableArray array];
         
+        
+        [self.destinationArray addObject:placeholder];
         // Countries starting A
         [self.destinationArray addObject:afghanistan]; // index 0 - afghanistan
         [self.destinationArray addObject:albania];  // index 1 - albania

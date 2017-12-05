@@ -19,6 +19,12 @@
         // Algeria Passport data
         self.algeriaArray = [NSMutableArray array];
         
+        visaDetailData *placeholder = [[visaDetailData alloc] init];
+        placeholder.visaStatus = @"placeholder";
+        placeholder.duration = 0;
+        placeholder.time = @"";
+        [self.algeriaArray addObject:placeholder];
+        
         // Afghanistan (placeholder)
         visaDetailData *afghanistan = [[visaDetailData alloc] init];
         afghanistan.visaStatus = @"Visa Required";

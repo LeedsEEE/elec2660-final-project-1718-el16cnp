@@ -33,13 +33,16 @@
     self.algerianDataModel = [[algeriaDataModel alloc] init];
     self.andorranDataModel = [[andorraDataModel alloc] init];
     self.angolanDataModel = [[angolaDataModel alloc] init];
+    self.antiguanDataModel = [[antiguaDataModel alloc] init];
+    self.argentineDataModel = [[argentinaDataModel alloc] init];
+    self.armenianDataModel = [[armeniaDataModel alloc] init];
+    self.ausDataModel = [[australiaDataModel alloc] init];
+    self.austrianDataModel = [[austriaDataModel alloc] init];
+    
+    
     
     passportPickerArray = self.vDataModel.passportArray;
     destinationPickerArray = self.vDataModel.destinationArray;
-    
-    NSLog(@"\nAfg: %i / 198\nAlb: %i / 198\nAlg: %i / 198\nAnd: %i / 198",self.afghanDataModel.afghanistanArray.count, self.albanianDataModel.albaniaArray.count,
-          self.algerianDataModel.algeriaArray.count, self.andorranDataModel.andorraArray.count);
-    NSLog(@"Ang: %i / 198", self.angolanDataModel.angolaArray.count);
     
     // NSLog(@"country count: %i", self.vDataModel.passportArray.count);
     
@@ -48,9 +51,24 @@
     self.passportPicker.delegate = self;
     self.passportPicker.dataSource = self;
     
+    // Tool bar
+    
+    
+    
+    
+    
+    
+    
+    
     // setting picker as input of both text fields
     passportTextField.inputView = passportPicker;
     destinationTextField.inputView = destinationPicker;
+    
+
+    visaData *savedData = [self.vDataModel.passportArray objectAtIndex:passportSelectedRow];
+    
+    passportTextField.text = savedData.passport;
+    NSLog(@"Saved Row: %i", passportSelectedRow);
 }
 
 
@@ -90,6 +108,8 @@
         if (passportTextField.editing) {
             passportTextField.text = passportData.passport;
         }
+        
+        
     } else {
     
         visaData *destinationData = [self.vDataModel.destinationArray objectAtIndex:row];
@@ -141,6 +161,35 @@
         [alertController addAction:okAction];
         [self presentViewController:alertController animated:YES completion:nil];
     }
+    
+    if (passportSelectedRow == 0) {
+        NSLog(@"Passport country == 0, error.");
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"Please select a passport country." preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction
+                                   actionWithTitle:@"OK"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction *action){
+                                       NSLog(@"Passport country == 0, error. Okay.");
+                                   }];
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    
+    if (destinationSelectedRow == 0) {
+        NSLog(@"Destination country == 0, error.");
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"Please select a destination country." preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction
+                                   actionWithTitle:@"OK"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction *action){
+                                       NSLog(@"Destination country == 0, error. Okay.");
+                                   }];
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    
     
     // print log of user chosen datas
     NSLog(@"Passport: %@", passportCountry);
@@ -225,6 +274,72 @@
             
         }
         
+        if (passportSelectedRow == 5) {
+            visaDetailData *tempDetailData = [self.antiguanDataModel.antiguaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow == 6) {
+            visaDetailData *tempDetailData = [self.argentineDataModel.argentinaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow == 7) {
+            visaDetailData *tempDetailData = [self.armenianDataModel.armeniaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow == 8) {
+            visaDetailData *tempDetailData = [self.ausDataModel.ausArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow == 9) {
+            visaDetailData *tempDetailData = [self.austrianDataModel.austriaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow > 9 && passportSelectedRow <= 100) {
+            
+            visaDetailData *tempDetailData = [self.austrianDataModel.austriaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow > 100 && passportSelectedRow <= 120) {
+            
+            visaDetailData *tempDetailData = [self.ausDataModel.ausArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow > 120 && passportSelectedRow <= 130) {
+            
+            visaDetailData *tempDetailData = [self.albanianDataModel.albaniaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (passportSelectedRow > 130 && passportSelectedRow <= 148) {
+            
+            visaDetailData *tempDetailData = [self.argentineDataModel.argentinaArray objectAtIndex:destinationSelectedRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
         
     }
     

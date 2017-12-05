@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VXQ-h8-dtU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VXQ-h8-dtU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,6 +27,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5vL-eL-jEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-578" y="134"/>
+        </scene>
+        <!--History Table Table View Controller-->
+        <scene sceneID="vwK-Wg-Qsg">
+            <objects>
+                <tableViewController id="qxr-Ib-66C" customClass="historyTableTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WWd-je-irD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="CdU-i8-bFc" style="IBUITableViewCellStyleDefault" id="Viw-Ad-KkC">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Viw-Ad-KkC" id="HM2-7R-roG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Passport" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CdU-i8-bFc">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Bvy-7Z-3uC">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bvy-7Z-3uC" id="a6T-px-w6N">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qxr-Ib-66C" id="Cux-xM-ohF"/>
+                            <outlet property="delegate" destination="qxr-Ib-66C" id="woI-cR-6Nq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0m-6E-U2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="-558"/>
         </scene>
         <!--Visa Checker-->
         <scene sceneID="tne-QT-ifu">
@@ -92,7 +138,18 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Visa Search" image="search" id="1Pe-J0-FcE"/>
-                    <navigationItem key="navigationItem" title="Visa Checker" id="dgt-kg-MJE"/>
+                    <navigationItem key="navigationItem" title="Visa Checker" id="dgt-kg-MJE">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="bookmarks" id="1bl-ja-wYl">
+                            <connections>
+                                <segue destination="qxr-Ib-66C" kind="show" id="0l7-bO-xNj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="izL-Ww-wVy">
+                            <connections>
+                                <segue destination="B1Q-XX-ZgB" kind="show" identifier="" id="RNY-dg-F4Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="destinationTextField" destination="pTh-eh-Tgq" id="8Lg-hj-agX"/>
                         <outlet property="passportTextField" destination="Fq8-MG-iI3" id="Sgn-0r-cgj"/>
@@ -165,7 +222,13 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Country List" image="list" id="QRX-Ns-qkx"/>
-                    <navigationItem key="navigationItem" title="Country List" id="JRU-QI-Xc0"/>
+                    <navigationItem key="navigationItem" title="Country List" id="JRU-QI-Xc0">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="m2p-1r-BRZ">
+                            <connections>
+                                <segue destination="B1Q-XX-ZgB" kind="show" identifier="listSettings" id="HbC-79-dLY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZgD-90-J7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,7 +251,7 @@
             </objects>
             <point key="canvasLocation" x="-578" y="1572"/>
         </scene>
-        <!--Rank Table View Controller-->
+        <!--Rank-->
         <scene sceneID="FGx-DB-cel">
             <objects>
                 <tableViewController id="YQF-6t-GVU" customClass="rankTableViewController" sceneMemberID="viewController">
@@ -211,7 +274,13 @@
                             <outlet property="delegate" destination="YQF-6t-GVU" id="XXU-MK-yfM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="CS3-iL-NQ0"/>
+                    <navigationItem key="navigationItem" title="Rank" id="CS3-iL-NQ0">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="X7G-Gp-qQY">
+                            <connections>
+                                <segue destination="B1Q-XX-ZgB" kind="show" identifier="rankSettings" id="ugp-eI-rae"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWk-LM-D0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,7 +312,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passport Rank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W0-BX-yVG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passport Index" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W0-BX-yVG">
                                 <rect key="frame" x="92" y="512" width="191" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -295,6 +364,89 @@
             </objects>
             <point key="canvasLocation" x="812" y="865.81709145427294"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="697-EK-Kgp">
+            <objects>
+                <viewController id="B1Q-XX-ZgB" customClass="settingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vv5-tJ-Z8A" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passport Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21Z-ay-6ZI">
+                                <rect key="frame" x="16" y="203" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select passport country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLG-dF-BfX">
+                                <rect key="frame" x="173" y="198" width="186" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Olu-yS-fy3">
+                                <rect key="frame" x="163" y="328" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkD-KX-5PZ">
+                                <rect key="frame" x="242" y="333" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ascending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3P-ZT-RHS">
+                                <rect key="frame" x="52" y="333" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KB3-Rr-ACQ">
+                                <rect key="frame" x="144" y="290" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPI-py-n0U">
+                                <rect key="frame" x="170" y="469" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="B1Q-XX-ZgB" eventType="touchUpInside" id="unc-BD-jcQ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="searchSettings" id="Zph-z3-Hdw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hLG-dF-BfX" firstAttribute="trailing" secondItem="Vv5-tJ-Z8A" secondAttribute="trailingMargin" id="3UO-Gt-6tX"/>
+                            <constraint firstItem="f3P-ZT-RHS" firstAttribute="top" secondItem="21Z-ay-6ZI" secondAttribute="bottom" constant="109" id="5Pb-yV-U0B"/>
+                            <constraint firstItem="hLG-dF-BfX" firstAttribute="leading" secondItem="21Z-ay-6ZI" secondAttribute="trailing" constant="23" id="7tw-4U-tiX"/>
+                            <constraint firstItem="fPI-py-n0U" firstAttribute="centerX" secondItem="Olu-yS-fy3" secondAttribute="centerX" id="9d8-fb-NK9"/>
+                            <constraint firstItem="Olu-yS-fy3" firstAttribute="top" secondItem="hLG-dF-BfX" secondAttribute="bottom" constant="100" id="Baq-ab-ebf"/>
+                            <constraint firstItem="nkD-KX-5PZ" firstAttribute="top" secondItem="hLG-dF-BfX" secondAttribute="bottom" constant="105" id="Jtl-lF-qw7"/>
+                            <constraint firstItem="KB3-Rr-ACQ" firstAttribute="top" secondItem="hLG-dF-BfX" secondAttribute="bottom" constant="62" id="LnN-qg-CNi"/>
+                            <constraint firstItem="21Z-ay-6ZI" firstAttribute="leading" secondItem="Vv5-tJ-Z8A" secondAttribute="leadingMargin" id="Oy2-qQ-FL6"/>
+                            <constraint firstItem="hLG-dF-BfX" firstAttribute="top" secondItem="Peg-Af-mSJ" secondAttribute="top" constant="134" id="POp-LX-8EG"/>
+                            <constraint firstItem="KB3-Rr-ACQ" firstAttribute="centerX" secondItem="Olu-yS-fy3" secondAttribute="centerX" id="XpG-h6-nTr"/>
+                            <constraint firstItem="Olu-yS-fy3" firstAttribute="centerX" secondItem="Vv5-tJ-Z8A" secondAttribute="centerX" id="ZHK-KL-29f"/>
+                            <constraint firstItem="fPI-py-n0U" firstAttribute="top" secondItem="Olu-yS-fy3" secondAttribute="bottom" constant="110" id="ZaL-0N-8tR"/>
+                            <constraint firstItem="Olu-yS-fy3" firstAttribute="leading" secondItem="f3P-ZT-RHS" secondAttribute="trailing" constant="30" id="ePP-ge-zMK"/>
+                            <constraint firstItem="nkD-KX-5PZ" firstAttribute="leading" secondItem="Olu-yS-fy3" secondAttribute="trailing" constant="30" id="mLf-G9-CQ4"/>
+                            <constraint firstItem="21Z-ay-6ZI" firstAttribute="top" secondItem="Peg-Af-mSJ" secondAttribute="top" constant="139" id="ykc-kf-zPx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Peg-Af-mSJ"/>
+                        <connections>
+                            <action selector="backgroundPressed:" destination="B1Q-XX-ZgB" eventType="touchUpInside" id="MpP-WB-YMd"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="HOg-mz-C0A"/>
+                    <connections>
+                        <outlet property="defaultTextField" destination="hLG-dF-BfX" id="es6-bW-mld"/>
+                        <outlet property="orderSwitch" destination="Olu-yS-fy3" id="3vD-Sb-1j8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmS-9H-Cjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648.8" y="865.81709145427294"/>
+        </scene>
         <!--Result-->
         <scene sceneID="IQe-UJ-BVO">
             <objects>
@@ -315,7 +467,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa Status: (status)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwM-tJ-bQ6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa Status: (status)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwM-tJ-bQ6">
                                 <rect key="frame" x="13" y="216" width="346" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -350,5 +502,10 @@
         <image name="list" width="25" height="25"/>
         <image name="rank" width="25" height="25"/>
         <image name="search" width="25" height="25"/>
+        <image name="settings" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="RNY-dg-F4Z"/>
+        <segue reference="Zph-z3-Hdw"/>
+    </inferredMetricsTieBreakers>
 </document>

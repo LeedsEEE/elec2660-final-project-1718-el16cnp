@@ -14,11 +14,11 @@
 #import "algeriaDataModel.h"
 #import "andorraDataModel.h"
 #import "angolaDataModel.h"
-
-
-
-
-
+#import "antiguaDataModel.h"
+#import "argentinaDataModel.h"
+#import "armeniaDataModel.h"
+#import "australiaDataModel.h"
+#import "austriaDataModel.h"
 
 
 
@@ -55,6 +55,16 @@
 @property (strong, nonatomic) andorraDataModel *andorranDataModel;
 
 @property (strong, nonatomic) angolaDataModel *angolanDataModel;
+
+@property (strong, nonatomic) antiguaDataModel *antiguanDataModel;
+
+@property (strong, nonatomic) argentinaDataModel *argentineDataModel;
+
+@property (strong, nonatomic) armeniaDataModel *armenianDataModel;
+
+@property (strong, nonatomic) australiaDataModel *ausDataModel;
+
+@property (strong, nonatomic) austriaDataModel *austrianDataModel;
 
 @property NSInteger *passportSelectedRow;
 

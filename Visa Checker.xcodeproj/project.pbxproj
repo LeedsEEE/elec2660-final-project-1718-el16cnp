@@ -12,6 +12,10 @@
 		1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806D8411FBCF1490052FA56 /* detailViewController.m */; };
 		1811DB491FCD9A1E00FB5533 /* visaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811DB481FCD9A1E00FB5533 /* visaData.m */; };
 		1811DB4C1FCD9A3900FB5533 /* visaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */; };
+		1819F9211FD333CD00FAA28E /* argentinaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819F91F1FD333CC00FAA28E /* argentinaDataModel.m */; };
+		1819F9241FD3350700FAA28E /* armeniaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819F9231FD3350700FAA28E /* armeniaDataModel.m */; };
+		1819F9271FD33BD200FAA28E /* australiaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819F9261FD33BD200FAA28E /* australiaDataModel.m */; };
+		1819F92A1FD41ECC00FAA28E /* austriaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819F9291FD41ECC00FAA28E /* austriaDataModel.m */; };
 		182875331FCEEACC00FC4C7B /* andorraDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182875321FCEEACC00FC4C7B /* andorraDataModel.m */; };
 		183AAA5B1FC0545B00298994 /* tabbaricons in Resources */ = {isa = PBXBuildFile; fileRef = 183AAA5A1FC0545A00298994 /* tabbaricons */; };
 		1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845EFBE1FBBCC8C006E9942 /* AppDelegate.m */; };
@@ -27,7 +31,10 @@
 		187BC4FC1FC08B0A002C0ED0 /* passportcover in Resources */ = {isa = PBXBuildFile; fileRef = 187BC4FB1FC08B0A002C0ED0 /* passportcover */; };
 		18BFFAD41FCDEACB00B55C62 /* visaDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */; };
 		18BFFADA1FCE272600B55C62 /* albaniaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD91FCE272600B55C62 /* albaniaDataModel.m */; };
+		18C2ADEA1FD6D94300E9A53F /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2ADE91FD6D94300E9A53F /* settingsViewController.m */; };
+		18C2ADED1FD6E2C400E9A53F /* historyTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2ADEC1FD6E2C400E9A53F /* historyTableTableViewController.m */; };
 		18C4F0661FD02CB900DA3943 /* angolaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4F0651FD02CB900DA3943 /* angolaDataModel.m */; };
+		18C4F0691FD0404E00DA3943 /* antiguaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4F0681FD0404E00DA3943 /* antiguaDataModel.m */; };
 		18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAC1FBE6BE80013699A /* TableViewController.m */; };
 		18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAF1FBE85A90013699A /* tableDataViewController.m */; };
 		18D23CB31FBE99B70013699A /* tableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CB21FBE99B70013699A /* tableData.m */; };
@@ -63,6 +70,14 @@
 		1811DB481FCD9A1E00FB5533 /* visaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaData.m; sourceTree = "<group>"; };
 		1811DB4A1FCD9A3900FB5533 /* visaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visaDataModel.h; sourceTree = "<group>"; };
 		1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaDataModel.m; sourceTree = "<group>"; };
+		1819F91F1FD333CC00FAA28E /* argentinaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = argentinaDataModel.m; sourceTree = "<group>"; };
+		1819F9201FD333CC00FAA28E /* argentinaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = argentinaDataModel.h; sourceTree = "<group>"; };
+		1819F9221FD3350700FAA28E /* armeniaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = armeniaDataModel.h; sourceTree = "<group>"; };
+		1819F9231FD3350700FAA28E /* armeniaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = armeniaDataModel.m; sourceTree = "<group>"; };
+		1819F9251FD33BD200FAA28E /* australiaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = australiaDataModel.h; sourceTree = "<group>"; };
+		1819F9261FD33BD200FAA28E /* australiaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = australiaDataModel.m; sourceTree = "<group>"; };
+		1819F9281FD41ECC00FAA28E /* austriaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = austriaDataModel.h; sourceTree = "<group>"; };
+		1819F9291FD41ECC00FAA28E /* austriaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = austriaDataModel.m; sourceTree = "<group>"; };
 		182875311FCEEACC00FC4C7B /* andorraDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = andorraDataModel.h; sourceTree = "<group>"; };
 		182875321FCEEACC00FC4C7B /* andorraDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = andorraDataModel.m; sourceTree = "<group>"; };
 		183AAA5A1FC0545A00298994 /* tabbaricons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tabbaricons; sourceTree = "<group>"; };
@@ -90,8 +105,14 @@
 		18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaDetailData.m; sourceTree = "<group>"; };
 		18BFFAD81FCE272600B55C62 /* albaniaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = albaniaDataModel.h; sourceTree = "<group>"; };
 		18BFFAD91FCE272600B55C62 /* albaniaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = albaniaDataModel.m; sourceTree = "<group>"; };
+		18C2ADE81FD6D94300E9A53F /* settingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = settingsViewController.h; sourceTree = "<group>"; };
+		18C2ADE91FD6D94300E9A53F /* settingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = settingsViewController.m; sourceTree = "<group>"; };
+		18C2ADEB1FD6E2C400E9A53F /* historyTableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = historyTableTableViewController.h; sourceTree = "<group>"; };
+		18C2ADEC1FD6E2C400E9A53F /* historyTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = historyTableTableViewController.m; sourceTree = "<group>"; };
 		18C4F0641FD02CB900DA3943 /* angolaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = angolaDataModel.h; sourceTree = "<group>"; };
 		18C4F0651FD02CB900DA3943 /* angolaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = angolaDataModel.m; sourceTree = "<group>"; };
+		18C4F0671FD0404E00DA3943 /* antiguaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = antiguaDataModel.h; sourceTree = "<group>"; };
+		18C4F0681FD0404E00DA3943 /* antiguaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = antiguaDataModel.m; sourceTree = "<group>"; };
 		18D23CAB1FBE6BE80013699A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		18D23CAC1FBE6BE80013699A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		18D23CAE1FBE85A90013699A /* tableDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableDataViewController.h; sourceTree = "<group>"; };
@@ -164,6 +185,16 @@
 				182875321FCEEACC00FC4C7B /* andorraDataModel.m */,
 				18C4F0641FD02CB900DA3943 /* angolaDataModel.h */,
 				18C4F0651FD02CB900DA3943 /* angolaDataModel.m */,
+				18C4F0671FD0404E00DA3943 /* antiguaDataModel.h */,
+				18C4F0681FD0404E00DA3943 /* antiguaDataModel.m */,
+				1819F9201FD333CC00FAA28E /* argentinaDataModel.h */,
+				1819F91F1FD333CC00FAA28E /* argentinaDataModel.m */,
+				1819F9221FD3350700FAA28E /* armeniaDataModel.h */,
+				1819F9231FD3350700FAA28E /* armeniaDataModel.m */,
+				1819F9251FD33BD200FAA28E /* australiaDataModel.h */,
+				1819F9261FD33BD200FAA28E /* australiaDataModel.m */,
+				1819F9281FD41ECC00FAA28E /* austriaDataModel.h */,
+				1819F9291FD41ECC00FAA28E /* austriaDataModel.m */,
 				18BFFAD21FCDEACB00B55C62 /* visaDetailData.h */,
 				18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */,
 				18D23CB71FBEA7FC0013699A /* flags */,
@@ -174,6 +205,10 @@
 				1806D8401FBCF1490052FA56 /* detailViewController.h */,
 				1806D8411FBCF1490052FA56 /* detailViewController.m */,
 				1845EFC31FBBCC8C006E9942 /* Main.storyboard */,
+				18C2ADEB1FD6E2C400E9A53F /* historyTableTableViewController.h */,
+				18C2ADEC1FD6E2C400E9A53F /* historyTableTableViewController.m */,
+				18C2ADE81FD6D94300E9A53F /* settingsViewController.h */,
+				18C2ADE91FD6D94300E9A53F /* settingsViewController.m */,
 				1811DB4A1FCD9A3900FB5533 /* visaDataModel.h */,
 				1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */,
 				1811DB471FCD9A1E00FB5533 /* visaData.h */,
@@ -355,17 +390,24 @@
 				18C4F0661FD02CB900DA3943 /* angolaDataModel.m in Sources */,
 				1850FAF81FC287C8001D3B2F /* rankTableViewController.m in Sources */,
 				18D23CB61FBE9A550013699A /* tableDataModel.m in Sources */,
+				18C2ADEA1FD6D94300E9A53F /* settingsViewController.m in Sources */,
 				1811DB4C1FCD9A3900FB5533 /* visaDataModel.m in Sources */,
 				18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */,
 				1845EFC21FBBCC8C006E9942 /* ViewController.m in Sources */,
+				1819F9271FD33BD200FAA28E /* australiaDataModel.m in Sources */,
+				1819F9211FD333CD00FAA28E /* argentinaDataModel.m in Sources */,
 				1802B55D1FCE36FB004458AC /* algeriaDataModel.m in Sources */,
+				1819F9241FD3350700FAA28E /* armeniaDataModel.m in Sources */,
 				1845EFCD1FBBCC8C006E9942 /* main.m in Sources */,
 				18BFFAD41FCDEACB00B55C62 /* visaDetailData.m in Sources */,
 				1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */,
+				18C2ADED1FD6E2C400E9A53F /* historyTableTableViewController.m in Sources */,
+				18C4F0691FD0404E00DA3943 /* antiguaDataModel.m in Sources */,
 				18BFFADA1FCE272600B55C62 /* albaniaDataModel.m in Sources */,
 				1802B5621FCE3F94004458AC /* afghanistanDataModel.m in Sources */,
 				18D23CB01FBE85A90013699A /* tableDataViewController.m in Sources */,
 				1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */,
+				1819F92A1FD41ECC00FAA28E /* austriaDataModel.m in Sources */,
 				1811DB491FCD9A1E00FB5533 /* visaData.m in Sources */,
 				182875331FCEEACC00FC4C7B /* andorraDataModel.m in Sources */,
 			);
@@ -533,6 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RVS7T5ACZ2;
 				INFOPLIST_FILE = "Visa Checker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.el16cnp.Visa-Checker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,6 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RVS7T5ACZ2;
 				INFOPLIST_FILE = "Visa Checker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.el16cnp.Visa-Checker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
