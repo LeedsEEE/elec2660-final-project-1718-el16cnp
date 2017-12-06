@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-@synthesize passportTextField, destinationTextField, passportPicker, destinationPicker, passportPickerArray, destinationPickerArray, passportCountry, destinationCountry, passportSelectedRow, destinationSelectedRow;
+@synthesize passportTextField, destinationTextField, passportPicker, destinationPicker, passportPickerArray, destinationPickerArray, passportCountry, destinationCountry, passportSelectedRow, destinationSelectedRow, historyPArray, historyDArray;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -71,22 +71,51 @@
 
 // Recall user last selected passport country
 -(void)viewWillAppear:(BOOL)animated{
-    NSUserDefaults *userPasportIndex = [NSUserDefaults standardUserDefaults];
-    NSInteger *userIndex = [userPasportIndex integerForKey:@"pIndex"];
     
-    passportSelectedRow = userIndex;
-    visaData *savedData = [self.vDataModel.passportArray objectAtIndex:passportSelectedRow];
-    passportTextField.text = savedData.passport;
+        NSUserDefaults *userPasportIndex = [NSUserDefaults standardUserDefaults];
+        NSInteger *userIndex = [userPasportIndex integerForKey:@"pIndex"];
+        
+        passportSelectedRow = userIndex;
+        
+        NSUserDefaults *userPassportText = [NSUserDefaults standardUserDefaults];
+        NSString *userText = [userPassportText stringForKey:@"pText"];
+        
+        passportTextField.text = userText;
+        
+        NSLog(@"Recalling user data: %i, %@", userIndex, userPassportText);
     
-    NSLog(@"Saved index: %i", userIndex);
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    NSArray *tempPArray = [userdefaults objectForKey:@"pArray"];
+    NSArray *tempDArray = [userdefaults objectForKey:@"dArray"];
+    
+    historyPArray = [NSMutableArray arrayWithArray:tempPArray];
+    historyDArray = [NSMutableArray arrayWithArray:tempDArray];
+    
+    NSLog(@"Recalling p array. P count: %i", historyPArray.count);
+    
+    NSLog(@"Recalling d array. D count: %i", historyDArray.count);
+    
+    
 }
 
 
 // Save user last selected passport country
 -(void)viewWillDisappear:(BOOL)animated{
-    NSInteger lastPassportIndex = passportSelectedRow;
     
-    [[NSUserDefaults standardUserDefaults] setInteger:lastPassportIndex forKey:@"pIndex"];
+        NSInteger lastPassportIndex = passportSelectedRow;
+        
+        [[NSUserDefaults standardUserDefaults] setInteger:lastPassportIndex forKey:@"pIndex"];
+        
+        NSString *lastPassportText = passportTextField.text;
+        
+        [[NSUserDefaults standardUserDefaults] setObject:lastPassportText forKey:@"pText"];
+        
+        NSLog(@"Saving user data: %i, %@", lastPassportIndex, lastPassportText);
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:historyPArray forKey:@"pArray"];
+    [userDefaults setObject:historyDArray forKey:@"dArray"];
+    
 }
 
 
@@ -209,6 +238,18 @@
     NSLog(@"Destination: %@", destinationCountry);
     NSLog(@"Submit pressed.");
     
+    // NSString *pString = [NSString stringWithFormat:@"%i", passportSelectedRow];
+    
+    // NSString *dString = [NSString stringWithFormat:@"%i", destinationSelectedRow];
+    
+    NSString *pString = passportTextField.text;
+    
+    NSString *dString = destinationTextField.text;
+    
+    [historyPArray insertObject:pString atIndex:historyPArray.count];
+    
+    [historyDArray insertObject:dString atIndex:historyDArray.count];
+    
 }
 
 #pragma mark backgroundPressed Method
@@ -227,6 +268,8 @@
         [self.destinationTextField resignFirstResponder];
 
     }
+    
+    
 }
 
 #pragma mark - Navigation
@@ -235,6 +278,14 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"showHistory"]) {
+        historyTableTableViewController *destinationViewController = [segue destinationViewController];
+        
+        destinationViewController.pArray = historyPArray;
+        destinationViewController.dArray = historyDArray;
+        
+    }
     
     if ([[segue identifier] isEqualToString:@"showDetails"]) {
         

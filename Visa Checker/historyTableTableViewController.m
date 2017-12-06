@@ -2,26 +2,28 @@
 //  historyTableTableViewController.m
 //  Visa Checker
 //
-//  Created by apple on 5/12/2017.
+//  Created by apple on 6/12/2017.
 //  Copyright © 2017 Nixon Pang. All rights reserved.
 //
 
 #import "historyTableTableViewController.h"
 
-@interface historyTableTableViewController ()
+@interface historyTableTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
 @implementation historyTableTableViewController
 
+@synthesize pArray, dArray;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // self.viewController = [[ViewController alloc] init];
+    self.vDataModel = [[visaDataModel alloc] init];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSLog(@"pArray count: %i", pArray.count);
+    NSLog(@"dArray count: %i", dArray.count);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,23 +35,36 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return dArray.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     // Configure the cell...
     
+    if (indexPath.section == 0) {
+        
+        NSString *pData = [pArray objectAtIndex:indexPath.row];
+        NSString *dData = [dArray objectAtIndex:indexPath.row];
+        
+        // visaData *tempPData = [self.vDataModel.passportArray objectAtIndex:indexPath.row];
+        
+        // visaData *tempDData = [self.vDataModel.destinationArray objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ passport in %@", pData, dData];
+        
+    }
+    
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -10,6 +10,7 @@
 		1802B55D1FCE36FB004458AC /* algeriaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1802B55C1FCE36FB004458AC /* algeriaDataModel.m */; };
 		1802B5621FCE3F94004458AC /* afghanistanDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1802B5611FCE3F94004458AC /* afghanistanDataModel.m */; };
 		1806D8421FBCF1490052FA56 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806D8411FBCF1490052FA56 /* detailViewController.m */; };
+		180740C11FD88506006DA999 /* historyTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180740C01FD88506006DA999 /* historyTableTableViewController.m */; };
 		1811DB491FCD9A1E00FB5533 /* visaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811DB481FCD9A1E00FB5533 /* visaData.m */; };
 		1811DB4C1FCD9A3900FB5533 /* visaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */; };
 		1819F9211FD333CD00FAA28E /* argentinaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819F91F1FD333CC00FAA28E /* argentinaDataModel.m */; };
@@ -31,8 +32,6 @@
 		187BC4FC1FC08B0A002C0ED0 /* passportcover in Resources */ = {isa = PBXBuildFile; fileRef = 187BC4FB1FC08B0A002C0ED0 /* passportcover */; };
 		18BFFAD41FCDEACB00B55C62 /* visaDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */; };
 		18BFFADA1FCE272600B55C62 /* albaniaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD91FCE272600B55C62 /* albaniaDataModel.m */; };
-		18C2ADEA1FD6D94300E9A53F /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2ADE91FD6D94300E9A53F /* settingsViewController.m */; };
-		18C2ADED1FD6E2C400E9A53F /* historyTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2ADEC1FD6E2C400E9A53F /* historyTableTableViewController.m */; };
 		18C4F0661FD02CB900DA3943 /* angolaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4F0651FD02CB900DA3943 /* angolaDataModel.m */; };
 		18C4F0691FD0404E00DA3943 /* antiguaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4F0681FD0404E00DA3943 /* antiguaDataModel.m */; };
 		18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D23CAC1FBE6BE80013699A /* TableViewController.m */; };
@@ -66,6 +65,8 @@
 		1802B5611FCE3F94004458AC /* afghanistanDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = afghanistanDataModel.m; sourceTree = "<group>"; };
 		1806D8401FBCF1490052FA56 /* detailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = "<group>"; };
 		1806D8411FBCF1490052FA56 /* detailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = "<group>"; };
+		180740BF1FD88506006DA999 /* historyTableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = historyTableTableViewController.h; sourceTree = "<group>"; };
+		180740C01FD88506006DA999 /* historyTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = historyTableTableViewController.m; sourceTree = "<group>"; };
 		1811DB471FCD9A1E00FB5533 /* visaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visaData.h; sourceTree = "<group>"; };
 		1811DB481FCD9A1E00FB5533 /* visaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaData.m; sourceTree = "<group>"; };
 		1811DB4A1FCD9A3900FB5533 /* visaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visaDataModel.h; sourceTree = "<group>"; };
@@ -105,10 +106,6 @@
 		18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaDetailData.m; sourceTree = "<group>"; };
 		18BFFAD81FCE272600B55C62 /* albaniaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = albaniaDataModel.h; sourceTree = "<group>"; };
 		18BFFAD91FCE272600B55C62 /* albaniaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = albaniaDataModel.m; sourceTree = "<group>"; };
-		18C2ADE81FD6D94300E9A53F /* settingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = settingsViewController.h; sourceTree = "<group>"; };
-		18C2ADE91FD6D94300E9A53F /* settingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = settingsViewController.m; sourceTree = "<group>"; };
-		18C2ADEB1FD6E2C400E9A53F /* historyTableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = historyTableTableViewController.h; sourceTree = "<group>"; };
-		18C2ADEC1FD6E2C400E9A53F /* historyTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = historyTableTableViewController.m; sourceTree = "<group>"; };
 		18C4F0641FD02CB900DA3943 /* angolaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = angolaDataModel.h; sourceTree = "<group>"; };
 		18C4F0651FD02CB900DA3943 /* angolaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = angolaDataModel.m; sourceTree = "<group>"; };
 		18C4F0671FD0404E00DA3943 /* antiguaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = antiguaDataModel.h; sourceTree = "<group>"; };
@@ -202,13 +199,11 @@
 				1845EFBE1FBBCC8C006E9942 /* AppDelegate.m */,
 				1845EFC01FBBCC8C006E9942 /* ViewController.h */,
 				1845EFC11FBBCC8C006E9942 /* ViewController.m */,
+				180740BF1FD88506006DA999 /* historyTableTableViewController.h */,
+				180740C01FD88506006DA999 /* historyTableTableViewController.m */,
 				1806D8401FBCF1490052FA56 /* detailViewController.h */,
 				1806D8411FBCF1490052FA56 /* detailViewController.m */,
 				1845EFC31FBBCC8C006E9942 /* Main.storyboard */,
-				18C2ADEB1FD6E2C400E9A53F /* historyTableTableViewController.h */,
-				18C2ADEC1FD6E2C400E9A53F /* historyTableTableViewController.m */,
-				18C2ADE81FD6D94300E9A53F /* settingsViewController.h */,
-				18C2ADE91FD6D94300E9A53F /* settingsViewController.m */,
 				1811DB4A1FCD9A3900FB5533 /* visaDataModel.h */,
 				1811DB4B1FCD9A3900FB5533 /* visaDataModel.m */,
 				1811DB471FCD9A1E00FB5533 /* visaData.h */,
@@ -390,7 +385,6 @@
 				18C4F0661FD02CB900DA3943 /* angolaDataModel.m in Sources */,
 				1850FAF81FC287C8001D3B2F /* rankTableViewController.m in Sources */,
 				18D23CB61FBE9A550013699A /* tableDataModel.m in Sources */,
-				18C2ADEA1FD6D94300E9A53F /* settingsViewController.m in Sources */,
 				1811DB4C1FCD9A3900FB5533 /* visaDataModel.m in Sources */,
 				18D23CAD1FBE6BE80013699A /* TableViewController.m in Sources */,
 				1845EFC21FBBCC8C006E9942 /* ViewController.m in Sources */,
@@ -398,10 +392,10 @@
 				1819F9211FD333CD00FAA28E /* argentinaDataModel.m in Sources */,
 				1802B55D1FCE36FB004458AC /* algeriaDataModel.m in Sources */,
 				1819F9241FD3350700FAA28E /* armeniaDataModel.m in Sources */,
+				180740C11FD88506006DA999 /* historyTableTableViewController.m in Sources */,
 				1845EFCD1FBBCC8C006E9942 /* main.m in Sources */,
 				18BFFAD41FCDEACB00B55C62 /* visaDetailData.m in Sources */,
 				1845EFBF1FBBCC8C006E9942 /* AppDelegate.m in Sources */,
-				18C2ADED1FD6E2C400E9A53F /* historyTableTableViewController.m in Sources */,
 				18C4F0691FD0404E00DA3943 /* antiguaDataModel.m in Sources */,
 				18BFFADA1FCE272600B55C62 /* albaniaDataModel.m in Sources */,
 				1802B5621FCE3F94004458AC /* afghanistanDataModel.m in Sources */,

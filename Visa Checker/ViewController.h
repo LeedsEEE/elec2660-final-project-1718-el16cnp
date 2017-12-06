@@ -19,6 +19,7 @@
 #import "armeniaDataModel.h"
 #import "australiaDataModel.h"
 #import "austriaDataModel.h"
+#import "historyTableTableViewController.h"
 
 
 
@@ -70,6 +71,9 @@
 
 @property NSInteger *destinationSelectedRow;
 
+@property (strong, nonatomic) NSMutableArray *historyPArray;
+
+@property (strong, nonatomic) NSMutableArray *historyDArray;
 
 @end
 
