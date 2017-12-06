@@ -50,25 +50,16 @@
     self.destinationPicker.dataSource = self;
     self.passportPicker.delegate = self;
     self.passportPicker.dataSource = self;
-    
-    // Tool bar
-    
-    
-    
-    
-    
-    
-    
-    
+
     // setting picker as input of both text fields
     passportTextField.inputView = passportPicker;
     destinationTextField.inputView = destinationPicker;
     
-
+    /*
     visaData *savedData = [self.vDataModel.passportArray objectAtIndex:passportSelectedRow];
     
     passportTextField.text = savedData.passport;
-    NSLog(@"Saved Row: %i", passportSelectedRow);
+    NSLog(@"Saved Row: %i", passportSelectedRow); */
 }
 
 
@@ -76,6 +67,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+// Recall user last selected passport country
+-(void)viewWillAppear:(BOOL)animated{
+    NSUserDefaults *userPasportIndex = [NSUserDefaults standardUserDefaults];
+    NSInteger *userIndex = [userPasportIndex integerForKey:@"pIndex"];
+    
+    passportSelectedRow = userIndex;
+    visaData *savedData = [self.vDataModel.passportArray objectAtIndex:passportSelectedRow];
+    passportTextField.text = savedData.passport;
+    
+    NSLog(@"Saved index: %i", userIndex);
+}
+
+
+// Save user last selected passport country
+-(void)viewWillDisappear:(BOOL)animated{
+    NSInteger lastPassportIndex = passportSelectedRow;
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:lastPassportIndex forKey:@"pIndex"];
+}
+
 
 #pragma mark Picker View Delegate Methods
 
