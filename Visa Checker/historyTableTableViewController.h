@@ -56,4 +56,7 @@
 
 @property (strong, nonatomic) NSString *dData;
 
+- (IBAction)clearAllPressed:(id)sender;
+
+
 @end

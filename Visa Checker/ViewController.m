@@ -116,6 +116,10 @@
     [userDefaults setObject:historyPArray forKey:@"pArray"];
     [userDefaults setObject:historyDArray forKey:@"dArray"];
     
+    NSLog(@"Saving p array. P count: %i", historyPArray.count);
+    
+    NSLog(@"Saving d array. D count: %i", historyDArray.count);
+    
 }
 
 
@@ -199,34 +203,6 @@
                                    style:UIAlertActionStyleDefault
                                    handler:^(UIAlertAction *action){
                                        NSLog(@"Passport country == Destination country, error. Okay.");
-                                   }];
-        [alertController addAction:okAction];
-        [self presentViewController:alertController animated:YES completion:nil];
-    }
-    
-    if (passportSelectedRow == 0) {
-        NSLog(@"Passport country == 0, error.");
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"Please select a passport country." preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction *okAction = [UIAlertAction
-                                   actionWithTitle:@"OK"
-                                   style:UIAlertActionStyleDefault
-                                   handler:^(UIAlertAction *action){
-                                       NSLog(@"Passport country == 0, error. Okay.");
-                                   }];
-        [alertController addAction:okAction];
-        [self presentViewController:alertController animated:YES completion:nil];
-    }
-    
-    if (destinationSelectedRow == 0) {
-        NSLog(@"Destination country == 0, error.");
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"Please select a destination country." preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction *okAction = [UIAlertAction
-                                   actionWithTitle:@"OK"
-                                   style:UIAlertActionStyleDefault
-                                   handler:^(UIAlertAction *action){
-                                       NSLog(@"Destination country == 0, error. Okay.");
                                    }];
         [alertController addAction:okAction];
         [self presentViewController:alertController animated:YES completion:nil];

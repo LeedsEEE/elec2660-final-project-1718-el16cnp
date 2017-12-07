@@ -19,11 +19,7 @@
         // AUS Passport data
         self.ausArray = [NSMutableArray array];
         
-        visaDetailData *placeholder = [[visaDetailData alloc] init];
-        placeholder.visaStatus = @"placeholder";
-        placeholder.duration = 0;
-        placeholder.time = @"";
-        [self.ausArray addObject:placeholder];
+
         
         // Afghanistan
         visaDetailData *afghanistan = [[visaDetailData alloc] init];

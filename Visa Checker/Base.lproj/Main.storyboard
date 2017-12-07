@@ -99,7 +99,7 @@
                             <barButtonItem style="plain" id="izL-Ww-wVy"/>
                             <barButtonItem title="History" id="DdR-yY-V7I">
                                 <connections>
-                                    <segue destination="Whn-oy-7lC" kind="show" identifier="showHistory" id="kVU-b5-yoS"/>
+                                    <segue destination="Lgc-Eu-fb3" kind="show" identifier="showHistory" id="RN3-zX-4F1"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -327,33 +327,40 @@
             </objects>
             <point key="canvasLocation" x="812" y="865.81709145427294"/>
         </scene>
-        <!--History Table Table View Controller-->
-        <scene sceneID="g1b-vm-nTf">
+        <!--History-->
+        <scene sceneID="083-P2-U7s">
             <objects>
-                <tableViewController id="Whn-oy-7lC" customClass="historyTableTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BBo-FY-Mxl">
+                <tableViewController id="Lgc-Eu-fb3" customClass="historyTableTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Zn-dv-g4B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="PDG-Hh-Cr8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="lxG-cU-1zV">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PDG-Hh-Cr8" id="fyy-uO-iKS">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lxG-cU-1zV" id="oem-fC-A1L">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Whn-oy-7lC" id="u36-kq-c2G"/>
-                            <outlet property="delegate" destination="Whn-oy-7lC" id="eBT-BM-0Fp"/>
+                            <outlet property="dataSource" destination="Lgc-Eu-fb3" id="byz-BN-vcI"/>
+                            <outlet property="delegate" destination="Lgc-Eu-fb3" id="sdQ-9W-MuS"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="History" id="xzw-aw-aCp">
+                        <barButtonItem key="rightBarButtonItem" title="Clear All" id="RzJ-eh-AeA">
+                            <connections>
+                                <action selector="clearAllPressed:" destination="Lgc-Eu-fb3" id="GFt-7t-xU2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tTd-lQ-XIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukb-hc-11G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="-544"/>
+            <point key="canvasLocation" x="812" y="-535"/>
         </scene>
         <!--Result-->
         <scene sceneID="IQe-UJ-BVO">
@@ -403,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yso-3c-LZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1538" y="134"/>
+            <point key="canvasLocation" x="1465" y="134"/>
         </scene>
     </scenes>
     <resources>

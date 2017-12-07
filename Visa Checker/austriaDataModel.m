@@ -19,11 +19,6 @@
         // Austria Passport data
         self.austriaArray = [NSMutableArray array];
         
-        visaDetailData *placeholder = [[visaDetailData alloc] init];
-        placeholder.visaStatus = @"placeholder";
-        placeholder.duration = 0;
-        placeholder.time = @"";
-        [self.austriaArray addObject:placeholder];
         
         // Afghanistan
         visaDetailData *afghanistan = [[visaDetailData alloc] init];

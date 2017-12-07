@@ -18,12 +18,7 @@
         
         // Angola Passport data
         self.angolaArray = [NSMutableArray array];
-        
-        visaDetailData *placeholder = [[visaDetailData alloc] init];
-        placeholder.visaStatus = @"placeholder";
-        placeholder.duration = 0;
-        placeholder.time = @"";
-        [self.angolaArray addObject:placeholder];
+
         
         // Afghanistan
         visaDetailData *afghanistan = [[visaDetailData alloc] init];

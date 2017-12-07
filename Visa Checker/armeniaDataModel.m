@@ -18,12 +18,7 @@
         
         // Armenia Passport data
         self.armeniaArray = [NSMutableArray array];
-        
-        visaDetailData *placeholder = [[visaDetailData alloc] init];
-        placeholder.visaStatus = @"placeholder";
-        placeholder.duration = 0;
-        placeholder.time = @"";
-        [self.armeniaArray addObject:placeholder];
+
         
         // Afghanistan
         visaDetailData *afghanistan = [[visaDetailData alloc] init];

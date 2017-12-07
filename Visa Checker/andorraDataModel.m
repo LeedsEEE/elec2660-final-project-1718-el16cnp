@@ -19,12 +19,6 @@
         // Andorra Passport Data
         self.andorraArray = [NSMutableArray array];
         
-        visaDetailData *placeholder = [[visaDetailData alloc] init];
-        placeholder.visaStatus = @"placeholder";
-        placeholder.duration = 0;
-        placeholder.time = @"";
-        [self.andorraArray addObject:placeholder];
-        
         // Afghanistan
         visaDetailData *afghanistan = [[visaDetailData alloc] init];
         afghanistan.visaStatus = @"Visa Required";

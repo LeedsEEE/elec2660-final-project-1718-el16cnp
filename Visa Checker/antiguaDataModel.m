@@ -19,11 +19,7 @@
         // Antigua Passport data
         self.antiguaArray = [NSMutableArray array];
         
-        visaDetailData *placeholder = [[visaDetailData alloc] init];
-        placeholder.visaStatus = @"placeholder";
-        placeholder.duration = 0;
-        placeholder.time = @"";
-        [self.antiguaArray addObject:placeholder];
+
         
         // Afghanistan
         visaDetailData *afghanistan = [[visaDetailData alloc] init];

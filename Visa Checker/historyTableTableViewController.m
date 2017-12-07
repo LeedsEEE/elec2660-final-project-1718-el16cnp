@@ -248,4 +248,23 @@
 */
 
 
+- (IBAction)clearAllPressed:(id)sender {
+    
+    // remove all saved array data
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"pArray"];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"dArray"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    // remove data from array
+    [pArray removeAllObjects];
+    [dArray removeAllObjects];
+    
+    NSLog(@"p array new count: %d", pArray.count);
+    
+    // refresh view to show change
+    [self.tableView reloadData];
+    [self viewDidLoad];
+    
+    
+}
 @end
