@@ -260,6 +260,7 @@
     [dArray removeAllObjects];
     
     NSLog(@"p array new count: %d", pArray.count);
+    NSLog(@"d array new count: %d", dArray.count);
     
     // refresh view to show change
     [self.tableView reloadData];

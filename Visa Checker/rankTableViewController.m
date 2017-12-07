@@ -7,11 +7,13 @@
 
 #import "rankTableViewController.h"
 
-@interface rankTableViewController ()
+@interface rankTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
 @implementation rankTableViewController
+
+@synthesize allArray, sortedAllArray, tableArray, powerRank;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,6 +23,42 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.tData = [[tableData alloc] init];
+    self.tDataModel = [[tableDataModel alloc] init];
+    
+    allArray = [NSMutableArray array];
+    [allArray addObjectsFromArray:self.tDataModel.aArray];
+    [allArray addObjectsFromArray:self.tDataModel.bArray];
+    [allArray addObjectsFromArray:self.tDataModel.cArray];
+    [allArray addObjectsFromArray:self.tDataModel.dArray];
+    [allArray addObjectsFromArray:self.tDataModel.eArray];
+    [allArray addObjectsFromArray:self.tDataModel.fArray];
+    [allArray addObjectsFromArray:self.tDataModel.gArray];
+    [allArray addObjectsFromArray:self.tDataModel.hArray];
+    [allArray addObjectsFromArray:self.tDataModel.iArray];
+    [allArray addObjectsFromArray:self.tDataModel.jArray];
+    [allArray addObjectsFromArray:self.tDataModel.kArray];
+    [allArray addObjectsFromArray:self.tDataModel.lArray];
+    [allArray addObjectsFromArray:self.tDataModel.mArray];
+    [allArray addObjectsFromArray:self.tDataModel.nArray];
+    [allArray addObjectsFromArray:self.tDataModel.oArray];
+    [allArray addObjectsFromArray:self.tDataModel.pArray];
+    [allArray addObjectsFromArray:self.tDataModel.qArray];
+    [allArray addObjectsFromArray:self.tDataModel.rArray];
+    [allArray addObjectsFromArray:self.tDataModel.sArray];
+    [allArray addObjectsFromArray:self.tDataModel.tArray];
+    [allArray addObjectsFromArray:self.tDataModel.uArray];
+    [allArray addObjectsFromArray:self.tDataModel.vArray];
+    [allArray addObjectsFromArray:self.tDataModel.yArray];
+    [allArray addObjectsFromArray:self.tDataModel.zArray];
+    
+    
+    NSLog(@"allarray count: %lu", (unsigned long)allArray.count);
+
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,24 +69,36 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return allArray.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+ UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     // Configure the cell...
     
+    // [allArray sortUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"powerRank" ascending:YES]]];
+    
+    // tableArray = [NSMutableArray arrayWithArray:sortedAllArray];
+    
+    tableData *tempData = [allArray objectAtIndex:indexPath.row];
+    
+    cell.detailTextLabel.text = tempData.countryTitle;
+    cell.textLabel.text = [NSString stringWithFormat:@"%i", tempData.powerRank];
+    
+    
+    
+    
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

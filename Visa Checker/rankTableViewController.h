@@ -6,7 +6,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "tableData.h"
+#import "tableDataModel.h"
 
-@interface rankTableViewController : UITableViewController
+@interface rankTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) tableData *tData;
+
+@property (strong, nonatomic) NSMutableArray *allArray;
+
+@property (strong, nonatomic) tableDataModel *tDataModel;
+
+@property (strong, nonatomic) NSArray *sortedAllArray;
+
+@property (strong, nonatomic) NSMutableArray *tableArray;
+
+@property NSInteger *powerRank;
 
 @end
