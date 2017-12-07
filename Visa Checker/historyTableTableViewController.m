@@ -14,7 +14,7 @@
 
 @implementation historyTableTableViewController
 
-@synthesize pArray, dArray;
+@synthesize pArray, dArray, pDataRow, dDataRow, pData, dData;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,14 +51,19 @@
     
     if (indexPath.section == 0) {
         
-        NSString *pData = [pArray objectAtIndex:indexPath.row];
-        NSString *dData = [dArray objectAtIndex:indexPath.row];
+        pData = [pArray objectAtIndex:indexPath.row];
+        dData = [dArray objectAtIndex:indexPath.row];
         
-        // visaData *tempPData = [self.vDataModel.passportArray objectAtIndex:indexPath.row];
+        pDataRow = [pData intValue];
+        dDataRow = [dData intValue];
         
-        // visaData *tempDData = [self.vDataModel.destinationArray objectAtIndex:indexPath.row];
+        visaData *tempPData = [self.vDataModel.passportArray objectAtIndex:pDataRow];
         
-        cell.textLabel.text = [NSString stringWithFormat:@"%@ passport in %@", pData, dData];
+        // NSString *pData =
+        
+        visaData *tempDData = [self.vDataModel.destinationArray objectAtIndex:dDataRow];
+        
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ passport in %@", tempPData.nationality, tempDData.destination];
         
     }
     
@@ -107,7 +112,140 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"historyDetails"]) {
+        
+        detailViewController *destinationViewController = [segue destinationViewController];
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        visaData *tempPassportData = [self.vDataModel.passportArray objectAtIndex:pDataRow];
+        
+        NSLog(@"pDataRow = %i", pDataRow);
+        
+        destinationViewController.passportData = tempPassportData;
+        
+        visaData *tempDestinationData = [self.vDataModel.destinationArray objectAtIndex:dDataRow];
+        
+        destinationViewController.destinationData = tempDestinationData;
+        
+        NSLog(@"Passing data for: %@", tempPassportData.passport);
+        
+        NSLog(@"dDataRow = %i", dDataRow);
+        
+        pData = [pArray objectAtIndex:indexPath.row];
+        dData = [dArray objectAtIndex:indexPath.row];
+        
+        pDataRow = [pData intValue];
+        dDataRow = [dData intValue];
+        
+        if (pDataRow == 0) {
+            visaDetailData *tempDetailData = [self.afghanDataModel.afghanistanArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow == 1) {
+            visaDetailData *tempDetailData = [self.albanianDataModel.albaniaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        if (pDataRow == 2) {
+            visaDetailData *tempDetailData = [self.algerianDataModel.algeriaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow == 3) {
+            visaDetailData *tempDetailData = [self.andorranDataModel.andorraArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow == 4) {
+            visaDetailData *tempDetailData = [self.angolanDataModel.angolaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow == 5) {
+            visaDetailData *tempDetailData = [self.antiguanDataModel.antiguaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow == 6) {
+            visaDetailData *tempDetailData = [self.argentineDataModel.argentinaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow == 7) {
+            visaDetailData *tempDetailData = [self.armenianDataModel.armeniaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow == 8) {
+            visaDetailData *tempDetailData = [self.ausDataModel.ausArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow == 9) {
+            visaDetailData *tempDetailData = [self.austrianDataModel.austriaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow > 9 && pDataRow <= 100) {
+            
+            visaDetailData *tempDetailData = [self.austrianDataModel.austriaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow > 100 && pDataRow <= 120) {
+            
+            visaDetailData *tempDetailData = [self.ausDataModel.ausArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow > 120 && pDataRow <= 130) {
+            
+            visaDetailData *tempDetailData = [self.albanianDataModel.albaniaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        if (pDataRow > 130 && pDataRow <= 148) {
+            
+            visaDetailData *tempDetailData = [self.argentineDataModel.argentinaArray objectAtIndex:dDataRow];
+            
+            destinationViewController.vDetailData = tempDetailData;
+            
+        }
+        
+        
+    }
+    
+    
 }
 */
+
 
 @end

@@ -238,13 +238,13 @@
     NSLog(@"Destination: %@", destinationCountry);
     NSLog(@"Submit pressed.");
     
-    // NSString *pString = [NSString stringWithFormat:@"%i", passportSelectedRow];
+    NSString *pString = [NSString stringWithFormat:@"%i", passportSelectedRow];
     
-    // NSString *dString = [NSString stringWithFormat:@"%i", destinationSelectedRow];
+    NSString *dString = [NSString stringWithFormat:@"%i", destinationSelectedRow];
     
-    NSString *pString = passportTextField.text;
+    // NSString *pString = passportTextField.text;
     
-    NSString *dString = destinationTextField.text;
+    // NSString *dString = destinationTextField.text;
     
     [historyPArray insertObject:pString atIndex:historyPArray.count];
     
