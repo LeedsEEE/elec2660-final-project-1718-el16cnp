@@ -30,6 +30,7 @@
 		1850FAF81FC287C8001D3B2F /* rankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850FAF71FC287C8001D3B2F /* rankTableViewController.m */; };
 		1850FAFA1FC3CF1C001D3B2F /* appicons in Resources */ = {isa = PBXBuildFile; fileRef = 1850FAF91FC3CF1B001D3B2F /* appicons */; };
 		187BC4FC1FC08B0A002C0ED0 /* passportcover in Resources */ = {isa = PBXBuildFile; fileRef = 187BC4FB1FC08B0A002C0ED0 /* passportcover */; };
+		18BA2D131FDA23160033AFC2 /* splash in Resources */ = {isa = PBXBuildFile; fileRef = 18BA2D121FDA23150033AFC2 /* splash */; };
 		18BFFAD41FCDEACB00B55C62 /* visaDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */; };
 		18BFFADA1FCE272600B55C62 /* albaniaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFFAD91FCE272600B55C62 /* albaniaDataModel.m */; };
 		18C4F0661FD02CB900DA3943 /* angolaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4F0651FD02CB900DA3943 /* angolaDataModel.m */; };
@@ -102,6 +103,7 @@
 		1850FAF71FC287C8001D3B2F /* rankTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = rankTableViewController.m; path = "/Users/apple/Documents/iOS App/Visa Checker/Visa Checker/rankTableViewController.m"; sourceTree = "<absolute>"; };
 		1850FAF91FC3CF1B001D3B2F /* appicons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = appicons; sourceTree = "<group>"; };
 		187BC4FB1FC08B0A002C0ED0 /* passportcover */ = {isa = PBXFileReference; lastKnownFileType = folder; path = passportcover; sourceTree = "<group>"; };
+		18BA2D121FDA23150033AFC2 /* splash */ = {isa = PBXFileReference; lastKnownFileType = folder; path = splash; sourceTree = "<group>"; };
 		18BFFAD21FCDEACB00B55C62 /* visaDetailData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = visaDetailData.h; sourceTree = "<group>"; };
 		18BFFAD31FCDEACB00B55C62 /* visaDetailData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visaDetailData.m; sourceTree = "<group>"; };
 		18BFFAD81FCE272600B55C62 /* albaniaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = albaniaDataModel.h; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		1845EFBC1FBBCC8C006E9942 /* Visa Checker */ = {
 			isa = PBXGroup;
 			children = (
+				18BA2D121FDA23150033AFC2 /* splash */,
 				1850FAF91FC3CF1B001D3B2F /* appicons */,
 				1802B5601FCE3F94004458AC /* afghanistanDataModel.h */,
 				1802B5611FCE3F94004458AC /* afghanistanDataModel.m */,
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1845EFCA1FBBCC8C006E9942 /* LaunchScreen.storyboard in Resources */,
+				18BA2D131FDA23160033AFC2 /* splash in Resources */,
 				1845EFC71FBBCC8C006E9942 /* Assets.xcassets in Resources */,
 				1850FAFA1FC3CF1C001D3B2F /* appicons in Resources */,
 				187BC4FC1FC08B0A002C0ED0 /* passportcover in Resources */,

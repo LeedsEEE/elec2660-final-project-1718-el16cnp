@@ -19,7 +19,9 @@
 
 @property (strong, nonatomic) NSArray *sortedAllArray;
 
-@property (strong, nonatomic) NSMutableArray *tableArray;
+@property (strong, nonatomic) NSMutableArray *rankArray;
+
+@property (strong, nonatomic) tableData *sortData;
 
 @property NSInteger *powerRank;
 

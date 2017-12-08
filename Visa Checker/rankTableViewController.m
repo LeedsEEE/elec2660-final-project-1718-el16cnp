@@ -13,7 +13,7 @@
 
 @implementation rankTableViewController
 
-@synthesize allArray, sortedAllArray, tableArray, powerRank;
+@synthesize allArray, sortedAllArray, rankArray, powerRank, sortData;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,11 +53,7 @@
     [allArray addObjectsFromArray:self.tDataModel.yArray];
     [allArray addObjectsFromArray:self.tDataModel.zArray];
     
-    
     NSLog(@"allarray count: %lu", (unsigned long)allArray.count);
-
-    
-    
     
 }
 
@@ -90,15 +86,22 @@
     
     tableData *tempData = [allArray objectAtIndex:indexPath.row];
     
+    // NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"tempData.powerRank" ascending:YES];
+    // [allArray sortedArrayUsingDescriptors:@[sortDescriptor]];
+    
     cell.detailTextLabel.text = tempData.countryTitle;
     cell.textLabel.text = [NSString stringWithFormat:@"%i", tempData.powerRank];
+/*
+    NSInteger *checkRank = [cell.textLabel.text intValue];
     
-    
-    
-    
+    if (checkRank != indexPath.row) {
+        tempData = [allArray objectAtIndex:checkRank];
+        cell.detailTextLabel.text = tempData.countryTitle;
+        cell.textLabel.text = [NSString stringWithFormat:@"%i", tempData.powerRank];
+    }
+    */
     return cell;
 }
-
 
 /*
 // Override to support conditional editing of the table view.

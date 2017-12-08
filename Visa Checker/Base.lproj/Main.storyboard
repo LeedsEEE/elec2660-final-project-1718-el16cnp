@@ -37,31 +37,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select a country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fq8-MG-iI3">
-                                <rect key="frame" x="111" y="221" width="248" height="30"/>
+                                <rect key="frame" x="111" y="273" width="248" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzt-g9-P6s">
-                                <rect key="frame" x="33" y="221" width="70" height="30"/>
+                                <rect key="frame" x="33" y="273" width="70" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnA-7r-vUU">
-                                <rect key="frame" x="16" y="271" width="87" height="30"/>
+                                <rect key="frame" x="16" y="323" width="87" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select a country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTh-eh-Tgq">
-                                <rect key="frame" x="111" y="271" width="248" height="30"/>
+                                <rect key="frame" x="111" y="323" width="248" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-zZ-fmh">
-                                <rect key="frame" x="163" y="362" width="49" height="30"/>
+                                <rect key="frame" x="163" y="414" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="w0c-AU-WHs"/>
@@ -81,7 +81,7 @@
                             <constraint firstItem="c1v-zZ-fmh" firstAttribute="top" secondItem="pTh-eh-Tgq" secondAttribute="bottom" constant="61" id="aSW-Wj-frH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fq8-MG-iI3" secondAttribute="trailing" constant="16" id="f3L-Z8-PbD"/>
                             <constraint firstItem="Fq8-MG-iI3" firstAttribute="leading" secondItem="xzt-g9-P6s" secondAttribute="trailing" constant="8" symbolic="YES" id="gbe-BO-A1a"/>
-                            <constraint firstItem="Fq8-MG-iI3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="157" id="iJh-b0-Ydx"/>
+                            <constraint firstItem="Fq8-MG-iI3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="209" id="iJh-b0-Ydx"/>
                             <constraint firstItem="c1v-zZ-fmh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ifK-2w-z6g"/>
                             <constraint firstItem="xzt-g9-P6s" firstAttribute="bottom" secondItem="Fq8-MG-iI3" secondAttribute="bottom" id="mcd-EC-ePk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pTh-eh-Tgq" secondAttribute="trailing" constant="16" id="ocU-b5-w63"/>
@@ -238,9 +238,7 @@
                             <outlet property="delegate" destination="YQF-6t-GVU" id="XXU-MK-yfM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Rank" id="CS3-iL-NQ0">
-                        <barButtonItem key="rightBarButtonItem" image="settings" id="X7G-Gp-qQY"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Rank" id="CS3-iL-NQ0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWk-LM-D0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -414,6 +412,5 @@
         <image name="list" width="25" height="25"/>
         <image name="rank" width="25" height="25"/>
         <image name="search" width="25" height="25"/>
-        <image name="settings" width="25" height="25"/>
     </resources>
 </document>

@@ -88,9 +88,8 @@
       "scale" : "2x"
     },
     {
-      "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "AppIcon1024.png",
+      "size" : "1024x1024",
       "scale" : "1x"
     }
   ],
